@@ -100,7 +100,7 @@ module user_proj_example #(
     assign clk = (~la_oenb[64]) ? la_data_in[64]: wb_clk_i;
     assign rst = (~la_oenb[65]) ? la_data_in[65]: wb_rst_i;
 
-    counter #(
+    isp_io #(
         .BITS(BITS)
     ) counter(
         .clk(clk),
@@ -117,7 +117,7 @@ module user_proj_example #(
 
 endmodule
 
-module counter #(
+module isp_io #(
     parameter BITS = 16
 )(
     input clk,
