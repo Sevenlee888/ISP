@@ -115,16 +115,19 @@ user_proj_example mprj (
         //(MIPI_D1 Enable),(MIPI_D1 HSYNC,VSYNC,XCLK) 
         //(MIPI_D0 Enable),(MIPI_D0 HSYNC,VSYNC,XCLK)  
     .io_in ({io_in[23:23],io_in[22:20],io_in[19:19],io_in[18:16]}),
+        //AD1 convert analog input , AD0 conver analog input)
+    .io_in ({io_in[25:25],io_in[24:24]}),
         //(UART1 TX,RX),(UART0 TX,RX),(SCL,SDA,SLK) 
-    .io_in ({io_in[30:29],io_in[28:27],io_in[26:24]}),
+    .io_in ({io_in[32:31],io_in[30:29],io_in[28:26]}),
         //(PWM_1),(PWM_0) 
-    .io_out({io_out[32:32],io_out[31:31]}),
+    .io_out({io_out[34:34],io_out[33:33]}),
+    
     .io_oeb({io_oeb[37:30],io_oeb[7:0]}),
 
     // IRQ
       // To manage the arbitration for AMI bus among slave axi element.
     .irq(user_irq) ({user_irq[3:0]}),
-);
+;
 
 endmodule	// user_project_wrapper
 
