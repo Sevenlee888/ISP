@@ -75,7 +75,7 @@ module user_project_wrapper #(
     input   user_clock2,
 
     // User maskable interrupt signals
-    output [2:0] user_irq
+    output [3:0] user_irq
 );
 
 /*--------------------------------------*/
@@ -108,14 +108,22 @@ user_proj_example mprj (
     .la_data_out(la_data_out),
     .la_oenb (la_oenb),
 
-    // IO Pads
-
-    .io_in ({io_in[37:30],io_in[7:0]}),
-    .io_out({io_out[37:30],io_out[7:0]}),
+    // IO Pads (for ISP Project io)
+        //(CAM_clk_N,CAM_clk_P),(CAM_D1_N,CAM_D1_P),(CAM_D0_N,CAM_D0_P)
+        //(DAC_outN,DAC_cabin),(PICLK,HSYNC,VSYNC,XCLK)  
+    .io_in ({io_in[15:14],io_in[13:12],io_in[11:10],io_in[9:8],io_in[7:4]}),
+        //(MIPI_D1 Enable),(MIPI_D1 HSYNC,VSYNC,XCLK) 
+        //(MIPI_D0 Enable),(MIPI_D0 HSYNC,VSYNC,XCLK)  
+    .io_in ({io_in[23:23],io_in[22:20],io_in[19:19],io_in[18:16]}),
+        //(UART1 TX,RX),(UART0 TX,RX),(SCL,SDA,SLK) 
+    .io_in ({io_in[30:29],io_in[28:27],io_in[26:24]}),
+        //(PWM_1),(PWM_0) 
+    .io_out({io_out[32:32],io_out[31:31]}),
     .io_oeb({io_oeb[37:30],io_oeb[7:0]}),
 
     // IRQ
-    .irq(user_irq)
+      // To manage the arbitration for AMI bus among slave axi element.
+    .irq(user_irq) ({user_irq[3:0]}),
 );
 
 endmodule	// user_project_wrapper
