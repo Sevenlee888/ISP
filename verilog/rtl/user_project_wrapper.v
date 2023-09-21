@@ -113,6 +113,7 @@ user_proj_example mprj (
     .io_in ({io_in[37:30],io_in[7:0]}),
     .io_out({io_out[37:30],io_out[7:0]}),
     .io_oeb({io_oeb[37:30],io_oeb[7:0]}),
+    // .analog_io(analog_io)
 
     // IRQ
     .irq(user_irq)
