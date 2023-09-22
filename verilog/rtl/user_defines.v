@@ -19,6 +19,26 @@
 // User GPIO initial configuration parameters
 `define __USER_DEFINES_H
 
+// Size of soc_mem_synth
+
+// Type and size of soc_mem
+// `define USE_OPENRAM
+`define USE_CUSTOM_DFFRAM
+// don't change the following without double checking addr widths
+`define MEM_WORDS 256
+
+// Number of columns in the custom memory; takes one of three values:
+// 1 column : 1 KB, 2 column: 2 KB, 4 column: 4KB
+`define DFFRAM_WSIZE 4
+`define DFFRAM_USE_LATCH 0
+
+// not really parameterized but just to easily keep track of the number
+// of ram_block across different modules
+`define RAM_BLOCKS 1
+
+// Clock divisor default value
+`define CLK_DIV 3'b010
+
 // deliberately erroneous placeholder value; user required to config GPIO's to other
 `define GPIO_MODE_INVALID                  13'hXXXX
 

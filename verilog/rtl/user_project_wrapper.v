@@ -109,18 +109,17 @@ user_proj_example mprj (
     .la_oenb (la_oenb),
 
     // IO Pads (for ISP Project io)
-        //(CAM_clk_N,CAM_clk_P),(CAM_D1_N,CAM_D1_P),(CAM_D0_N,CAM_D0_P)
-        //(DAC_outN,DAC_cabin),(PICLK,HSYNC,VSYNC,XCLK)  
-    .io_in ({io_in[15:14],io_in[13:12],io_in[11:10],io_in[9:8],io_in[7:4]}),
-        //(MIPI_D1 Enable),(MIPI_D1 HSYNC,VSYNC,XCLK) 
-        //(MIPI_D0 Enable),(MIPI_D0 HSYNC,VSYNC,XCLK)  
-    .io_in ({io_in[23:23],io_in[22:20],io_in[19:19],io_in[18:16]}),
+        //(MIPI_clk_N,MIPI_clk_P),(MIPI_D1_N,MIPI_D1_P),(MIPI_D0_N,MIPI_D0_P)
+        //(DAC_outN,DAC_cabin),(CIS:PICLK,HSYNC,VSYNC,XCLK,RST)  
+    .io_in ({io_in[16:15],io_in[14:13],io_in[12:11],io_in[10:9],io_in[8:4]}),
+        //(CIS_data: D9 - D0)  
+    .io_in ({io_in[26:17]}),
         //AD1 convert analog input , AD0 conver analog input)
-    .io_in ({io_in[25:25],io_in[24:24]}),
+    .io_in ({io_in[28:28],io_in[27:27]}),
         //(UART1 TX,RX),(UART0 TX,RX),(SCL,SDA,SLK) 
-    .io_in ({io_in[32:31],io_in[30:29],io_in[28:26]}),
+    .io_in ({io_in[35:34],io_in[33:32],io_in[31:29]}),
         //(PWM_1),(PWM_0) 
-    .io_out({io_out[34:34],io_out[33:33]}),
+    .io_out({io_out[37:37],io_out[36:36]}),
     
     .io_oeb({io_oeb[37:30],io_oeb[7:0]}),
 
