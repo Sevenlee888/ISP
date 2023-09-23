@@ -124,16 +124,16 @@ module mipi_rx_raw10_select #(
 )(          
     wb_clk_i,
     reset,
-	wbs_stb_i,
+    wbs_stb_i,
     wstrb,
     data_i,
-    wdata
-    la_write
-    la_write
-    ready
-    rdata
-	output_valid_o,
-	output_o);   
+    wdata,
+    la_write,
+    la_write,
+    ready,
+    rdata,
+    output_valid_o,
+    output_o);   
 
 localparam [2:0]BYTES_PERPACK = 3'h5; // RAW 10 is packed <Sample0[9:2]> <Sample1[9:2]> <Sample2[9:2]> <Sample3[9:2]> <Sample0[1:0],Sample1[1:0],Sample2[1:0],Sample3[1:0]>
 input clk_i;
