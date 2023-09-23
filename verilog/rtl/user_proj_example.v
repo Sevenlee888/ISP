@@ -86,7 +86,7 @@ module user_proj_example #(
     assign wdata = wbs_dat_i[BITS-1:0];
 
     // IO
-    assign io_out = count;
+    assign io_out = MIPI_para;
     assign io_oeb = {(BITS){rst}};
 
     // IRQ
@@ -119,18 +119,21 @@ module user_proj_example #(
 
 endmodule
 
-module mipi_rx_raw10_select(	wb_clk_i,
-                                reset,
-								wbs_stb_i,
-                                wstrb,
-                                data_i,
-                                wdata
-                                la_write
-                                la_write
-                                ready
-                                rdata
-								output_valid_o,
-								output_o);   
+module mipi_rx_raw10_select #(
+    parameter BITS = 16
+)(          
+    wb_clk_i,
+    reset,
+	wbs_stb_i,
+    wstrb,
+    data_i,
+    wdata
+    la_write
+    la_write
+    ready
+    rdata
+	output_valid_o,
+	output_o);   
 
 localparam [2:0]BYTES_PERPACK = 3'h5; // RAW 10 is packed <Sample0[9:2]> <Sample1[9:2]> <Sample2[9:2]> <Sample3[9:2]> <Sample0[1:0],Sample1[1:0],Sample2[1:0],Sample3[1:0]>
 input clk_i;
@@ -138,7 +141,7 @@ input reset,
 input data_valid_i;
 input [3:0] wstrb,
 input [31:0]data_i;
-input [BITS-1:0] wdata
+input [12:11] wdata
 input [BITS-1:0] la_write,
 input [BITS-1:0] la_write,
 output reg ready,
@@ -151,6 +154,7 @@ reg [2:0]byte_count;
 reg [31:0]last_data_i;
 
 wire [63:0]word;
+assign data_i = wdata
 assign word = {data_i,last_data_i}; //would need last bytes as well as current data to get full 4 pixel
 
 always @(posedge clk_i)
@@ -194,26 +198,4 @@ end
 
 endmodule
 
-
-    always @(posedge clk) begin
-        if (reset) begin
-            count <= 0;
-            ready <= 0;
-        end else begin
-            ready <= 1'b0;
-            if (~|la_write) begin
-                count <= count + 1;
-            end
-            if (valid && !ready) begin
-                ready <= 1'b1;
-                rdata <= count;
-                if (wstrb[0]) count[7:0]   <= wdata[7:0];
-                if (wstrb[1]) count[15:8]  <= wdata[15:8];
-            end else if (|la_write) begin
-                count <= la_write & la_input;
-            end
-        end
-    end
-
-endmodule
 `default_nettype wire
