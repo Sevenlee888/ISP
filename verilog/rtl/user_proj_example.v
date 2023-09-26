@@ -122,18 +122,18 @@ endmodule
 module mipi_rx_raw10_select #(
     parameter BITS = 16
 )(          
-    wb_clk_i,
-    reset,
-    wbs_stb_i,
-    wstrb,
-    data_i,
-    wdata,
-    la_write,
-    la_write,
-    ready,
-    rdata,
-    output_valid_o,
-    output_o);   
+    .wb_clk_i(wb_clk_i),
+    .reset(reset),
+    .wbs_stb_i(wbs_stb_i),
+    .wstrb(wstrb),
+    .data_i(data_i),
+    .wdata(wdata),
+    .la_write(la_write),
+    .la_write(la_write),
+    .ready(ready),
+    .rdata(rdata),
+    .output_valid_o(output_valid_o),
+    .output_o(output_o);   
 
 localparam [2:0]BYTES_PERPACK = 3'h5; // RAW 10 is packed <Sample0[9:2]> <Sample1[9:2]> <Sample2[9:2]> <Sample3[9:2]> <Sample0[1:0],Sample1[1:0],Sample2[1:0],Sample3[1:0]>
 input clk_i;
@@ -152,9 +152,14 @@ output reg [39:0]output_o;
 reg [7:0]offset;
 reg [2:0]byte_count;
 reg [31:0]last_data_i;
-
 wire [63:0]word;
+
+//add by ISP_intergratot//
 assign data_i = wdata
+assign clk_i = clk
+assign reset = rst 
+assign data_valid_i= valid
+
 assign word = {data_i,last_data_i}; //would need last bytes as well as current data to get full 4 pixel
 
 always @(posedge clk_i)
