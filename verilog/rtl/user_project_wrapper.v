@@ -122,6 +122,7 @@ user_proj_example mprj (
     .io_out({io_out[37:37],io_out[36:36]}),
     
     .io_oeb({io_oeb[37:30],io_oeb[7:0]}),
+    // .analog_io(analog_io)
 
     // IRQ
       // To manage the arbitration for AMI bus among slave axi element.
