@@ -1,3 +1,3906 @@
-make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
-'make.exe' ���O�����Υ~���R�O�B�i���檺�{���Χ妸�ɡC
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+export CARAVEL_ROOT=/home/benison/isp_cteTWLCEO/caravel && export MPW_TAG=mpw-9d && make -f /home/benison/isp_cteTWLCEO/caravel/Makefile all
+ 
+# make[1]: Entering directory '/home/benison/isp_cteTWLCEO'
+ 
+make[1]: *** No rule to make target 'all'.  Stop.
 
+# GNU Make 4.3
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Thu Oct  5 11:06:20 2023
+
+# Variables
+
+# environment
+GDK_BACKEND = x11
+# environment
+LC_ALL = C
+# environment
+GNOME_SHELL_SESSION_MODE = ubuntu
+# environment
+SSH_AGENT_LAUNCHER = gnome-keyring
+# makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 512)
+OPENLANE_IMAGE_NAME = efabless/openlane:2021.11.25_01.26.14
+# makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 475)
+MAG_BLOCKS = $(foreach block, $(BLOCKS), mag2lef-$(block))
+# makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 58)
+MCW_NAME := mcw-litex-vexriscv
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# environment
+PDK = sky130A
+# makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 79)
+MGMT_AREA_ROOT = $(shell pwd)/mgmt_core_wrapper 
+# environment
+LC_NAME = lzh_TW
+# environment
+LC_NUMERIC = lzh_TW
+# environment
+VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
+# environment
+VSCODE_CWD = /home/benison
+# environment
+PDKPATH = /home/benison/isp_cteTWLCEO/dependencies/pdks/sky130A
+# makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 437)
+DRC_BLOCKS = $(foreach block, $(BLOCKS), drc-$(block))
+# environment
+LC_ADDRESS = lzh_TW
+# default
+MAKE_COMMAND := make
+# environment
+PDK_ROOT = /home/benison/isp_cteTWLCEO/dependencies/pdks
+# environment
+QT_ACCESSIBILITY = 1
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 18)
+FILE_SIZE_LIMIT_MB = 100
+# environment
+PWD = /home/benison/isp_cteTWLCEO
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+ROOTLESS = 0
+# makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 94)
+SKYWATER_COMMIT = f70d8ca46961ff92719d8870a18a076370b85f6c
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = /home/benison/.config/Code/CachedData/e7e037083ff4455cf320e344325dacb480062c3c
+# environment
+LANG = C
+# environment
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.Y00BC2
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
+# makefile
+MAKEFLAGS = pqrRw --warn-undefined-variables
+# environment
+CARAVEL_ROOT = /home/benison/isp_cteTWLCEO/caravel
+# makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 24)
+UNCOMPRESS = gzip -d
+# environment
+CUP_ROOT = /home/benison/isp_cteTWLCEO
+# makefile
+CURDIR := /home/benison/isp_cteTWLCEO
+# makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 49)
+PYTHON_BIN = python3
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -pqrRw --warn-undefined-variables
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# default
+.SHELLFLAGS := -c
+# makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 511)
+RCX_BLOCKS = $(foreach block, $(BLOCKS), rcx-$(block))
+# makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 314)
+LVS_BLOCKS = $(foreach block, $(BLOCKS), lvs-$(block))
+# environment
+WAYLAND_DISPLAY = wayland-0
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 1)
+MAKEFILE_LIST := /home/benison/isp_cteTWLCEO/caravel/Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_PID = 4402
+# environment
+XDG_SESSION_TYPE = wayland
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 40)
+LARGE_FILES_GZ := ./gds/user_proj_example.gds.gz ./gds/user_project_wrapper.gds.gz
+# makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 38)
+LARGE_FILES := ./gds/user_proj_example.gds ./gds/user_project_wrapper.gds
+# environment
+SESSION_MANAGER = local/benison-VirtualBox:@/tmp/.ICE-unix/1882,unix/benison-VirtualBox:/tmp/.ICE-unix/1882
+# automatic
+*F = $(notdir $*)
+# makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 23)
+COMPRESS = gzip -n --best
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 60)
+MCW_TAG := mpw-9d
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","osLocale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 82)
+FOREGROUND = 1
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 86)
+SHELL = /bin/bash -o pipefail
+# makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 30)
+SPLIT_FILES := 
+# default
+MAKECMDGOALS := all
+# environment
+XMODIFIERS = @im=ibus
+# environment
+MCW_ROOT = /home/benison/isp_cteTWLCEO/mgmt_core_wrapper
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# environment
+SHLVL = 0
+# environment
+MAKELEVEL := 1
+# environment
+IM_CONFIG_CHECK_ENV = 1
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = /home/benison/.local/bin:/home/benison/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+# makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 446)
+ANTENNA_BLOCKS = $(foreach block, $(BLOCKS), antenna-$(block))
+# default
+MAKEFILES := 
+# environment
+LC_MONETARY = lzh_TW
+# automatic
+^F = $(notdir $^)
+# makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 97)
+PDK_MAGIC_COMMIT = 085131b090cb511d785baf52a10cf6df8a657d44
+# environment
+LC_TIME = lzh_TW
+# environment
+OPENLANE_TAG = 2023.07.19
+# makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 92)
+IO_LIBRARY = sky130_fd_io
+# environment
+INVOCATION_ID = 2e7a146726b44027b9fcee52c0729524
+# environment
+USERNAME = benison
+# makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 55)
+MCW_LITE = 1
+# environment
+GNOME_SETUP_DISPLAY = :1
+# environment
+LC_TELEPHONE = lzh_TW
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# automatic
+?F = $(notdir $?)
+# makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 46)
+MCW = LITEX_VEXRISCV
+# makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 510)
+BLOCKS = $(shell cd openlane && find * -maxdepth 0 -type d)
+# makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 360)
+LVS_GDS_BLOCKS = $(foreach block, $(BLOCKS), lvs-gds-$(block))
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# automatic
++F = $(notdir $+)
+# environment
+DESKTOP_SESSION = ubuntu
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 34)
+ARCHIVES := ./caravel/def/caravan_core.def.gz ./caravel/def/caravel_core.def.gz ./caravel/gds/user_analog_project_wrapper_empty.gds.gz ./caravel/gds/user_project_wrapper_empty.gds.gz ./openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.error.gz ./openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.debug.gz ./openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.error.gz ./openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.debug.gz ./mgmt_core_wrapper/mag/mgmt_core_wrapper.mag.gz ./mgmt_core_wrapper/gds/mgmt_core_wrapper.gds.gz ./mgmt_core_wrapper/gds/RAM256.gds.gz ./mgmt_core_wrapper/gds/RAM128.gds.gz
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+LOGNAME = benison
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
+# makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 89)
+THREADS = $(shell nproc)
+# environment
+DISABLE_LVS = 0
+# makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 100)
+.DEFAULT_GOAL := ship
+# environment
+SYSTEMD_EXEC_PID = 1910
+# environment
+TIMING_ROOT = /home/benison/isp_cteTWLCEO/dependencies/timing-scripts
+# environment
+DISPLAY = :0
+# environment
+USER = benison
+# environment
+GTK_MODULES = gail:atk-bridge
+# makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 59)
+MCW_REPO := https://github.com/efabless/caravel_mgmt_soc_litex
+# default
+MAKE_VERSION := 4.3
+# makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 35)
+ARCHIVE_SOURCES := ./caravel/def/caravan_core.def ./caravel/def/caravel_core.def ./caravel/gds/user_analog_project_wrapper_empty.gds ./caravel/gds/user_project_wrapper_empty.gds ./openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.error ./openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.debug ./openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.error ./openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.debug ./mgmt_core_wrapper/mag/mgmt_core_wrapper.mag ./mgmt_core_wrapper/gds/mgmt_core_wrapper.gds ./mgmt_core_wrapper/gds/RAM256.gds ./mgmt_core_wrapper/gds/RAM128.gds
+# makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 76)
+UPRJ_ROOT = $(shell pwd)
+# 'override' directive
+.SHELLSTATUS := 0
+# environment
+OPEN_PDKS_COMMIT = 78b7bc32ddb4b6f14f76883c2e2dc5b5de9d1cbc
+# environment
+PROJECT_ROOT = /home/benison/isp_cteTWLCEO
+# makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 68)
+SUBMODULE = 0
+# environment
+MANAGERPID = 1733
+# environment
+LC_MEASUREMENT = lzh_TW
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 4402
+# makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 43)
+LARGE_FILES_GZ_SPLIT := ./gds/user_proj_example.gds.gz.00.split ./gds/user_project_wrapper.gds.gz.00.split ./caravel/def/caravan_core.def.gz.00.split ./caravel/def/caravel_core.def.gz.00.split ./caravel/gds/user_analog_project_wrapper_empty.gds.gz.00.split ./caravel/gds/user_project_wrapper_empty.gds.gz.00.split ./openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.error.gz.00.split ./openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.debug.gz.00.split ./openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.error.gz.00.split ./openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.debug.gz.00.split ./mgmt_core_wrapper/mag/mgmt_core_wrapper.mag.gz.00.split ./mgmt_core_wrapper/gds/mgmt_core_wrapper.gds.gz.00.split ./mgmt_core_wrapper/gds/RAM256.gds.gz.00.split ./mgmt_core_wrapper/gds/RAM128.gds.gz.00.split
+# environment
+_ = /usr/share/code/code
+# environment
+LC_PAPER = lzh_TW
+ 
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 31)
+SPLIT_FILES_SOURCES := 
+# environment
+OPENLANE_ROOT = /home/benison/isp_cteTWLCEO/dependencies/openlane_src
+# environment
+MPW_TAG = mpw-9d
+# environment
+JOURNAL_STREAM = 8:24390
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 398)
+LVS_MAGLEF_BLOCKS = $(foreach block, $(BLOCKS), lvs-maglef-$(block))
+# environment
+HOME = /home/benison
+# environment
+QT_IM_MODULE = ibus
+# makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 90)
+STD_CELL_LIBRARY = sky130_fd_sc_hd
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-1b460752-1.83-main.sock
+# environment
+IM_CONFIG_PHASE = 1
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 91)
+SPECIAL_VOLTAGE_LIBRARY = sky130_fd_sc_hvl
+# default
+SUFFIXES := 
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
+# makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 25)
+ARCHIVE_EXT = gz
+# makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 93)
+PRIMITIVES_LIBRARY = sky130_fd_pr
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+GDMSESSION = ubuntu
+# environment
+LC_IDENTIFICATION = lzh_TW
+# variable set hash-table stats:
+# Load=155/1024=15%, Rehash=0, Collisions=25/323=8%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+
+# No files, no impossibilities in 0 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+maglef/:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+update_mcw: check-mcw
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 1202):
+	cd $(MCW_ROOT)/ && \
+		git checkout $(MCW_TAG) && \
+		git pull
+
+# Not a target:
+docs/source/tool-versioning.rst:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.error: openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.error.gz
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.error'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 238):
+	@$(UNCOMPRESS) $<
+	@echo "$< -> $@"
+
+# Not a target:
+mgmt_core_wrapper/gds/RAM256.gds.gz:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+verify:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 207):
+	cd $(CARAVEL_ROOT)/verilog/dv/caravel/mgmt_soc/ && \
+		$(MAKE) -j$(THREADS) all
+	cd $(CARAVEL_ROOT)/verilog/dv/wb_utests/ && \
+		$(MAKE) -j$(THREADS) all
+
+antenna-user_project_wrapper: gds/user_project_wrapper.gds
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'user_project_wrapper'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 448):
+	echo "Running Antenna Checks on $*"
+	mkdir -p ./gds/tmp
+	cd gds && export DESIGN_IN_ANTENNA=$* && export MAGTYPE=mag; magic -rcfile ${PDK_ROOT}/$(PDK)/libs.tech/magic/$(PDK).magicrc -noc -dnull $(CARAVEL_ROOT)/gds/antenna_on_gds.tcl < /dev/null 2>&1 | tee ./tmp/$*.antenna
+	mv -f ./gds/*.ext ./gds/tmp/
+	@echo "Antenna result: ./gds/tmp/$*.antenna"
+
+pdk: check-env skywater-pdk open-pdks sky130 gen-sources
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+mag2lef-asic: mag/asic.mag uncompress
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'asic'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 477):
+	echo "Converting mag file $* to LEF..."
+	echo "addpath $(CARAVEL_ROOT)/mag/hexdigits;\
+		addpath ${PDKPATH}/libs.ref/sky130_ml_xx_hd/mag;\
+		addpath $(CARAVEL_ROOT)/mag/primitives;\
+		drc off;\
+		load $*;\
+		lef write $*.lef;\
+		exit;" > ./mag/mag2lef_$*.tcl
+	cd ./mag && magic -rcfile ${PDK_ROOT}/$(PDK)/libs.tech/magic/$(PDK).magicrc -noc -dnull mag2lef_$*.tcl < /dev/null
+	rm ./mag/mag2lef_$*.tcl
+	mv -f ./mag/$*.lef ./lef/
+
+# Not a target:
+verilog/gl/asic.v:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+caravel/gds/user_project_wrapper_empty.gds.gz.00.split: caravel/gds/user_project_wrapper_empty.gds.gz
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'caravel/gds/user_project_wrapper_empty.gds'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 222):
+	@if [ -n "$$(find "$<" -prune -size +$(FILE_SIZE_LIMIT_MB)M)" ]; then\
+		split $< -b $(FILE_SIZE_LIMIT_MB)M $<. -d &&\
+		rm $< &&\
+		for file in $$(ls $<.*); do mv "$$file" "$$file.split"; done &&\
+		echo -n "$< -> $$(ls $<.*.split)" | tr '\n' ' ' && echo "";\
+	fi
+
+gen-sources:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 1300):
+	touch $(PDK_ROOT)/$(PDK)/SOURCES
+	printf "skywater-pdk " >> $(PDK_ROOT)/$(PDK)/SOURCES
+	cd $(PDK_ROOT)/skywater-pdk && git rev-parse HEAD >> $(PDK_ROOT)/$(PDK)/SOURCES
+	printf "open_pdks " >> $(PDK_ROOT)/$(PDK)/SOURCES
+	cd $(PDK_ROOT)/open_pdks && git rev-parse HEAD >> $(PDK_ROOT)/$(PDK)/SOURCES
+	printf "magic $(PDK_MAGIC_COMMIT)" >> $(PDK_ROOT)/$(PDK)/SOURCES
+
+xor-analog-wrapper: uncompress uncompress-caravel
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 290):
+	sh $(CARAVEL_ROOT)/utils/erase_box.sh gds/user_analog_project_wrapper.gds 0 0 2920 3520 -8 -8 
+	sh $(CARAVEL_ROOT)/utils/erase_box.sh $(CARAVEL_ROOT)/gds/user_analog_project_wrapper_empty.gds 0 0 2920 3520 -8 -8 
+	mkdir -p signoff/user_analog_project_wrapper_xor
+	sh $(CARAVEL_ROOT)/utils/xor.sh \
+		$(CARAVEL_ROOT)/gds/user_analog_project_wrapper_empty_erased.gds gds/user_analog_project_wrapper_erased.gds \
+		user_analog_project_wrapper user_analog_project_wrapper.xor.xml
+	sh $(CARAVEL_ROOT)/utils/xor.sh \
+		$(CARAVEL_ROOT)/gds/user_analog_project_wrapper_empty_erased.gds gds/user_analog_project_wrapper_erased.gds \
+		user_analog_project_wrapper gds/user_analog_project_wrapper.xor.gds > signoff/user_analog_project_wrapper_xor/xor.log 
+	rm $(CARAVEL_ROOT)/gds/user_analog_project_wrapper_empty_erased.gds gds/user_analog_project_wrapper_erased.gds
+	mv gds/user_analog_project_wrapper.xor.gds gds/user_analog_project_wrapper.xor.xml signoff/user_analog_project_wrapper_xor
+	python $(CARAVEL_ROOT)/utils/parse_klayout_xor_log.py \
+		-l signoff/user_analog_project_wrapper_xor/xor.log \
+		-o signoff/user_analog_project_wrapper_xor/total.txt
+	sh $(CARAVEL_ROOT)/utils/scrotLayout.sh \
+		$(PDK_ROOT)/$(PDK)/libs.tech/klayout/$(PDK).lyt \
+		signoff/user_analog_project_wrapper_xor/user_analog_project_wrapper.xor.gds
+	@cat signoff/user_analog_project_wrapper_xor/total.txt
+
+caravel/gds/user_analog_project_wrapper_empty.gds: caravel/gds/user_analog_project_wrapper_empty.gds.gz
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'caravel/gds/user_analog_project_wrapper_empty.gds'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 238):
+	@$(UNCOMPRESS) $<
+	@echo "$< -> $@"
+
+clean-openlane:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 1376):
+	rm -rf $(OPENLANE_ROOT)
+
+final: check-env check-uid check-project uncompress uncompress-caravel
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 1114):
+	$(MAKE) -f $(CARAVEL_ROOT)/Makefile __final
+	@echo "Final build completed." 2>&1 | tee -a ./signoff/build/final_build.out
+
+rcx-user_proj_example: def/user_proj_example.def
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'user_proj_example'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 514):
+	echo "Running RC Extraction on $*"
+	mkdir -p ./def/tmp 
+	# merge techlef and standard cell lef files
+	python3 $(OPENLANE_ROOT)/scripts/mergeLef.py -i $(PDK_ROOT)/$(PDK)/libs.ref/$(STD_CELL_LIBRARY)/techlef/$(STD_CELL_LIBRARY).tlef $(PDK_ROOT)/$(PDK)/libs.ref/$(STD_CELL_LIBRARY)/lef/*.lef $(PDK_ROOT)/$(PDK)/libs.ref/$(SPECIAL_VOLTAGE_LIBRARY)/techlef/$(SPECIAL_VOLTAGE_LIBRARY).tlef $(PDK_ROOT)/$(PDK)/libs.ref/$(SPECIAL_VOLTAGE_LIBRARY)/lef/*.lef $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lef/*.lef -o ./def/tmp/merged.lef
+	echo "\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(STD_CELL_LIBRARY)/lib/$(STD_CELL_LIBRARY)__tt_025C_1v80.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(SPECIAL_VOLTAGE_LIBRARY)/lib/$(SPECIAL_VOLTAGE_LIBRARY)__tt_025C_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(SPECIAL_VOLTAGE_LIBRARY)/lib/$(SPECIAL_VOLTAGE_LIBRARY)__tt_025C_3v30_lv1v80.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/sky130_sram_macros/lib/sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_gpiov2_tt_tt_025C_1v80_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_ground_hvc_wpad_tt_025C_1v80_3v30_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_ground_lvc_wpad_tt_025C_1v80_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_ground_lvc_wpad_tt_100C_1v80_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_power_lvc_wpad_tt_025C_1v80_3v30_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_xres4v2_tt_tt_025C_1v80_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__gpiov2_pad_tt_tt_025C_1v80_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vccd_lvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vdda_hvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vssa_hvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vssd_lvc_clamped3_pad_tt_025C_1v80_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vccd_lvc_clamped3_pad_tt_025C_1v80_3v30_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vssd_lvc_clamped_pad_tt_025C_1v80_3v30.lib;\
+		set std_cell_lef ./def/tmp/merged.lef;\
+		set sram_lef $(PDK_ROOT)/$(PDK)/libs.ref/sky130_sram_macros/lef/sky130_sram_2kbyte_1rw1r_32x512_8.lef;\
+		if {[catch {read_lef \$$std_cell_lef} errmsg]} {\
+    			puts stderr \$$errmsg;\
+    			exit 1;\
+		};\
+		if {[catch {read_lef \$$sram_lef} errmsg]} {\
+    			puts stderr \$$errmsg;\
+    			exit 1;\
+		};\
+		foreach lef_file [glob ./lef/*.lef] {\
+			if {[catch {read_lef \$$lef_file} errmsg]} {\
+    			puts stderr \$$errmsg;\
+    			exit 1;\
+			}\
+		};\
+		if {[catch {read_def -order_wires ./def/$*.def} errmsg]} {\
+			puts stderr \$$errmsg;\
+			exit 1;\
+		};\
+		read_sdc -echo ./sdc/$*.sdc;\
+		set_propagated_clock [all_clocks];\
+		set rc_values \"mcon 9.249146E-3,via 4.5E-3,via2 3.368786E-3,via3 0.376635E-3,via4 0.00580E-3\";\
+		set l_rc \"li1 1.499e-04 7.176e-02,met1 1.449e-04 8.929e-04,met2 1.331e-04 8.929e-04,met3 1.464e-04 1.567e-04,met4 1.297e-04 1.567e-04,met5 1.501e-04 1.781e-05\";\
+		set layers_rc [split \$$l_rc ","];\
+		foreach layer_rc \$$layers_rc {\
+			set layer_name [lindex \$$layer_rc 0];\
+			set capacitance [lindex \$$layer_rc 1];\
+			set resistance [lindex \$$layer_rc 2];\
+			set_layer_rc -layer \$$layer_name -capacitance \$$capacitance -resistance \$$resistance;\
+		};\
+		set vias_rc [split \$$rc_values ","];\
+    	foreach via_rc \$$vias_rc {\
+        		set layer_name [lindex \$$via_rc 0];\
+        		set resistance [lindex \$$via_rc 1];\
+       			set_layer_rc -via \$$layer_name -resistance \$$resistance;\
+    	};\
+		set_wire_rc -signal -layer met2;\
+		set_wire_rc -clock -layer met5;\
+		define_process_corner -ext_model_index 0 X;\
+		extract_parasitics -ext_model_file ${PDK_ROOT}/$(PDK)/libs.tech/openlane/rcx_rules.info -corner_cnt 1 -max_res 50 -coupling_threshold 0.1 -cc_model 10 -context_depth 5;\
+		write_spef ./spef/$*.spef" > ./def/tmp/rcx_$*.tcl
+	docker run -it -v $(OPENLANE_ROOT):/openlane -v $(PDK_ROOT):$(PDK_ROOT) -v $(PWD):/caravel -e PDK_ROOT=$(PDK_ROOT) -u $(shell id -u $(USER)):$(shell id -g $(USER)) $(OPENLANE_IMAGE_NAME) \
+	sh -c " cd /caravel; openroad -exit ./def/tmp/rcx_$*.tcl |& tee ./def/tmp/rcx_$*.log" 
+	echo "\
+		set std_cell_lef ./def/tmp/merged.lef;\
+		set sram_lef $(PDK_ROOT)/$(PDK)/libs.ref/sky130_sram_macros/lef/sky130_sram_2kbyte_1rw1r_32x512_8.lef;\
+		if {[catch {read_lef \$$std_cell_lef} errmsg]} {\
+    			puts stderr \$$errmsg;\
+    			exit 1;\
+		};\
+		if {[catch {read_lef \$$sram_lef} errmsg]} {\
+    			puts stderr \$$errmsg;\
+    			exit 1;\
+		};\
+		foreach lef_file [glob ./lef/*.lef] {\
+			if {[catch {read_lef \$$lef_file} errmsg]} {\
+    			puts stderr \$$errmsg;\
+    			exit 1;\
+			}\
+		};\
+		set_cmd_units -time ns -capacitance pF -current mA -voltage V -resistance kOhm -distance um;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(STD_CELL_LIBRARY)/lib/$(STD_CELL_LIBRARY)__tt_025C_1v80.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(SPECIAL_VOLTAGE_LIBRARY)/lib/$(SPECIAL_VOLTAGE_LIBRARY)__tt_025C_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(SPECIAL_VOLTAGE_LIBRARY)/lib/sky130_fd_sc_hvl__tt_025C_3v30_lv1v80.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/sky130_sram_macros/lib/sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_gpiov2_tt_tt_025C_1v80_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_ground_hvc_wpad_tt_025C_1v80_3v30_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_ground_lvc_wpad_tt_025C_1v80_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_ground_lvc_wpad_tt_100C_1v80_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_power_lvc_wpad_tt_025C_1v80_3v30_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_xres4v2_tt_tt_025C_1v80_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__gpiov2_pad_tt_tt_025C_1v80_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vccd_lvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vdda_hvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vssa_hvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vssd_lvc_clamped3_pad_tt_025C_1v80_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vccd_lvc_clamped3_pad_tt_025C_1v80_3v30_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vssd_lvc_clamped_pad_tt_025C_1v80_3v30.lib;\
+		read_verilog ./verilog/gl/$*.v;\
+		link_design $*;\
+		read_spef ./spef/$*.spef;\
+		read_sdc -echo ./sdc/$*.sdc;\
+		write_sdf ./sdf/$*.sdf -divider . -include_typ;\
+		report_checks -fields {capacitance slew input_pins nets fanout} -path_delay min_max -group_count 5;\
+		report_check_types -max_slew -max_capacitance -max_fanout -violators;\
+		report_checks -to [all_outputs] -group_count 1000;\
+		" > ./def/tmp/sta_$*.tcl 
+	docker run -it -v $(OPENLANE_ROOT):/openlane -v $(PDK_ROOT):$(PDK_ROOT) -v $(PWD):/caravel -e PDK_ROOT=$(PDK_ROOT) -u $(shell id -u $(USER)):$(shell id -g $(USER)) $(OPENLANE_IMAGE_NAME) \
+	sh -c "cd /caravel; openroad -exit ./def/tmp/sta_$*.tcl |& tee ./def/tmp/sta_$*.log" 
+
+mag2gds-user_proj_example: mag/user_proj_example.mag uncompress
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'user_proj_example'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 458):
+	echo "Converting mag file $* to GDS..."
+	echo "addpath $(CARAVEL_ROOT)/mag/hexdigits;\
+		addpath ${PDKPATH}/libs.ref/sky130_ml_xx_hd/mag;\
+		addpath $(CARAVEL_ROOT)/mag/primitives;\
+		drc off;\
+		gds rescale false;\
+		load $* -dereference;\
+		select top cell;\
+		expand;\
+		gds write $*.gds;\
+		exit;" > ./mag/mag2gds_$*.tcl
+	cd ./mag && magic -rcfile ${PDK_ROOT}/$(PDK)/libs.tech/magic/$(PDK).magicrc -noc -dnull mag2gds_$*.tcl < /dev/null
+	rm ./mag/mag2gds_$*.tcl
+	mv -f ./mag/$*.gds ./gds/
+
+sky130:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 1280):
+	if [ -d "$(PDK_ROOT)/$(PDK)" ]; then \
+		echo "Deleting exisiting $(PDK_ROOT)/$(PDK)" && \
+		rm -rf $(PDK_ROOT)/$(PDK) && sleep 2;\
+	fi
+	docker run --rm\
+		-v $(PDK_ROOT):$(PDK_ROOT)\
+		-u $(shell id -u $(USER)):$(shell id -g $(USER)) \
+		-e PDK_ROOT=$(PDK_ROOT)\
+		-e GIT_COMMITTER_NAME="caravel"\
+		-e GIT_COMMITTER_EMAIL="caravel@caravel.caravel"\
+		efabless/openlane-tools:magic-$(PDK_MAGIC_COMMIT)-centos-7\
+		sh -c "\
+			cd $(PDK_ROOT)/open_pdks && \
+			./configure --enable-sky130-pdk=$(PDK_ROOT)/skywater-pdk --enable-sram-sky130 && \
+			make && \
+			make SHARED_PDKS_PATH=$(PDK_ROOT) install && \
+			make clean \
+		"
+
+# Not a target:
+mag/user_project_wrapper.mag:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+ 
+#  File has not been updated.
+
+mgmt_core_wrapper/mag/mgmt_core_wrapper.mag: mgmt_core_wrapper/mag/mgmt_core_wrapper.mag.gz
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'mgmt_core_wrapper/mag/mgmt_core_wrapper.mag'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 238):
+	@$(UNCOMPRESS) $<
+	@echo "$< -> $@"
+
+# Not a target:
+/home/benison/isp_cteTWLCEO/caravel/Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2023-09-16 07:16:11.067451969
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+mgmt_core_wrapper/gds/mgmt_core_wrapper.gds.gz:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+lvs-gds-user_project_wrapper: gds/user_project_wrapper.gds verilog/gl/user_project_wrapper.v
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'user_project_wrapper'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 362):
+	echo "Extracting $*"
+	mkdir -p ./gds/tmp
+	echo "	gds flatglob \"*_example_*\";\
+		gds flatten true;\
+		gds read ./$*.gds;\
+		load $* -dereference;\
+		select top cell;\
+		extract no all;\
+		extract do local;\
+		extract unique;\
+		extract;\
+		ext2spice lvs;\
+		ext2spice $*.ext;\
+		feedback save extract_$*.log;\
+		exit;" > ./gds/extract_$*.tcl
+	cd gds && \
+		magic -rcfile ${PDK_ROOT}/$(PDK)/libs.tech/magic/$(PDK).magicrc -noc -dnull extract_$*.tcl < /dev/null
+	mv ./gds/$*.spice ./spi/lvs
+	rm ./gds/*.ext
+	mv -f ./gds/extract_$*.tcl ./gds/tmp
+	mv -f ./gds/extract_$*.log ./gds/tmp
+	####
+	mkdir -p ./spi/lvs/tmp
+	MAGIC_EXT_USE_GDS=1 sh $(CARAVEL_ROOT)/spi/lvs/run_lvs.sh ./spi/lvs/$*.spice ./verilog/gl/$*.v $*
+	@echo ""
+	python3 $(CARAVEL_ROOT)/scripts/count_lvs.py -f ./verilog/gl/$*.v_comp.json | tee ./spi/lvs/tmp/$*.lvs.summary.log
+	mv -f ./verilog/gl/*.out ./spi/lvs/tmp 2> /dev/null || true
+	mv -f ./verilog/gl/*.json ./spi/lvs/tmp 2> /dev/null || true
+	mv -f ./verilog/gl/*.log ./spi/lvs/tmp 2> /dev/null || true
+	@echo ""
+	@echo "LVS: ./spi/lvs/$*.spice vs. ./verilog/gl/$*.v"
+	@echo "Comparison result: ./spi/lvs/tmp/$*.v_comp.out"
+	@awk '/^NET mismatches/,0' ./spi/lvs/tmp/$*.v_comp.out
+
+# Not a target:
+mgmt_core_wrapper/gds/RAM128.gds.gz:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+antenna-user_proj_example: gds/user_proj_example.gds
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'user_proj_example'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 448):
+	echo "Running Antenna Checks on $*"
+	mkdir -p ./gds/tmp
+	cd gds && export DESIGN_IN_ANTENNA=$* && export MAGTYPE=mag; magic -rcfile ${PDK_ROOT}/$(PDK)/libs.tech/magic/$(PDK).magicrc -noc -dnull $(CARAVEL_ROOT)/gds/antenna_on_gds.tcl < /dev/null 2>&1 | tee ./tmp/$*.antenna
+	mv -f ./gds/*.ext ./gds/tmp/
+	@echo "Antenna result: ./gds/tmp/$*.antenna"
+
+mgmt_core_wrapper/gds/RAM128.gds: mgmt_core_wrapper/gds/RAM128.gds.gz
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'mgmt_core_wrapper/gds/RAM128.gds'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 238):
+	@$(UNCOMPRESS) $<
+	@echo "$< -> $@"
+
+caravel/def/caravan_core.def.gz.00.split: caravel/def/caravan_core.def.gz
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'caravel/def/caravan_core.def'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 222):
+	@if [ -n "$$(find "$<" -prune -size +$(FILE_SIZE_LIMIT_MB)M)" ]; then\
+		split $< -b $(FILE_SIZE_LIMIT_MB)M $<. -d &&\
+		rm $< &&\
+		for file in $$(ls $<.*); do mv "$$file" "$$file.split"; done &&\
+		echo -n "$< -> $$(ls $<.*.split)" | tr '\n' ' ' && echo "";\
+	fi
+
+# Not a target:
+Makefile:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+lvs-user_proj_example: mag/user_proj_example.mag verilog/gl/user_proj_example.v
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'user_proj_example'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 316):
+	echo "Extracting $*"
+	mkdir -p ./mag/tmp
+	echo "addpath $(CARAVEL_ROOT)/mag/hexdigits;\
+		addpath $(CARAVEL_ROOT)/mag/primitives;\
+		addpath $(MCW_ROOT)/mag;\
+		addpath $(CARAVEL_ROOT)/subcells/simple_por/mag;\
+		addpath \$$PDKPATH/libs.ref/sky130_ml_xx_hd/mag;\
+		load $* -dereference;\
+		select top cell;\
+		foreach cell [cellname list children] {\
+			load \$$cell -dereference;\
+			property LEFview TRUE;\
+		};\
+		load $* -dereference;\
+		select top cell;\
+		extract no all;\
+		extract do local;\
+		extract unique;\
+		extract;\
+		ext2spice lvs;\
+		ext2spice $*.ext;\
+		feedback save extract_$*.log;\
+		exit;" > ./mag/extract_$*.tcl
+	cd mag && \
+		export MAGTYPE=maglef; \
+		magic -rcfile ${PDK_ROOT}/$(PDK)/libs.tech/magic/$(PDK).magicrc -noc -dnull extract_$*.tcl < /dev/null
+	mv ./mag/$*.spice ./spi/lvs
+	rm ./mag/*.ext
+	mv -f ./mag/extract_$*.tcl ./mag/tmp
+	mv -f ./mag/extract_$*.log ./mag/tmp
+	####
+	mkdir -p ./spi/lvs/tmp
+	sh $(CARAVEL_ROOT)/spi/lvs/run_lvs.sh ./spi/lvs/$*.spice ./verilog/gl/$*.v $*
+	@echo ""
+	python3 $(CARAVEL_ROOT)/scripts/count_lvs.py -f ./verilog/gl/$*.v_comp.json | tee ./spi/lvs/tmp/$*.lvs.summary.log
+	mv -f ./verilog/gl/*.out ./spi/lvs/tmp 2> /dev/null || true
+	mv -f ./verilog/gl/*.json ./spi/lvs/tmp 2> /dev/null || true
+	mv -f ./verilog/gl/*.log ./spi/lvs/tmp 2> /dev/null || true
+	@echo ""
+	@echo "LVS: ./spi/lvs/$*.spice vs. ./verilog/gl/$*.v"
+	@echo "Comparison result: ./spi/lvs/tmp/$*.v_comp.out"
+	@awk '/^NET mismatches/,0' ./spi/lvs/tmp/$*.v_comp.out
+
+openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.error: openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.error.gz
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.error'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 238):
+	@$(UNCOMPRESS) $<
+	@echo "$< -> $@"
+
+__truck:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 165):
+	@echo "###############################################"
+	@echo "Generating Caravan GDS (sources are in the 'gds' directory)"
+	@sleep 1
+	@echo "\
+		random seed `$(CARAVEL_ROOT)/scripts/set_user_id.py -report`; \
+		drc off; \
+		crashbackups stop; \
+		addpath hexdigits; \
+		addpath $(MCW_ROOT)/mag; \
+		addpath $(UPRJ_ROOT)/mag; \
+		load user_analog_project_wrapper; \
+		property LEFview true; \
+		property GDS_FILE $(UPRJ_ROOT)/gds/user_analog_project_wrapper.gds; \
+		property GDS_START 0; \
+		load $(UPRJ_ROOT)/mag/user_id_programming; \
+		load $(UPRJ_ROOT)/mag/user_id_textblock; \
+		load $(CARAVEL_ROOT)/maglef/simple_por; \
+		load $(UPRJ_ROOT)/mag/caravan_core -dereference; \
+		load caravan -dereference; \
+		select top cell; \
+		expand; \
+		cif *hier write disable; \
+		cif *array write disable; \
+		gds write $(UPRJ_ROOT)/gds/caravan.gds; \
+		quit -noprompt;" > $(UPRJ_ROOT)/mag/mag2gds_caravan.tcl
+	@mkdir -p ./signoff/build
+	#@cd $(CARAVEL_ROOT)/mag && PDKPATH=${PDK_ROOT}/$(PDK) MAGTYPE=mag magic -noc -dnull -rcfile ${PDK_ROOT}/$(PDK)/libs.tech/magic/$(PDK).magicrc $(UPRJ_ROOT)/mag/mag2gds_caravan.tcl 2>&1 | tee $(UPRJ_ROOT)/signoff/build/make_truck.out
+	@cd $(CARAVEL_ROOT)/mag && PDKPATH=${PDK_ROOT}/$(PDK) MAGTYPE=mag magic -noc -dnull -rcfile ./.magicrc $(UPRJ_ROOT)/mag/mag2gds_caravan.tcl 2>&1 | tee $(UPRJ_ROOT)/signoff/build/make_truck.out
+
+gds/user_project_wrapper.gds.gz.00.split: gds/user_project_wrapper.gds.gz
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'gds/user_project_wrapper.gds'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 222):
+	@if [ -n "$$(find "$<" -prune -size +$(FILE_SIZE_LIMIT_MB)M)" ]; then\
+		split $< -b $(FILE_SIZE_LIMIT_MB)M $<. -d &&\
+		rm $< &&\
+		for file in $$(ls $<.*); do mv "$$file" "$$file.split"; done &&\
+		echo -n "$< -> $$(ls $<.*.split)" | tr '\n' ' ' && echo "";\
+	fi
+
+mgmt_core_wrapper/gds/RAM256.gds: mgmt_core_wrapper/gds/RAM256.gds.gz
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'mgmt_core_wrapper/gds/RAM256.gds'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 238):
+	@$(UNCOMPRESS) $<
+	@echo "$< -> $@"
+
+# Not a target:
+openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.error.gz:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+mgmt_core_wrapper/gds/RAM128.gds.gz.00.split: mgmt_core_wrapper/gds/RAM128.gds.gz
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'mgmt_core_wrapper/gds/RAM128.gds'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 222):
+	@if [ -n "$$(find "$<" -prune -size +$(FILE_SIZE_LIMIT_MB)M)" ]; then\
+		split $< -b $(FILE_SIZE_LIMIT_MB)M $<. -d &&\
+		rm $< &&\
+		for file in $$(ls $<.*); do mv "$$file" "$$file.split"; done &&\
+		echo -n "$< -> $$(ls $<.*.split)" | tr '\n' ' ' && echo "";\
+	fi
+
+caravel/def/caravel_core.def: caravel/def/caravel_core.def.gz
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'caravel/def/caravel_core.def'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 238):
+	@$(UNCOMPRESS) $<
+	@echo "$< -> $@"
+
+openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.debug: openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.debug.gz
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.debug'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 238):
+	@$(UNCOMPRESS) $<
+	@echo "$< -> $@"
+
+# Not a target:
+openlane/README.src.rst:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+README.rst: README.src.rst docs/source/getting-started.rst docs/source/tool-versioning.rst openlane/README.src.rst docs/source/caravel-with-openlane.rst Makefile
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 1356):
+	pip -q install rst_include && \
+	rm -f README.rst && \
+		rst_include include README.src.rst - | \
+			sed \
+				-e's@\.\/\_static@\/docs\/source\/\_static@g' \
+				-e's@:doc:`tool-versioning`@`tool-versioning.rst <./docs/source/tool-versioning.rst>`__@g' \
+				-e's@.. note::@**NOTE:**@g' \
+				-e's@.. warning::@**WARNING:**@g' \
+				> README.rst && \
+		rst_include include openlane/README.src.rst - | \
+			sed \
+				-e's@https://github.com/efabless/caravel/blob/master/verilog@../verilog@g' \
+				-e's@:ref:`getting-started`@`README.rst <../README.rst>`__@g' \
+				-e's@https://github.com/efabless/caravel/blob/master/openlane/@./@g' \
+				-e's@.. note::@**NOTE:**@g' \
+				-e's@.. warning::@**WARNING:**@g' \
+				> openlane/README.rst
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 199):
+	cd $(CARAVEL_ROOT)/verilog/dv/caravel/mgmt_soc/ && \
+		$(MAKE) -j$(THREADS) clean
+	cd $(CARAVEL_ROOT)/verilog/dv/wb_utests/ && \
+		$(MAKE) -j$(THREADS) clean
+
+# Not a target:
+gds/asic.gds:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+lvs-gds-user_proj_example: gds/user_proj_example.gds verilog/gl/user_proj_example.v
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'user_proj_example'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 362):
+	echo "Extracting $*"
+	mkdir -p ./gds/tmp
+	echo "	gds flatglob \"*_example_*\";\
+		gds flatten true;\
+		gds read ./$*.gds;\
+		load $* -dereference;\
+		select top cell;\
+		extract no all;\
+		extract do local;\
+		extract unique;\
+		extract;\
+		ext2spice lvs;\
+		ext2spice $*.ext;\
+		feedback save extract_$*.log;\
+		exit;" > ./gds/extract_$*.tcl
+	cd gds && \
+		magic -rcfile ${PDK_ROOT}/$(PDK)/libs.tech/magic/$(PDK).magicrc -noc -dnull extract_$*.tcl < /dev/null
+	mv ./gds/$*.spice ./spi/lvs
+	rm ./gds/*.ext
+	mv -f ./gds/extract_$*.tcl ./gds/tmp
+	mv -f ./gds/extract_$*.log ./gds/tmp
+	####
+	mkdir -p ./spi/lvs/tmp
+	MAGIC_EXT_USE_GDS=1 sh $(CARAVEL_ROOT)/spi/lvs/run_lvs.sh ./spi/lvs/$*.spice ./verilog/gl/$*.v $*
+	@echo ""
+	python3 $(CARAVEL_ROOT)/scripts/count_lvs.py -f ./verilog/gl/$*.v_comp.json | tee ./spi/lvs/tmp/$*.lvs.summary.log
+	mv -f ./verilog/gl/*.out ./spi/lvs/tmp 2> /dev/null || true
+	mv -f ./verilog/gl/*.json ./spi/lvs/tmp 2> /dev/null || true
+	mv -f ./verilog/gl/*.log ./spi/lvs/tmp 2> /dev/null || true
+	@echo ""
+	@echo "LVS: ./spi/lvs/$*.spice vs. ./verilog/gl/$*.v"
+	@echo "Comparison result: ./spi/lvs/tmp/$*.v_comp.out"
+	@awk '/^NET mismatches/,0' ./spi/lvs/tmp/$*.v_comp.out
+
+# Not a target:
+README.src.rst:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+verilog/gl/caravel.v:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+ 
+#  File has not been updated.
+
+__set_user_id:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 1139):
+	mkdir -p ./signoff/build
+	# Update info.yaml
+	# sed -r "s/^(\s*project_id\s*:\s*).*/\1${USER_ID}/" -i info.yaml
+	cp $(CARAVEL_ROOT)/mag/user_id_programming.mag ./mag/user_id_programming.mag
+	cp $(CARAVEL_ROOT)/mag/user_id_textblock.mag ./mag/user_id_textblock.mag
+	cp $(CARAVEL_ROOT)/verilog/rtl/caravel_core.v ./verilog/rtl/caravel_core.v
+	cp $(CARAVEL_ROOT)/verilog/gl/user_id_programming.v ./verilog/gl/user_id_programming.v
+	python3 $(CARAVEL_ROOT)/scripts/set_user_id.py $(USER_ID) $(shell pwd) 2>&1 | tee ./signoff/build/set_user_id.out
+
+# Not a target:
+gds/user_proj_example.gds:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+verilog/gl/user_project_wrapper.v:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+pdk-with-sram: pdk
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+def/asic.def:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+mag/:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+mgmt_core_wrapper/gds/mgmt_core_wrapper.gds.gz.00.split: mgmt_core_wrapper/gds/mgmt_core_wrapper.gds.gz
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'mgmt_core_wrapper/gds/mgmt_core_wrapper.gds'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 222):
+	@if [ -n "$$(find "$<" -prune -size +$(FILE_SIZE_LIMIT_MB)M)" ]; then\
+		split $< -b $(FILE_SIZE_LIMIT_MB)M $<. -d &&\
+		rm $< &&\
+		for file in $$(ls $<.*); do mv "$$file" "$$file.split"; done &&\
+		echo -n "$< -> $$(ls $<.*.split)" | tr '\n' ' ' && echo "";\
+	fi
+
+install-volare:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 1235):
+	rm -rf ./venv
+	$(PYTHON_BIN) -m venv ./venv
+	./venv/bin/$(PYTHON_BIN) -m pip install --upgrade --no-cache-dir pip
+	./venv/bin/$(PYTHON_BIN) -m pip install --upgrade --no-cache-dir volare
+
+# Not a target:
+caravel/gds/user_analog_project_wrapper_empty.gds.gz:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+check-project:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 1343):
+	$(error PROJECT is undefined, please export it before running make generate_fill or make final)
+
+mgmt_core_wrapper/gds/RAM256.gds.gz.00.split: mgmt_core_wrapper/gds/RAM256.gds.gz
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'mgmt_core_wrapper/gds/RAM256.gds'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 222):
+	@if [ -n "$$(find "$<" -prune -size +$(FILE_SIZE_LIMIT_MB)M)" ]; then\
+		split $< -b $(FILE_SIZE_LIMIT_MB)M $<. -d &&\
+		rm $< &&\
+		for file in $$(ls $<.*); do mv "$$file" "$$file.split"; done &&\
+		echo -n "$< -> $$(ls $<.*.split)" | tr '\n' ' ' && echo "";\
+	fi
+
+lvs-maglef-user_proj_example: mag/user_proj_example.mag verilog/gl/user_proj_example.v
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'user_proj_example'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 400):
+	echo "Extracting $*"
+	mkdir -p ./maglef/tmp
+	echo "load $* -dereference;\
+		select top cell;\
+		foreach cell [cellname list children] {\
+			load \$$cell -dereference;\
+			property LEFview TRUE;\
+		};\
+		load $* -dereference;\
+		select top cell;\
+		extract no all;\
+		extract do local;\
+		extract;\
+		ext2spice lvs;\
+		ext2spice $*.ext;\
+		feedback save extract_$*.log;\
+		exit;" > ./mag/extract_$*.tcl
+	cd mag && export MAGTYPE=maglef; magic -noc -dnull extract_$*.tcl < /dev/null
+	mv ./mag/$*.spice ./spi/lvs
+	rm ./maglef/*.ext
+	mv -f ./mag/extract_$*.tcl ./maglef/tmp
+	mv -f ./mag/extract_$*.log ./maglef/tmp
+	####
+	mkdir -p ./spi/lvs/tmp
+	sh $(CARAVEL_ROOT)/spi/lvs/run_lvs.sh ./spi/lvs/$*.spice ./verilog/gl/$*.v $*
+	@echo ""
+	python3 $(CARAVEL_ROOT)/scripts/count_lvs.py -f ./verilog/gl/$*.v_comp.json | tee ./spi/lvs/tmp/$*.maglef.lvs.summary.log
+	mv -f ./verilog/gl/*.out ./spi/lvs/tmp 2> /dev/null || true
+	mv -f ./verilog/gl/*.json ./spi/lvs/tmp 2> /dev/null || true
+	mv -f ./verilog/gl/*.log ./spi/lvs/tmp 2> /dev/null || true
+	@echo ""
+	@echo "LVS: ./spi/lvs/$*.spice vs. ./verilog/gl/$*.v"
+	@echo "Comparison result: ./spi/lvs/tmp/$*.v_comp.out"
+	@awk '/^NET mismatches/,0' ./spi/lvs/tmp/$*.v_comp.out
+
+xor-wrapper: uncompress uncompress-caravel
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 264):
+	sh $(CARAVEL_ROOT)/utils/erase_box.sh gds/user_project_wrapper.gds 0 0 2920 3520
+	sh $(CARAVEL_ROOT)/utils/erase_box.sh $(CARAVEL_ROOT)/gds/user_project_wrapper_empty.gds 0 0 2920 3520
+	mkdir -p signoff/user_project_wrapper_xor
+	sh $(CARAVEL_ROOT)/utils/xor.sh \
+		$(CARAVEL_ROOT)/gds/user_project_wrapper_empty_erased.gds gds/user_project_wrapper_erased.gds \
+		user_project_wrapper user_project_wrapper.xor.xml
+	sh $(CARAVEL_ROOT)/utils/xor.sh \
+		$(CARAVEL_ROOT)/gds/user_project_wrapper_empty_erased.gds gds/user_project_wrapper_erased.gds \
+		user_project_wrapper gds/user_project_wrapper.xor.gds > signoff/user_project_wrapper_xor/xor.log 
+	rm $(CARAVEL_ROOT)/gds/user_project_wrapper_empty_erased.gds gds/user_project_wrapper_erased.gds
+	mv gds/user_project_wrapper.xor.gds gds/user_project_wrapper.xor.xml signoff/user_project_wrapper_xor
+	python $(CARAVEL_ROOT)/utils/parse_klayout_xor_log.py \
+		-l signoff/user_project_wrapper_xor/xor.log \
+		-o signoff/user_project_wrapper_xor/total.txt
+	sh $(CARAVEL_ROOT)/utils/scrotLayout.sh \
+		$(PDK_ROOT)/$(PDK)/libs.tech/klayout/$(PDK).lyt \
+		signoff/user_project_wrapper_xor/user_project_wrapper.xor.gds
+	@cat signoff/user_project_wrapper_xor/total.txt
+
+mag2gds-asic: mag/asic.mag uncompress
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'asic'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 458):
+	echo "Converting mag file $* to GDS..."
+	echo "addpath $(CARAVEL_ROOT)/mag/hexdigits;\
+		addpath ${PDKPATH}/libs.ref/sky130_ml_xx_hd/mag;\
+		addpath $(CARAVEL_ROOT)/mag/primitives;\
+		drc off;\
+		gds rescale false;\
+		load $* -dereference;\
+		select top cell;\
+		expand;\
+		gds write $*.gds;\
+		exit;" > ./mag/mag2gds_$*.tcl
+	cd ./mag && magic -rcfile ${PDK_ROOT}/$(PDK)/libs.tech/magic/$(PDK).magicrc -noc -dnull mag2gds_$*.tcl < /dev/null
+	rm ./mag/mag2gds_$*.tcl
+	mv -f ./mag/$*.gds ./gds/
+
+drc-asic: gds/asic.gds
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'asic'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 439):
+	echo "Running DRC on $*"
+	mkdir -p ./gds/tmp
+	cd gds && export DESIGN_IN_DRC=$* && export MAGTYPE=mag; magic -rcfile ${PDK_ROOT}/$(PDK)/libs.tech/magic/$(PDK).magicrc -noc -dnull $(CARAVEL_ROOT)/gds/drc_on_gds.tcl < /dev/null
+	@echo "DRC result: ./gds/tmp/$*.drc"
+
+# Not a target:
+caravel/gds/user_project_wrapper_empty.gds.gz:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+master_manifest:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 1318):
+	find verilog/rtl/* -type f -exec shasum {} \; > master_manifest && \
+	find verilog/gl/* -type f -exec shasum {} \; >> master_manifest && \
+	shasum scripts/set_user_id.py scripts/generate_fill.py scripts/compositor.py >> master_manifest && \
+	find lef/*.lef -type f -exec shasum {} \; >> master_manifest && \
+	find def/*.def -type f -exec shasum {} \; >> master_manifest && \
+	find mag/*.mag -type f  -exec shasum {} \; >> master_manifest && \
+	find maglef/*.mag -type f -exec shasum {} \; >> master_manifest && \
+	find spi/lvs/*.spice -type f -exec shasum {} \; >> master_manifest && \
+	find gds/*.gds -type f -exec shasum {} \; >> master_manifest 
+	
+
+check-env:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+check-python:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+__generate_fill:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 1105):
+	@mkdir -p ./signoff/build
+	@cp -r $(CARAVEL_ROOT)/mag/.magicrc $(shell pwd)/mag
+	python3 $(CARAVEL_ROOT)/scripts/generate_fill.py $(USER_ID) $(PROJECT) $(shell pwd) -dist 2>&1 | tee ./signoff/build/generate_fill.out
+	#python3 $(CARAVEL_ROOT)/scripts/generate_fill.py $(USER_ID) $(PROJECT) $(shell pwd) -keep 2>&1 | tee ./signoff/build/generate_fill.out
+
+openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.debug.gz.00.split: openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.debug.gz
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.debug'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 222):
+	@if [ -n "$$(find "$<" -prune -size +$(FILE_SIZE_LIMIT_MB)M)" ]; then\
+		split $< -b $(FILE_SIZE_LIMIT_MB)M $<. -d &&\
+		rm $< &&\
+		for file in $$(ls $<.*); do mv "$$file" "$$file.split"; done &&\
+		echo -n "$< -> $$(ls $<.*.split)" | tr '\n' ' ' && echo "";\
+	fi
+
+__final:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 1123):
+	python3 $(CARAVEL_ROOT)/scripts/compositor.py $(USER_ID) $(PROJECT) $(shell pwd) $(CARAVEL_ROOT)/mag $(shell pwd)/gds -keep
+	#mv $(CARAVEL_ROOT)/mag/caravel_$(USER_ID).mag ./mag/
+	@rm -rf ./mag/tmp
+
+# Not a target:
+verilog/rtl/:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+lvs-maglef-user_project_wrapper: mag/user_project_wrapper.mag verilog/gl/user_project_wrapper.v
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'user_project_wrapper'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 400):
+	echo "Extracting $*"
+	mkdir -p ./maglef/tmp
+	echo "load $* -dereference;\
+		select top cell;\
+		foreach cell [cellname list children] {\
+			load \$$cell -dereference;\
+			property LEFview TRUE;\
+		};\
+		load $* -dereference;\
+		select top cell;\
+		extract no all;\
+		extract do local;\
+		extract;\
+		ext2spice lvs;\
+		ext2spice $*.ext;\
+		feedback save extract_$*.log;\
+		exit;" > ./mag/extract_$*.tcl
+	cd mag && export MAGTYPE=maglef; magic -noc -dnull extract_$*.tcl < /dev/null
+	mv ./mag/$*.spice ./spi/lvs
+	rm ./maglef/*.ext
+	mv -f ./mag/extract_$*.tcl ./maglef/tmp
+	mv -f ./mag/extract_$*.log ./maglef/tmp
+	####
+	mkdir -p ./spi/lvs/tmp
+	sh $(CARAVEL_ROOT)/spi/lvs/run_lvs.sh ./spi/lvs/$*.spice ./verilog/gl/$*.v $*
+	@echo ""
+	python3 $(CARAVEL_ROOT)/scripts/count_lvs.py -f ./verilog/gl/$*.v_comp.json | tee ./spi/lvs/tmp/$*.maglef.lvs.summary.log
+	mv -f ./verilog/gl/*.out ./spi/lvs/tmp 2> /dev/null || true
+	mv -f ./verilog/gl/*.json ./spi/lvs/tmp 2> /dev/null || true
+	mv -f ./verilog/gl/*.log ./spi/lvs/tmp 2> /dev/null || true
+	@echo ""
+	@echo "LVS: ./spi/lvs/$*.spice vs. ./verilog/gl/$*.v"
+	@echo "Comparison result: ./spi/lvs/tmp/$*.v_comp.out"
+	@awk '/^NET mismatches/,0' ./spi/lvs/tmp/$*.v_comp.out
+
+uninstall_mcw:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 1218):
+	rm -rf $(MCW_ROOT)/*
+
+uncompress: caravel/def/caravan_core.def caravel/def/caravel_core.def caravel/gds/user_analog_project_wrapper_empty.gds caravel/gds/user_project_wrapper_empty.gds openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.error openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.debug openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.error openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.debug mgmt_core_wrapper/mag/mgmt_core_wrapper.mag mgmt_core_wrapper/gds/mgmt_core_wrapper.gds mgmt_core_wrapper/gds/RAM256.gds mgmt_core_wrapper/gds/RAM128.gds
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 252):
+	@echo "All files are uncompressed!"
+
+manifest: mag/ maglef/ verilog/rtl/ Makefile
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 1309):
+	touch manifest && \
+	find verilog/rtl/* -type f ! -name "caravel_netlists.v" ! -name "user_*.v" ! -name "README" ! -name "defines.v" -exec shasum {} \; > manifest && \
+	shasum scripts/set_user_id.py scripts/generate_fill.py scripts/compositor.py >> manifest
+
+# Not a target:
+ 
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+set_user_id: check-env check-uid uncompress uncompress-caravel
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 1130):
+	$(MAKE) -f $(CARAVEL_ROOT)/Makefile __set_user_id
+	@echo "Set user ID completed." 2>&1 | tee -a ./signoff/build/set_user_id.out
+
+# Not a target:
+def/caravel.def:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.debug.gz:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+help:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 507):
+	@$(MAKE) -pRrq -f $(lastword $(MAKEFILE_LIST)) : 2>/dev/null | awk -v RS= -F: '/^# File/,/^# Finished Make data base/ {if ($$1 !~ "^[#.]") {print $$1}}' | sort | egrep -v -e '^[^[:alnum:]]' -e '^$@$$'
+
+gds/user_proj_example.gds.gz.00.split: gds/user_proj_example.gds.gz
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'gds/user_proj_example.gds'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 222):
+	@if [ -n "$$(find "$<" -prune -size +$(FILE_SIZE_LIMIT_MB)M)" ]; then\
+		split $< -b $(FILE_SIZE_LIMIT_MB)M $<. -d &&\
+		rm $< &&\
+		for file in $$(ls $<.*); do mv "$$file" "$$file.split"; done &&\
+		echo -n "$< -> $$(ls $<.*.split)" | tr '\n' ' ' && echo "";\
+	fi
+
+gds/user_proj_example.gds.gz: gds/user_proj_example.gds
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'gds/user_proj_example.gds'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 216):
+	@if ! [ $(suffix $<) = ".$(ARCHIVE_EXT)" ]; then\
+		$(COMPRESS) $< > /dev/null &&\
+		echo "$< -> $@";\
+	fi
+
+# Not a target:
+def/user_proj_example.def:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.RECIPE: manifest master_manifest
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+caravel/gds/user_analog_project_wrapper_empty.gds.gz.00.split: caravel/gds/user_analog_project_wrapper_empty.gds.gz
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'caravel/gds/user_analog_project_wrapper_empty.gds'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 222):
+	@if [ -n "$$(find "$<" -prune -size +$(FILE_SIZE_LIMIT_MB)M)" ]; then\
+		split $< -b $(FILE_SIZE_LIMIT_MB)M $<. -d &&\
+		rm $< &&\
+		for file in $$(ls $<.*); do mv "$$file" "$$file.split"; done &&\
+		echo -n "$< -> $$(ls $<.*.split)" | tr '\n' ' ' && echo "";\
+	fi
+
+rcx-asic: def/asic.def
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'asic'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 514):
+	echo "Running RC Extraction on $*"
+	mkdir -p ./def/tmp 
+	# merge techlef and standard cell lef files
+	python3 $(OPENLANE_ROOT)/scripts/mergeLef.py -i $(PDK_ROOT)/$(PDK)/libs.ref/$(STD_CELL_LIBRARY)/techlef/$(STD_CELL_LIBRARY).tlef $(PDK_ROOT)/$(PDK)/libs.ref/$(STD_CELL_LIBRARY)/lef/*.lef $(PDK_ROOT)/$(PDK)/libs.ref/$(SPECIAL_VOLTAGE_LIBRARY)/techlef/$(SPECIAL_VOLTAGE_LIBRARY).tlef $(PDK_ROOT)/$(PDK)/libs.ref/$(SPECIAL_VOLTAGE_LIBRARY)/lef/*.lef $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lef/*.lef -o ./def/tmp/merged.lef
+	echo "\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(STD_CELL_LIBRARY)/lib/$(STD_CELL_LIBRARY)__tt_025C_1v80.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(SPECIAL_VOLTAGE_LIBRARY)/lib/$(SPECIAL_VOLTAGE_LIBRARY)__tt_025C_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(SPECIAL_VOLTAGE_LIBRARY)/lib/$(SPECIAL_VOLTAGE_LIBRARY)__tt_025C_3v30_lv1v80.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/sky130_sram_macros/lib/sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_gpiov2_tt_tt_025C_1v80_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_ground_hvc_wpad_tt_025C_1v80_3v30_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_ground_lvc_wpad_tt_025C_1v80_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_ground_lvc_wpad_tt_100C_1v80_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_power_lvc_wpad_tt_025C_1v80_3v30_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_xres4v2_tt_tt_025C_1v80_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__gpiov2_pad_tt_tt_025C_1v80_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vccd_lvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vdda_hvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vssa_hvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vssd_lvc_clamped3_pad_tt_025C_1v80_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vccd_lvc_clamped3_pad_tt_025C_1v80_3v30_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vssd_lvc_clamped_pad_tt_025C_1v80_3v30.lib;\
+		set std_cell_lef ./def/tmp/merged.lef;\
+		set sram_lef $(PDK_ROOT)/$(PDK)/libs.ref/sky130_sram_macros/lef/sky130_sram_2kbyte_1rw1r_32x512_8.lef;\
+		if {[catch {read_lef \$$std_cell_lef} errmsg]} {\
+    			puts stderr \$$errmsg;\
+    			exit 1;\
+		};\
+		if {[catch {read_lef \$$sram_lef} errmsg]} {\
+    			puts stderr \$$errmsg;\
+    			exit 1;\
+		};\
+		foreach lef_file [glob ./lef/*.lef] {\
+			if {[catch {read_lef \$$lef_file} errmsg]} {\
+    			puts stderr \$$errmsg;\
+    			exit 1;\
+			}\
+		};\
+		if {[catch {read_def -order_wires ./def/$*.def} errmsg]} {\
+			puts stderr \$$errmsg;\
+			exit 1;\
+		};\
+		read_sdc -echo ./sdc/$*.sdc;\
+		set_propagated_clock [all_clocks];\
+		set rc_values \"mcon 9.249146E-3,via 4.5E-3,via2 3.368786E-3,via3 0.376635E-3,via4 0.00580E-3\";\
+		set l_rc \"li1 1.499e-04 7.176e-02,met1 1.449e-04 8.929e-04,met2 1.331e-04 8.929e-04,met3 1.464e-04 1.567e-04,met4 1.297e-04 1.567e-04,met5 1.501e-04 1.781e-05\";\
+		set layers_rc [split \$$l_rc ","];\
+		foreach layer_rc \$$layers_rc {\
+			set layer_name [lindex \$$layer_rc 0];\
+			set capacitance [lindex \$$layer_rc 1];\
+			set resistance [lindex \$$layer_rc 2];\
+			set_layer_rc -layer \$$layer_name -capacitance \$$capacitance -resistance \$$resistance;\
+		};\
+		set vias_rc [split \$$rc_values ","];\
+    	foreach via_rc \$$vias_rc {\
+        		set layer_name [lindex \$$via_rc 0];\
+        		set resistance [lindex \$$via_rc 1];\
+       			set_layer_rc -via \$$layer_name -resistance \$$resistance;\
+    	};\
+		set_wire_rc -signal -layer met2;\
+		set_wire_rc -clock -layer met5;\
+		define_process_corner -ext_model_index 0 X;\
+		extract_parasitics -ext_model_file ${PDK_ROOT}/$(PDK)/libs.tech/openlane/rcx_rules.info -corner_cnt 1 -max_res 50 -coupling_threshold 0.1 -cc_model 10 -context_depth 5;\
+		write_spef ./spef/$*.spef" > ./def/tmp/rcx_$*.tcl
+	docker run -it -v $(OPENLANE_ROOT):/openlane -v $(PDK_ROOT):$(PDK_ROOT) -v $(PWD):/caravel -e PDK_ROOT=$(PDK_ROOT) -u $(shell id -u $(USER)):$(shell id -g $(USER)) $(OPENLANE_IMAGE_NAME) \
+	sh -c " cd /caravel; openroad -exit ./def/tmp/rcx_$*.tcl |& tee ./def/tmp/rcx_$*.log" 
+	echo "\
+		set std_cell_lef ./def/tmp/merged.lef;\
+		set sram_lef $(PDK_ROOT)/$(PDK)/libs.ref/sky130_sram_macros/lef/sky130_sram_2kbyte_1rw1r_32x512_8.lef;\
+		if {[catch {read_lef \$$std_cell_lef} errmsg]} {\
+    			puts stderr \$$errmsg;\
+    			exit 1;\
+		};\
+		if {[catch {read_lef \$$sram_lef} errmsg]} {\
+    			puts stderr \$$errmsg;\
+    			exit 1;\
+		};\
+		foreach lef_file [glob ./lef/*.lef] {\
+			if {[catch {read_lef \$$lef_file} errmsg]} {\
+    			puts stderr \$$errmsg;\
+    			exit 1;\
+			}\
+		};\
+		set_cmd_units -time ns -capacitance pF -current mA -voltage V -resistance kOhm -distance um;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(STD_CELL_LIBRARY)/lib/$(STD_CELL_LIBRARY)__tt_025C_1v80.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(SPECIAL_VOLTAGE_LIBRARY)/lib/$(SPECIAL_VOLTAGE_LIBRARY)__tt_025C_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(SPECIAL_VOLTAGE_LIBRARY)/lib/sky130_fd_sc_hvl__tt_025C_3v30_lv1v80.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/sky130_sram_macros/lib/sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_gpiov2_tt_tt_025C_1v80_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_ground_hvc_wpad_tt_025C_1v80_3v30_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_ground_lvc_wpad_tt_025C_1v80_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_ground_lvc_wpad_tt_100C_1v80_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_power_lvc_wpad_tt_025C_1v80_3v30_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_xres4v2_tt_tt_025C_1v80_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__gpiov2_pad_tt_tt_025C_1v80_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vccd_lvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vdda_hvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vssa_hvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vssd_lvc_clamped3_pad_tt_025C_1v80_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vccd_lvc_clamped3_pad_tt_025C_1v80_3v30_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vssd_lvc_clamped_pad_tt_025C_1v80_3v30.lib;\
+		read_verilog ./verilog/gl/$*.v;\
+		link_design $*;\
+		read_spef ./spef/$*.spef;\
+		read_sdc -echo ./sdc/$*.sdc;\
+		write_sdf ./sdf/$*.sdf -divider . -include_typ;\
+		report_checks -fields {capacitance slew input_pins nets fanout} -path_delay min_max -group_count 5;\
+		report_check_types -max_slew -max_capacitance -max_fanout -violators;\
+		report_checks -to [all_outputs] -group_count 1000;\
+		" > ./def/tmp/sta_$*.tcl 
+	docker run -it -v $(OPENLANE_ROOT):/openlane -v $(PDK_ROOT):$(PDK_ROOT) -v $(PWD):/caravel -e PDK_ROOT=$(PDK_ROOT) -u $(shell id -u $(USER)):$(shell id -g $(USER)) $(OPENLANE_IMAGE_NAME) \
+	sh -c "cd /caravel; openroad -exit ./def/tmp/sta_$*.tcl |& tee ./def/tmp/sta_$*.log" 
+
+mgmt_core_wrapper/mag/mgmt_core_wrapper.mag.gz.00.split: mgmt_core_wrapper/mag/mgmt_core_wrapper.mag.gz
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'mgmt_core_wrapper/mag/mgmt_core_wrapper.mag'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 222):
+	@if [ -n "$$(find "$<" -prune -size +$(FILE_SIZE_LIMIT_MB)M)" ]; then\
+		split $< -b $(FILE_SIZE_LIMIT_MB)M $<. -d &&\
+		rm $< &&\
+		for file in $$(ls $<.*); do mv "$$file" "$$file.split"; done &&\
+		echo -n "$< -> $$(ls $<.*.split)" | tr '\n' ' ' && echo "";\
+	fi
+
+lvs-asic: mag/asic.mag verilog/gl/asic.v
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'asic'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 316):
+	echo "Extracting $*"
+	mkdir -p ./mag/tmp
+	echo "addpath $(CARAVEL_ROOT)/mag/hexdigits;\
+		addpath $(CARAVEL_ROOT)/mag/primitives;\
+		addpath $(MCW_ROOT)/mag;\
+		addpath $(CARAVEL_ROOT)/subcells/simple_por/mag;\
+		addpath \$$PDKPATH/libs.ref/sky130_ml_xx_hd/mag;\
+		load $* -dereference;\
+		select top cell;\
+		foreach cell [cellname list children] {\
+			load \$$cell -dereference;\
+			property LEFview TRUE;\
+		};\
+		load $* -dereference;\
+		select top cell;\
+		extract no all;\
+		extract do local;\
+		extract unique;\
+		extract;\
+		ext2spice lvs;\
+		ext2spice $*.ext;\
+		feedback save extract_$*.log;\
+		exit;" > ./mag/extract_$*.tcl
+	cd mag && \
+		export MAGTYPE=maglef; \
+		magic -rcfile ${PDK_ROOT}/$(PDK)/libs.tech/magic/$(PDK).magicrc -noc -dnull extract_$*.tcl < /dev/null
+	mv ./mag/$*.spice ./spi/lvs
+	rm ./mag/*.ext
+	mv -f ./mag/extract_$*.tcl ./mag/tmp
+	mv -f ./mag/extract_$*.log ./mag/tmp
+	####
+	mkdir -p ./spi/lvs/tmp
+	sh $(CARAVEL_ROOT)/spi/lvs/run_lvs.sh ./spi/lvs/$*.spice ./verilog/gl/$*.v $*
+	@echo ""
+	python3 $(CARAVEL_ROOT)/scripts/count_lvs.py -f ./verilog/gl/$*.v_comp.json | tee ./spi/lvs/tmp/$*.lvs.summary.log
+	mv -f ./verilog/gl/*.out ./spi/lvs/tmp 2> /dev/null || true
+	mv -f ./verilog/gl/*.json ./spi/lvs/tmp 2> /dev/null || true
+	mv -f ./verilog/gl/*.log ./spi/lvs/tmp 2> /dev/null || true
+	@echo ""
+	@echo "LVS: ./spi/lvs/$*.spice vs. ./verilog/gl/$*.v"
+	@echo "Comparison result: ./spi/lvs/tmp/$*.v_comp.out"
+	@awk '/^NET mismatches/,0' ./spi/lvs/tmp/$*.v_comp.out
+
+caravel/def/caravel_core.def.gz.00.split: caravel/def/caravel_core.def.gz
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'caravel/def/caravel_core.def'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 222):
+	@if [ -n "$$(find "$<" -prune -size +$(FILE_SIZE_LIMIT_MB)M)" ]; then\
+		split $< -b $(FILE_SIZE_LIMIT_MB)M $<. -d &&\
+		rm $< &&\
+		for file in $$(ls $<.*); do mv "$$file" "$$file.split"; done &&\
+		echo -n "$< -> $$(ls $<.*.split)" | tr '\n' ' ' && echo "";\
+	fi
+
+update_caravel:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 1166):
+	cd caravel/ && \
+		git checkout master && \
+		git pull
+
+lvs-user_project_wrapper: mag/user_project_wrapper.mag verilog/gl/user_project_wrapper.v
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'user_project_wrapper'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 316):
+	echo "Extracting $*"
+	mkdir -p ./mag/tmp
+	echo "addpath $(CARAVEL_ROOT)/mag/hexdigits;\
+		addpath $(CARAVEL_ROOT)/mag/primitives;\
+		addpath $(MCW_ROOT)/mag;\
+		addpath $(CARAVEL_ROOT)/subcells/simple_por/mag;\
+		addpath \$$PDKPATH/libs.ref/sky130_ml_xx_hd/mag;\
+		load $* -dereference;\
+		select top cell;\
+		foreach cell [cellname list children] {\
+			load \$$cell -dereference;\
+			property LEFview TRUE;\
+		};\
+		load $* -dereference;\
+		select top cell;\
+		extract no all;\
+		extract do local;\
+		extract unique;\
+		extract;\
+		ext2spice lvs;\
+		ext2spice $*.ext;\
+		feedback save extract_$*.log;\
+		exit;" > ./mag/extract_$*.tcl
+	cd mag && \
+		export MAGTYPE=maglef; \
+		magic -rcfile ${PDK_ROOT}/$(PDK)/libs.tech/magic/$(PDK).magicrc -noc -dnull extract_$*.tcl < /dev/null
+	mv ./mag/$*.spice ./spi/lvs
+	rm ./mag/*.ext
+	mv -f ./mag/extract_$*.tcl ./mag/tmp
+	mv -f ./mag/extract_$*.log ./mag/tmp
+	####
+	mkdir -p ./spi/lvs/tmp
+	sh $(CARAVEL_ROOT)/spi/lvs/run_lvs.sh ./spi/lvs/$*.spice ./verilog/gl/$*.v $*
+	@echo ""
+	python3 $(CARAVEL_ROOT)/scripts/count_lvs.py -f ./verilog/gl/$*.v_comp.json | tee ./spi/lvs/tmp/$*.lvs.summary.log
+	mv -f ./verilog/gl/*.out ./spi/lvs/tmp 2> /dev/null || true
+	mv -f ./verilog/gl/*.json ./spi/lvs/tmp 2> /dev/null || true
+	mv -f ./verilog/gl/*.log ./spi/lvs/tmp 2> /dev/null || true
+	@echo ""
+	@echo "LVS: ./spi/lvs/$*.spice vs. ./verilog/gl/$*.v"
+	@echo "Comparison result: ./spi/lvs/tmp/$*.v_comp.out"
+	@awk '/^NET mismatches/,0' ./spi/lvs/tmp/$*.v_comp.out
+
+lvs-gds-asic: gds/asic.gds verilog/gl/asic.v
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'asic'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 362):
+	echo "Extracting $*"
+	mkdir -p ./gds/tmp
+	echo "	gds flatglob \"*_example_*\";\
+		gds flatten true;\
+		gds read ./$*.gds;\
+		load $* -dereference;\
+		select top cell;\
+		extract no all;\
+		extract do local;\
+		extract unique;\
+		extract;\
+		ext2spice lvs;\
+		ext2spice $*.ext;\
+		feedback save extract_$*.log;\
+		exit;" > ./gds/extract_$*.tcl
+	cd gds && \
+		magic -rcfile ${PDK_ROOT}/$(PDK)/libs.tech/magic/$(PDK).magicrc -noc -dnull extract_$*.tcl < /dev/null
+	mv ./gds/$*.spice ./spi/lvs
+	rm ./gds/*.ext
+	mv -f ./gds/extract_$*.tcl ./gds/tmp
+	mv -f ./gds/extract_$*.log ./gds/tmp
+	####
+	mkdir -p ./spi/lvs/tmp
+	MAGIC_EXT_USE_GDS=1 sh $(CARAVEL_ROOT)/spi/lvs/run_lvs.sh ./spi/lvs/$*.spice ./verilog/gl/$*.v $*
+	@echo ""
+	python3 $(CARAVEL_ROOT)/scripts/count_lvs.py -f ./verilog/gl/$*.v_comp.json | tee ./spi/lvs/tmp/$*.lvs.summary.log
+	mv -f ./verilog/gl/*.out ./spi/lvs/tmp 2> /dev/null || true
+	mv -f ./verilog/gl/*.json ./spi/lvs/tmp 2> /dev/null || true
+	mv -f ./verilog/gl/*.log ./spi/lvs/tmp 2> /dev/null || true
+	@echo ""
+	@echo "LVS: ./spi/lvs/$*.spice vs. ./verilog/gl/$*.v"
+	@echo "Comparison result: ./spi/lvs/tmp/$*.v_comp.out"
+	@awk '/^NET mismatches/,0' ./spi/lvs/tmp/$*.v_comp.out
+
+gpio_defaults: check-env uncompress uncompress-caravel
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 1151):
+	$(MAKE) -f $(CARAVEL_ROOT)/Makefile __gpio_defaults
+	@echo "GPIO defaults completed." 2>&1 | tee -a ./signoff/build/__gpio_defaults.out
+
+# Not a target:
+sdc/caravel.sdc:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+__gpio_defaults:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 1160):
+	mkdir -p ./signoff/build
+	mkdir -p ./verilog/gl
+	python3 $(CARAVEL_ROOT)/scripts/gen_gpio_defaults.py $(shell pwd) 2>&1 | tee ./signoff/build/gpio_defaults.out
+
+clean-pdk:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 1248):
+	rm -rf $(PDK_ROOT)
+
+# Not a target:
+mag/user_proj_example.mag:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+caravel/def/caravel_core.def.gz:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+mag2lef-user_project_wrapper: mag/user_project_wrapper.mag uncompress
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'user_project_wrapper'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 477):
+ 
+	echo "Converting mag file $* to LEF..."
+	echo "addpath $(CARAVEL_ROOT)/mag/hexdigits;\
+		addpath ${PDKPATH}/libs.ref/sky130_ml_xx_hd/mag;\
+		addpath $(CARAVEL_ROOT)/mag/primitives;\
+		drc off;\
+		load $*;\
+		lef write $*.lef;\
+		exit;" > ./mag/mag2lef_$*.tcl
+	cd ./mag && magic -rcfile ${PDK_ROOT}/$(PDK)/libs.tech/magic/$(PDK).magicrc -noc -dnull mag2lef_$*.tcl < /dev/null
+	rm ./mag/mag2lef_$*.tcl
+	mv -f ./mag/$*.lef ./lef/
+
+# Not a target:
+openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.error.gz:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.debug.gz:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.error.gz.00.split: openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.error.gz
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.error'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 222):
+	@if [ -n "$$(find "$<" -prune -size +$(FILE_SIZE_LIMIT_MB)M)" ]; then\
+		split $< -b $(FILE_SIZE_LIMIT_MB)M $<. -d &&\
+		rm $< &&\
+		for file in $$(ls $<.*); do mv "$$file" "$$file.split"; done &&\
+		echo -n "$< -> $$(ls $<.*.split)" | tr '\n' ' ' && echo "";\
+	fi
+
+skywater-pdk:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 1252):
+	if [ -d "$(PDK_ROOT)/skywater-pdk" ]; then\
+		echo "Deleting exisiting $(PDK_ROOT)/skywater-pdk" && \
+		rm -rf $(PDK_ROOT)/skywater-pdk && sleep 2;\
+	fi
+	git clone https://github.com/google/skywater-pdk.git $(PDK_ROOT)/skywater-pdk
+	cd $(PDK_ROOT)/skywater-pdk && \
+		git checkout main && git pull && \
+		git checkout -qf $(SKYWATER_COMMIT) && \
+		git submodule update --init libraries/$(STD_CELL_LIBRARY)/latest && \
+		git submodule update --init libraries/$(IO_LIBRARY)/latest && \
+		git submodule update --init libraries/$(SPECIAL_VOLTAGE_LIBRARY)/latest && \
+		git submodule update --init libraries/$(PRIMITIVES_LIBRARY)/latest && \
+		$(MAKE) timing
+
+open-pdks:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 1269):
+	if [ -d "$(PDK_ROOT)/open_pdks" ]; then \
+		echo "Deleting exisiting $(PDK_ROOT)/open_pdks" && \
+		rm -rf $(PDK_ROOT)/open_pdks && sleep 2; \
+	fi
+	git clone git://opencircuitdesign.com/open_pdks $(PDK_ROOT)/open_pdks
+	cd $(PDK_ROOT)/open_pdks && \
+		git checkout master && git pull && \
+		git checkout -qf $(OPEN_PDKS_COMMIT)
+
+# Not a target:
+caravel/def/caravan_core.def.gz:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+drc-user_project_wrapper: gds/user_project_wrapper.gds
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'user_project_wrapper'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 439):
+	echo "Running DRC on $*"
+	mkdir -p ./gds/tmp
+	cd gds && export DESIGN_IN_DRC=$* && export MAGTYPE=mag; magic -rcfile ${PDK_ROOT}/$(PDK)/libs.tech/magic/$(PDK).magicrc -noc -dnull $(CARAVEL_ROOT)/gds/drc_on_gds.tcl < /dev/null
+	@echo "DRC result: ./gds/tmp/$*.drc"
+
+mgmt_core_wrapper/gds/mgmt_core_wrapper.gds: mgmt_core_wrapper/gds/mgmt_core_wrapper.gds.gz
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'mgmt_core_wrapper/gds/mgmt_core_wrapper.gds'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 238):
+	@$(UNCOMPRESS) $<
+	@echo "$< -> $@"
+
+# Not a target:
+mgmt_core_wrapper/mag/mgmt_core_wrapper.mag.gz:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+drc-user_proj_example: gds/user_proj_example.gds
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'user_proj_example'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 439):
+	echo "Running DRC on $*"
+	mkdir -p ./gds/tmp
+	cd gds && export DESIGN_IN_DRC=$* && export MAGTYPE=mag; magic -rcfile ${PDK_ROOT}/$(PDK)/libs.tech/magic/$(PDK).magicrc -noc -dnull $(CARAVEL_ROOT)/gds/drc_on_gds.tcl < /dev/null
+	@echo "DRC result: ./gds/tmp/$*.drc"
+
+openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.debug.gz.00.split: openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.debug.gz
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.debug'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 222):
+	@if [ -n "$$(find "$<" -prune -size +$(FILE_SIZE_LIMIT_MB)M)" ]; then\
+		split $< -b $(FILE_SIZE_LIMIT_MB)M $<. -d &&\
+		rm $< &&\
+		for file in $$(ls $<.*); do mv "$$file" "$$file.split"; done &&\
+		echo -n "$< -> $$(ls $<.*.split)" | tr '\n' ' ' && echo "";\
+	fi
+
+install_mcw:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 1175):
+	if [ -d "$(MCW_ROOT)" ]; then \
+		echo "Deleting exisiting $(MCW_ROOT)" && \
+		rm -rf $(MCW_ROOT) && sleep 2;\
+	fi
+	@echo "Installing $(MCW_NAME).."
+	@git clone -b $(MCW_TAG) $(MCW_REPO) $(MCW_ROOT) --depth=1
+
+# Not a target:
+docs/source/getting-started.rst:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+caravel_timing_typ: def/caravel.def sdc/caravel.sdc verilog/gl/caravel.v check-mcw
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 631):
+	mkdir -p ./def/tmp
+	echo "\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(STD_CELL_LIBRARY)/lib/$(STD_CELL_LIBRARY)__tt_025C_1v80.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/sky130_sram_macros/lib/sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(SPECIAL_VOLTAGE_LIBRARY)/lib/$(SPECIAL_VOLTAGE_LIBRARY)__tt_025C_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(SPECIAL_VOLTAGE_LIBRARY)/lib/$(SPECIAL_VOLTAGE_LIBRARY)__tt_025C_3v30_lv1v80.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_gpiov2_tt_tt_025C_1v80_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_ground_hvc_wpad_tt_025C_1v80_3v30_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_ground_lvc_wpad_tt_025C_1v80_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_ground_lvc_wpad_tt_100C_1v80_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_power_lvc_wpad_tt_025C_1v80_3v30_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_xres4v2_tt_tt_025C_1v80_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__gpiov2_pad_tt_tt_025C_1v80_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vccd_lvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vdda_hvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vssa_hvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vssd_lvc_clamped3_pad_tt_025C_1v80_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vccd_lvc_clamped3_pad_tt_025C_1v80_3v30_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vssd_lvc_clamped_pad_tt_025C_1v80_3v30.lib;\
+		read_verilog $(MCW_ROOT)/verilog/gl/mgmt_core.v;\
+		read_verilog $(MCW_ROOT)/verilog/gl/DFFRAM.v;\
+		read_verilog $(MCW_ROOT)/verilog/gl/mgmt_core_wrapper.v;\
+		read_verilog ./verilog/gl/caravel_clocking.v;\
+		read_verilog ./verilog/gl/digital_pll.v;\
+		read_verilog ./verilog/gl/housekeeping.v;\
+		read_verilog ./verilog/gl/gpio_logic_high.v;\
+		read_verilog ./verilog/gl/gpio_control_block.v;\
+		read_verilog ./verilog/gl/gpio_defaults_block.v;\
+		read_verilog ./verilog/gl/gpio_defaults_block_0403.v;\
+		read_verilog ./verilog/gl/gpio_defaults_block_1803.v;\
+		read_verilog ./verilog/gl/mgmt_protect_hv.v;\
+		read_verilog ./verilog/gl/mprj_logic_high.v;\
+		read_verilog ./verilog/gl/mprj2_logic_high.v;\
+		read_verilog ./verilog/gl/mgmt_protect.v;\
+		read_verilog ./verilog/gl/user_id_programming.v;\
+		read_verilog ./verilog/gl/xres_buf.v;\
+		read_verilog ./verilog/gl/spare_logic_block.v;\
+		read_verilog ./verilog/gl/chip_io.v;\
+		read_verilog ./verilog/gl/caravel.v;\
+		link_design caravel;\
+		read_spef -path soc/DFFRAM_0 $(MCW_ROOT)/spef/DFFRAM.spef;\
+		read_spef -path soc/core $(MCW_ROOT)/spef/mgmt_core.spef;\
+		read_spef -path soc $(MCW_ROOT)/spef/mgmt_core_wrapper.spef;\
+		read_spef -path padframe ./spef/chip_io.spef;\
+		read_spef -path rstb_level ./spef/xres_buf.spef;\
+		read_spef -path pll ./spef/digital_pll.spef;\
+		read_spef -path housekeeping ./spef/housekeeping.spef;\
+		read_spef -path mgmt_buffers/powergood_check ./spef/mgmt_protect_hv.spef;\
+		read_spef -path mgmt_buffers/mprj_logic_high_inst ./spef/mprj_logic_high.spef;\
+		read_spef -path mgmt_buffers/mprj2_logic_high_inst ./spef/mprj2_logic_high.spef;\
+		read_spef -path mgmt_buffers ./spef/mgmt_protect.spef;\
+		read_spef -path \gpio_control_bidir_1[0] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_bidir_1[1] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_bidir_2[1] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_bidir_2[2] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1[0] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1[10] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1[1] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1[2] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1[3] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1[4] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1[5] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1[6] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1[7] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1[8] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1[9] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1a[0] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1a[1] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1a[2] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1a[3] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1a[4] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1a[5] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[0] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[10] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[11] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[12] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[13] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[14] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[15] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[1] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[2] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[3] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[4] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[5] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[6] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[7] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[8] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[9] ./spef/gpio_control_block.spef;\
+		read_spef -path gpio_defaults_block_0 ./spef/gpio_defaults_block_1803.spef;\
+		read_spef -path gpio_defaults_block_1 ./spef/gpio_defaults_block_1803.spef;\
+		read_spef -path gpio_defaults_block_2 ./spef/gpio_defaults_block_0403.spef;\
+		read_spef -path gpio_defaults_block_3 ./spef/gpio_defaults_block_0403.spef;\
+		read_spef -path gpio_defaults_block_4 ./spef/gpio_defaults_block_0403.spef;\
+		read_spef -path gpio_defaults_block_5 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_6 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_7 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_8 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_9 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_10 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_11 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_12 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_13 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_14 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_15 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_16 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_17 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_18 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_19 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_20 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_21 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_22 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_23 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_24 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_25 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_26 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_27 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_28 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_29 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_30 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_31 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_32 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_33 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_34 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_35 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_36 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_37 ./spef/gpio_defaults_block.spef;\
+		read_spef ./spef/caravel.spef;\
+		read_sdc -echo ./sdc/caravel.sdc;\
+		report_checks -path_delay min -fields {slew cap input nets fanout} -format full_clock_expanded -group_count 50;\
+		report_checks -path_delay max -fields {slew cap input nets fanout} -format full_clock_expanded -group_count 50;\
+		report_worst_slack -max ;\
+		report_worst_slack -min ;\
+		echo \" Management Area Interface \";\
+		report_checks -to soc/core_clk -unconstrained -group_count 1;\
+		echo \" User project Interface \";\
+		report_checks -to mprj/wb_clk_i -unconstrained -group_count 1;\
+		report_checks -to mprj/wb_rst_i -unconstrained -group_count 1;\
+		report_checks -to mprj/wbs_cyc_i -unconstrained -group_count 1;\
+		report_checks -to mprj/wbs_stb_i -unconstrained -group_count 1;\
+		report_checks -to mprj/wbs_we_i -unconstrained -group_count 1;\
+		report_checks -to mprj/wbs_sel_i[*] -unconstrained -group_count 4;\
+		report_checks -to mprj/wbs_adr_i[*] -unconstrained -group_count 32;\
+		report_checks -to mprj/io_in[*] -unconstrained -group_count 32;\
+		report_checks -to mprj/user_clock2 -unconstrained -group_count 32;\
+		report_checks -to mprj/user_irq[*] -unconstrained -group_count 32;\
+		report_checks -to mprj/la_data_in[*] -unconstrained -group_count 128;\
+		report_checks -to mprj/la_oenb[*] -unconstrained -group_count 128;\
+		echo \" Flash output Interface \";\
+		report_checks -to flash_clk -group_count 1;\
+		report_checks -to flash_csb -group_count 1;\
+		report_checks -to flash_io0 -group_count 1;\
+		" > ./def/tmp/caravel_timing_typ.tcl 
+	sta -exit ./def/tmp/caravel_timing_typ.tcl | tee ./signoff/caravel/caravel_timing_typ.log 
+
+caravel_timing_slow: def/caravel.def sdc/caravel.sdc verilog/gl/caravel.v check-mcw
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 787):
+	mkdir -p ./def/tmp
+	echo "\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(STD_CELL_LIBRARY)/lib/$(STD_CELL_LIBRARY)__ss_100C_1v60.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/sky130_sram_macros/lib/sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(SPECIAL_VOLTAGE_LIBRARY)/lib/$(SPECIAL_VOLTAGE_LIBRARY)__ss_100C_1v65.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(SPECIAL_VOLTAGE_LIBRARY)/lib/$(SPECIAL_VOLTAGE_LIBRARY)__ss_100C_1v65_lv1v40.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_gpiov2_ss_ss_100C_1v40_1v65.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_ground_hvc_wpad_ss_100C_1v60_3v00_3v00.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_ground_lvc_wpad_ss_100C_1v40_1v65.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_power_lvc_wpad_ss_100C_1v60_3v00_3v00.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_xres4v2_ss_ss_100C_1v40_1v65.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__gpiov2_pad_wrapped_ss_ss_100C_1v60_3v00.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vccd_lvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vdda_hvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vdda_hvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vssd_lvc_clamped3_pad_ss_100C_1v40_1v65.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vccd_lvc_clamped3_pad_ss_100C_1v60_3v00_3v00.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vssd_lvc_clamped_pad_ss_100C_1v60_3v00.lib;\
+		read_verilog $(MCW_ROOT)/verilog/gl/mgmt_core.v;\
+		read_verilog $(MCW_ROOT)/verilog/gl/DFFRAM.v;\
+		read_verilog $(MCW_ROOT)/verilog/gl/mgmt_core_wrapper.v;\
+		read_verilog ./verilog/gl/caravel_clocking.v;\
+		read_verilog ./verilog/gl/digital_pll.v;\
+		read_verilog ./verilog/gl/housekeeping.v;\
+		read_verilog ./verilog/gl/gpio_logic_high.v;\
+		read_verilog ./verilog/gl/gpio_control_block.v;\
+		read_verilog ./verilog/gl/gpio_defaults_block.v;\
+		read_verilog ./verilog/gl/gpio_defaults_block_0403.v;\
+		read_verilog ./verilog/gl/gpio_defaults_block_1803.v;\
+		read_verilog ./verilog/gl/mgmt_protect_hv.v;\
+		read_verilog ./verilog/gl/mprj_logic_high.v;\
+		read_verilog ./verilog/gl/mprj2_logic_high.v;\
+		read_verilog ./verilog/gl/mgmt_protect.v;\
+		read_verilog ./verilog/gl/user_id_programming.v;\
+		read_verilog ./verilog/gl/xres_buf.v;\
+		read_verilog ./verilog/gl/spare_logic_block.v;\
+		read_verilog ./verilog/gl/chip_io.v;\
+		read_verilog ./verilog/gl/caravel.v;\
+		link_design caravel;\
+		read_spef -path soc/DFFRAM_0 $(MCW_ROOT)/spef/DFFRAM.spef;\
+		read_spef -path soc/core $(MCW_ROOT)/spef/mgmt_core.spef;\
+		read_spef -path soc $(MCW_ROOT)/spef/mgmt_core_wrapper.spef;\
+		read_spef -path padframe ./spef/chip_io.spef;\
+		read_spef -path rstb_level ./spef/xres_buf.spef;\
+		read_spef -path pll ./spef/digital_pll.spef;\
+		read_spef -path housekeeping ./spef/housekeeping.spef;\
+		read_spef -path mgmt_buffers/powergood_check ./spef/mgmt_protect_hv.spef;\
+		read_spef -path mgmt_buffers/mprj_logic_high_inst ./spef/mprj_logic_high.spef;\
+		read_spef -path mgmt_buffers/mprj2_logic_high_inst ./spef/mprj2_logic_high.spef;\
+		read_spef -path mgmt_buffers ./spef/mgmt_protect.spef;\
+		read_spef -path \gpio_control_bidir_1[0] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_bidir_1[1] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_bidir_2[1] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_bidir_2[2] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1[0] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1[10] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1[1] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1[2] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1[3] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1[4] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1[5] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1[6] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1[7] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1[8] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1[9] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1a[0] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1a[1] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1a[2] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1a[3] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1a[4] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1a[5] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[0] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[10] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[11] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[12] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[13] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[14] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[15] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[1] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[2] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[3] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[4] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[5] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[6] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[7] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[8] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[9] ./spef/gpio_control_block.spef;\
+		read_spef -path gpio_defaults_block_0 ./spef/gpio_defaults_block_1803.spef;\
+		read_spef -path gpio_defaults_block_1 ./spef/gpio_defaults_block_1803.spef;\
+		read_spef -path gpio_defaults_block_2 ./spef/gpio_defaults_block_0403.spef;\
+		read_spef -path gpio_defaults_block_3 ./spef/gpio_defaults_block_0403.spef;\
+		read_spef -path gpio_defaults_block_4 ./spef/gpio_defaults_block_0403.spef;\
+		read_spef -path gpio_defaults_block_5 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_6 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_7 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_8 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_9 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_10 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_11 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_12 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_13 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_14 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_15 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_16 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_17 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_18 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_19 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_20 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_21 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_22 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_23 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_24 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_25 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_26 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_27 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_28 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_29 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_30 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_31 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_32 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_33 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_34 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_35 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_36 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_37 ./spef/gpio_defaults_block.spef;\
+		read_spef ./spef/caravel.spef;\
+		read_sdc -echo ./sdc/caravel.sdc;\
+		report_checks -path_delay min -fields {slew cap input nets fanout} -format full_clock_expanded -group_count 50;\
+		report_checks -path_delay max -fields {slew cap input nets fanout} -format full_clock_expanded -group_count 50;\
+		report_worst_slack -max ;\
+		report_worst_slack -min ;\
+		echo \" Management Area Interface \";\
+		report_checks -to soc/core_clk -unconstrained -group_count 1;\
+		echo \" User project Interface \";\
+		report_checks -to mprj/wb_clk_i -unconstrained -group_count 1;\
+		report_checks -to mprj/wb_rst_i -unconstrained -group_count 1;\
+		report_checks -to mprj/wbs_cyc_i -unconstrained -group_count 1;\
+		report_checks -to mprj/wbs_stb_i -unconstrained -group_count 1;\
+		report_checks -to mprj/wbs_we_i -unconstrained -group_count 1;\
+		report_checks -to mprj/wbs_sel_i[*] -unconstrained -group_count 4;\
+		report_checks -to mprj/wbs_adr_i[*] -unconstrained -group_count 32;\
+		report_checks -to mprj/io_in[*] -unconstrained -group_count 32;\
+		report_checks -to mprj/user_clock2 -unconstrained -group_count 32;\
+		report_checks -to mprj/user_irq[*] -unconstrained -group_count 32;\
+		report_checks -to mprj/la_data_in[*] -unconstrained -group_count 128;\
+		report_checks -to mprj/la_oenb[*] -unconstrained -group_count 128;\
+		" > ./def/tmp/caravel_timing_slow.tcl 
+	sta -exit ./def/tmp/caravel_timing_slow.tcl | tee ./signoff/caravel/caravel_timing_slow.log 
+
+# Not a target:
+docs/source/caravel-with-openlane.rst:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.SECONDEXPANSION:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+antenna-asic: gds/asic.gds
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'asic'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 448):
+	echo "Running Antenna Checks on $*"
+	mkdir -p ./gds/tmp
+	cd gds && export DESIGN_IN_ANTENNA=$* && export MAGTYPE=mag; magic -rcfile ${PDK_ROOT}/$(PDK)/libs.tech/magic/$(PDK).magicrc -noc -dnull $(CARAVEL_ROOT)/gds/antenna_on_gds.tcl < /dev/null 2>&1 | tee ./tmp/$*.antenna
+	mv -f ./gds/*.ext ./gds/tmp/
+	@echo "Antenna result: ./gds/tmp/$*.antenna"
+
+caravel/gds/user_project_wrapper_empty.gds: caravel/gds/user_project_wrapper_empty.gds.gz
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'caravel/gds/user_project_wrapper_empty.gds'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 238):
+	@$(UNCOMPRESS) $<
+	@echo "$< -> $@"
+
+pdk-with-volare: check-python install-volare
+ 
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 1226):
+	./venv/bin/volare enable ${OPEN_PDKS_COMMIT}
+
+# Not a target:
+mag/asic.mag:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+mag2gds-user_project_wrapper: mag/user_project_wrapper.mag uncompress
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'user_project_wrapper'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 458):
+	echo "Converting mag file $* to GDS..."
+	echo "addpath $(CARAVEL_ROOT)/mag/hexdigits;\
+		addpath ${PDKPATH}/libs.ref/sky130_ml_xx_hd/mag;\
+		addpath $(CARAVEL_ROOT)/mag/primitives;\
+		drc off;\
+		gds rescale false;\
+		load $* -dereference;\
+		select top cell;\
+		expand;\
+		gds write $*.gds;\
+		exit;" > ./mag/mag2gds_$*.tcl
+	cd ./mag && magic -rcfile ${PDK_ROOT}/$(PDK)/libs.tech/magic/$(PDK).magicrc -noc -dnull mag2gds_$*.tcl < /dev/null
+	rm ./mag/mag2gds_$*.tcl
+	mv -f ./mag/$*.gds ./gds/
+
+uncompress-caravel:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 257):
+	cd $(CARAVEL_ROOT) && \
+	$(MAKE) uncompress
+
+openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.debug: openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.debug.gz
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.debug'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 238):
+	@$(UNCOMPRESS) $<
+	@echo "$< -> $@"
+
+check-uid:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 1336):
+	$(error USER_ID is undefined, please export it before running make set_user_id)
+
+# Not a target:
+verilog/gl/user_proj_example.v:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+lvs-maglef-asic: mag/asic.mag verilog/gl/asic.v
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'asic'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 400):
+	echo "Extracting $*"
+	mkdir -p ./maglef/tmp
+	echo "load $* -dereference;\
+		select top cell;\
+		foreach cell [cellname list children] {\
+			load \$$cell -dereference;\
+			property LEFview TRUE;\
+		};\
+		load $* -dereference;\
+		select top cell;\
+		extract no all;\
+		extract do local;\
+		extract;\
+		ext2spice lvs;\
+		ext2spice $*.ext;\
+		feedback save extract_$*.log;\
+		exit;" > ./mag/extract_$*.tcl
+	cd mag && export MAGTYPE=maglef; magic -noc -dnull extract_$*.tcl < /dev/null
+	mv ./mag/$*.spice ./spi/lvs
+	rm ./maglef/*.ext
+	mv -f ./mag/extract_$*.tcl ./maglef/tmp
+	mv -f ./mag/extract_$*.log ./maglef/tmp
+	####
+	mkdir -p ./spi/lvs/tmp
+	sh $(CARAVEL_ROOT)/spi/lvs/run_lvs.sh ./spi/lvs/$*.spice ./verilog/gl/$*.v $*
+	@echo ""
+	python3 $(CARAVEL_ROOT)/scripts/count_lvs.py -f ./verilog/gl/$*.v_comp.json | tee ./spi/lvs/tmp/$*.maglef.lvs.summary.log
+	mv -f ./verilog/gl/*.out ./spi/lvs/tmp 2> /dev/null || true
+	mv -f ./verilog/gl/*.json ./spi/lvs/tmp 2> /dev/null || true
+	mv -f ./verilog/gl/*.log ./spi/lvs/tmp 2> /dev/null || true
+	@echo ""
+	@echo "LVS: ./spi/lvs/$*.spice vs. ./verilog/gl/$*.v"
+	@echo "Comparison result: ./spi/lvs/tmp/$*.v_comp.out"
+	@awk '/^NET mismatches/,0' ./spi/lvs/tmp/$*.v_comp.out
+
+__ship:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 116):
+	@echo "###############################################"
+	@echo "Generating Caravel GDS (sources are in the 'gds' directory)"
+	@sleep 1
+	@echo "\
+		random seed `$(CARAVEL_ROOT)/scripts/set_user_id.py -report`; \
+		drc off; \
+		crashbackups stop; \
+		addpath hexdigits; \
+		addpath $(MCW_ROOT)/mag; \
+		addpath $(UPRJ_ROOT)/mag; \
+		load user_project_wrapper; \
+		property LEFview true; \
+		property GDS_FILE $(UPRJ_ROOT)/gds/user_project_wrapper.gds; \
+		property GDS_START 0; \
+		load $(UPRJ_ROOT)/mag/user_id_programming; \
+		load $(UPRJ_ROOT)/mag/user_id_textblock; \
+		load $(CARAVEL_ROOT)/maglef/simple_por; \
+		load $(UPRJ_ROOT)/mag/caravel_core -dereference; \
+		load caravel -dereference; \
+		select top cell; \
+		expand; \
+		cif *hier write disable; \
+		cif *array write disable; \
+		gds write $(UPRJ_ROOT)/gds/caravel.gds; \
+		quit -noprompt;" > $(UPRJ_ROOT)/mag/mag2gds_caravel.tcl
+	@mkdir -p ./signoff/build
+	#@cd $(CARAVEL_ROOT)/mag && PDKPATH=${PDK_ROOT}/$(PDK) MAGTYPE=mag magic -noc -dnull -rcfile ${PDK_ROOT}/$(PDK)/libs.tech/magic/$(PDK).magicrc $(UPRJ_ROOT)/mag/mag2gds_caravel.tcl 2>&1 | tee $(UPRJ_ROOT)/signoff/build/make_ship.out
+	@cd $(CARAVEL_ROOT)/mag && PDKPATH=${PDK_ROOT}/$(PDK) MAGTYPE=mag magic -noc -dnull -rcfile ./.magicrc $(UPRJ_ROOT)/mag/mag2gds_caravel.tcl 2>&1 | tee $(UPRJ_ROOT)/signoff/build/make_ship.out
+
+.PHONY: ship clean verify compress uncompress uncompress-caravel help generate_fill final set_user_id gpio_defaults update_caravel install_mcw update_mcw uninstall_mcw pdk-with-volare install-volare pdk clean-pdk skywater-pdk open-pdks sky130 gen-sources check-env clean-openlane
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.error.gz.00.split: openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.error.gz
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.error'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 222):
+	@if [ -n "$$(find "$<" -prune -size +$(FILE_SIZE_LIMIT_MB)M)" ]; then\
+		split $< -b $(FILE_SIZE_LIMIT_MB)M $<. -d &&\
+		rm $< &&\
+		for file in $$(ls $<.*); do mv "$$file" "$$file.split"; done &&\
+		echo -n "$< -> $$(ls $<.*.split)" | tr '\n' ' ' && echo "";\
+	fi
+
+caravel_timing_fast: def/caravel.def sdc/caravel.sdc verilog/gl/caravel.v check-mcw
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 939):
+	mkdir -p ./def/tmp
+	echo "\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(STD_CELL_LIBRARY)/lib/$(STD_CELL_LIBRARY)__ff_n40C_1v95.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/sky130_sram_macros/lib/sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(SPECIAL_VOLTAGE_LIBRARY)/lib/$(SPECIAL_VOLTAGE_LIBRARY)__ff_n40C_5v50.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(SPECIAL_VOLTAGE_LIBRARY)/lib/$(SPECIAL_VOLTAGE_LIBRARY)__ff_n40C_4v40_lv1v95.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_gpiov2_ff_ff_n40C_1v95_5v50.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_ground_hvc_wpad_ff_n40C_1v95_5v50_5v50.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_ground_lvc_wpad_ff_n40C_1v95_5v50.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_ground_lvc_wpad_ff_n40C_1v95_5v50.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_power_lvc_wpad_ff_n40C_1v95_5v50_5v50.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_xres4v2_ff_ff_n40C_1v95_5v50.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__gpiov2_pad_wrapped_ff_ff_n40C_1v95_5v50.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vccd_lvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vdda_hvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vssa_hvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vssd_lvc_clamped3_pad_ff_n40C_1v95_5v50.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vccd_lvc_clamped3_pad_ff_n40C_1v95_5v50_5v50.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vssd_lvc_clamped_pad_ff_n40C_1v95_5v50.lib;\
+		read_verilog $(MCW_ROOT)/verilog/gl/mgmt_core.v;\
+		read_verilog $(MCW_ROOT)/verilog/gl/DFFRAM.v;\
+		read_verilog $(MCW_ROOT)/verilog/gl/mgmt_core_wrapper.v;\
+		read_verilog ./verilog/gl/caravel_clocking.v;\
+		read_verilog ./verilog/gl/digital_pll.v;\
+		read_verilog ./verilog/gl/housekeeping.v;\
+		read_verilog ./verilog/gl/gpio_logic_high.v;\
+		read_verilog ./verilog/gl/gpio_control_block.v;\
+		read_verilog ./verilog/gl/gpio_defaults_block.v;\
+		read_verilog ./verilog/gl/gpio_defaults_block_0403.v;\
+		read_verilog ./verilog/gl/gpio_defaults_block_1803.v;\
+		read_verilog ./verilog/gl/mgmt_protect_hv.v;\
+		read_verilog ./verilog/gl/mprj_logic_high.v;\
+		read_verilog ./verilog/gl/mprj2_logic_high.v;\
+		read_verilog ./verilog/gl/mgmt_protect.v;\
+		read_verilog ./verilog/gl/user_id_programming.v;\
+		read_verilog ./verilog/gl/xres_buf.v;\
+		read_verilog ./verilog/gl/spare_logic_block.v;\
+		read_verilog ./verilog/gl/chip_io.v;\
+		read_verilog ./verilog/gl/caravel.v;\
+		link_design caravel;\
+		read_spef -path soc/DFFRAM_0 $(MCW_ROOT)/spef/DFFRAM.spef;\
+		read_spef -path soc/core $(MCW_ROOT)/spef/mgmt_core.spef;\
+		read_spef -path soc $(MCW_ROOT)/spef/mgmt_core_wrapper.spef;\
+		read_spef -path padframe ./spef/chip_io.spef;\
+		read_spef -path rstb_level ./spef/xres_buf.spef;\
+		read_spef -path pll ./spef/digital_pll.spef;\
+		read_spef -path housekeeping ./spef/housekeeping.spef;\
+		read_spef -path mgmt_buffers/powergood_check ./spef/mgmt_protect_hv.spef;\
+		read_spef -path mgmt_buffers/mprj_logic_high_inst ./spef/mprj_logic_high.spef;\
+		read_spef -path mgmt_buffers/mprj2_logic_high_inst ./spef/mprj2_logic_high.spef;\
+		read_spef -path mgmt_buffers ./spef/mgmt_protect.spef;\
+		read_spef -path \gpio_control_bidir_1[0] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_bidir_1[1] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_bidir_2[1] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_bidir_2[2] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1[0] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1[10] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1[1] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1[2] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1[3] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1[4] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1[5] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1[6] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1[7] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1[8] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1[9] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1a[0] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1a[1] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1a[2] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1a[3] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1a[4] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_1a[5] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[0] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[10] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[11] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[12] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[13] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[14] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[15] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[1] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[2] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[3] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[4] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[5] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[6] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[7] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[8] ./spef/gpio_control_block.spef;\
+		read_spef -path \gpio_control_in_2[9] ./spef/gpio_control_block.spef;\
+		read_spef -path gpio_defaults_block_0 ./spef/gpio_defaults_block_1803.spef;\
+		read_spef -path gpio_defaults_block_1 ./spef/gpio_defaults_block_1803.spef;\
+		read_spef -path gpio_defaults_block_2 ./spef/gpio_defaults_block_0403.spef;\
+		read_spef -path gpio_defaults_block_3 ./spef/gpio_defaults_block_0403.spef;\
+		read_spef -path gpio_defaults_block_4 ./spef/gpio_defaults_block_0403.spef;\
+		read_spef -path gpio_defaults_block_5 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_6 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_7 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_8 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_9 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_10 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_11 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_12 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_13 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_14 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_15 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_16 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_17 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_18 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_19 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_20 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_21 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_22 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_23 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_24 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_25 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_26 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_27 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_28 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_29 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_30 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_31 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_32 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_33 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_34 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_35 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_36 ./spef/gpio_defaults_block.spef;\
+		read_spef -path gpio_defaults_block_37 ./spef/gpio_defaults_block.spef;\
+		read_spef ./spef/caravel.spef;\
+		read_sdc -echo ./sdc/caravel.sdc;\
+		report_checks -path_delay min -fields {slew cap input nets fanout} -format full_clock_expanded -group_count 50;\
+		report_checks -path_delay max -fields {slew cap input nets fanout} -format full_clock_expanded -group_count 50;\
+		report_worst_slack -max ;\
+		report_worst_slack -min ;\
+		echo \" Management Area Interface \";\
+		report_checks -to soc/core_clk -unconstrained -group_count 1;\
+		echo \" User project Interface \";\
+		report_checks -to mprj/wb_clk_i -unconstrained -group_count 1;\
+		report_checks -to mprj/wb_rst_i -unconstrained -group_count 1;\
+		report_checks -to mprj/wbs_cyc_i -unconstrained -group_count 1;\
+		report_checks -to mprj/wbs_stb_i -unconstrained -group_count 1;\
+		report_checks -to mprj/wbs_we_i -unconstrained -group_count 1;\
+		report_checks -to mprj/wbs_sel_i[*] -unconstrained -group_count 4;\
+		report_checks -to mprj/wbs_adr_i[*] -unconstrained -group_count 32;\
+		report_checks -to mprj/io_in[*] -unconstrained -group_count 32;\
+		report_checks -to mprj/user_clock2 -unconstrained -group_count 32;\
+		report_checks -to mprj/user_irq[*] -unconstrained -group_count 32;\
+		report_checks -to mprj/la_data_in[*] -unconstrained -group_count 128;\
+		report_checks -to mprj/la_oenb[*] -unconstrained -group_count 128;\
+		" > ./def/tmp/caravel_timing_fast.tcl 
+	sta -exit ./def/tmp/caravel_timing_fast.tcl | tee ./signoff/caravel/caravel_timing_fast.log 
+
+generate_fill: check-env check-uid check-project uncompress
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 1094):
+	@echo "Running generate_fill in the foreground..."
+	$(MAKE) -f $(CARAVEL_ROOT)/Makefile __generate_fill
+	@echo "Generate fill completed." 2>&1 | tee -a ./signoff/build/generate_fill.out
+
+rcx-user_project_wrapper: def/user_project_wrapper.def
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'user_project_wrapper'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 514):
+	echo "Running RC Extraction on $*"
+	mkdir -p ./def/tmp 
+	# merge techlef and standard cell lef files
+	python3 $(OPENLANE_ROOT)/scripts/mergeLef.py -i $(PDK_ROOT)/$(PDK)/libs.ref/$(STD_CELL_LIBRARY)/techlef/$(STD_CELL_LIBRARY).tlef $(PDK_ROOT)/$(PDK)/libs.ref/$(STD_CELL_LIBRARY)/lef/*.lef $(PDK_ROOT)/$(PDK)/libs.ref/$(SPECIAL_VOLTAGE_LIBRARY)/techlef/$(SPECIAL_VOLTAGE_LIBRARY).tlef $(PDK_ROOT)/$(PDK)/libs.ref/$(SPECIAL_VOLTAGE_LIBRARY)/lef/*.lef $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lef/*.lef -o ./def/tmp/merged.lef
+	echo "\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(STD_CELL_LIBRARY)/lib/$(STD_CELL_LIBRARY)__tt_025C_1v80.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(SPECIAL_VOLTAGE_LIBRARY)/lib/$(SPECIAL_VOLTAGE_LIBRARY)__tt_025C_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(SPECIAL_VOLTAGE_LIBRARY)/lib/$(SPECIAL_VOLTAGE_LIBRARY)__tt_025C_3v30_lv1v80.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/sky130_sram_macros/lib/sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_gpiov2_tt_tt_025C_1v80_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_ground_hvc_wpad_tt_025C_1v80_3v30_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_ground_lvc_wpad_tt_025C_1v80_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_ground_lvc_wpad_tt_100C_1v80_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_power_lvc_wpad_tt_025C_1v80_3v30_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_xres4v2_tt_tt_025C_1v80_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__gpiov2_pad_tt_tt_025C_1v80_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vccd_lvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vdda_hvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vssa_hvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vssd_lvc_clamped3_pad_tt_025C_1v80_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vccd_lvc_clamped3_pad_tt_025C_1v80_3v30_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vssd_lvc_clamped_pad_tt_025C_1v80_3v30.lib;\
+		set std_cell_lef ./def/tmp/merged.lef;\
+		set sram_lef $(PDK_ROOT)/$(PDK)/libs.ref/sky130_sram_macros/lef/sky130_sram_2kbyte_1rw1r_32x512_8.lef;\
+		if {[catch {read_lef \$$std_cell_lef} errmsg]} {\
+    			puts stderr \$$errmsg;\
+    			exit 1;\
+		};\
+		if {[catch {read_lef \$$sram_lef} errmsg]} {\
+    			puts stderr \$$errmsg;\
+    			exit 1;\
+		};\
+		foreach lef_file [glob ./lef/*.lef] {\
+			if {[catch {read_lef \$$lef_file} errmsg]} {\
+    			puts stderr \$$errmsg;\
+    			exit 1;\
+			}\
+		};\
+		if {[catch {read_def -order_wires ./def/$*.def} errmsg]} {\
+			puts stderr \$$errmsg;\
+			exit 1;\
+		};\
+		read_sdc -echo ./sdc/$*.sdc;\
+		set_propagated_clock [all_clocks];\
+		set rc_values \"mcon 9.249146E-3,via 4.5E-3,via2 3.368786E-3,via3 0.376635E-3,via4 0.00580E-3\";\
+		set l_rc \"li1 1.499e-04 7.176e-02,met1 1.449e-04 8.929e-04,met2 1.331e-04 8.929e-04,met3 1.464e-04 1.567e-04,met4 1.297e-04 1.567e-04,met5 1.501e-04 1.781e-05\";\
+		set layers_rc [split \$$l_rc ","];\
+		foreach layer_rc \$$layers_rc {\
+			set layer_name [lindex \$$layer_rc 0];\
+			set capacitance [lindex \$$layer_rc 1];\
+			set resistance [lindex \$$layer_rc 2];\
+			set_layer_rc -layer \$$layer_name -capacitance \$$capacitance -resistance \$$resistance;\
+		};\
+		set vias_rc [split \$$rc_values ","];\
+    	foreach via_rc \$$vias_rc {\
+        		set layer_name [lindex \$$via_rc 0];\
+        		set resistance [lindex \$$via_rc 1];\
+       			set_layer_rc -via \$$layer_name -resistance \$$resistance;\
+    	};\
+		set_wire_rc -signal -layer met2;\
+		set_wire_rc -clock -layer met5;\
+		define_process_corner -ext_model_index 0 X;\
+		extract_parasitics -ext_model_file ${PDK_ROOT}/$(PDK)/libs.tech/openlane/rcx_rules.info -corner_cnt 1 -max_res 50 -coupling_threshold 0.1 -cc_model 10 -context_depth 5;\
+		write_spef ./spef/$*.spef" > ./def/tmp/rcx_$*.tcl
+	docker run -it -v $(OPENLANE_ROOT):/openlane -v $(PDK_ROOT):$(PDK_ROOT) -v $(PWD):/caravel -e PDK_ROOT=$(PDK_ROOT) -u $(shell id -u $(USER)):$(shell id -g $(USER)) $(OPENLANE_IMAGE_NAME) \
+	sh -c " cd /caravel; openroad -exit ./def/tmp/rcx_$*.tcl |& tee ./def/tmp/rcx_$*.log" 
+	echo "\
+		set std_cell_lef ./def/tmp/merged.lef;\
+		set sram_lef $(PDK_ROOT)/$(PDK)/libs.ref/sky130_sram_macros/lef/sky130_sram_2kbyte_1rw1r_32x512_8.lef;\
+		if {[catch {read_lef \$$std_cell_lef} errmsg]} {\
+    			puts stderr \$$errmsg;\
+    			exit 1;\
+		};\
+		if {[catch {read_lef \$$sram_lef} errmsg]} {\
+    			puts stderr \$$errmsg;\
+    			exit 1;\
+		};\
+		foreach lef_file [glob ./lef/*.lef] {\
+			if {[catch {read_lef \$$lef_file} errmsg]} {\
+    			puts stderr \$$errmsg;\
+    			exit 1;\
+			}\
+		};\
+		set_cmd_units -time ns -capacitance pF -current mA -voltage V -resistance kOhm -distance um;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(STD_CELL_LIBRARY)/lib/$(STD_CELL_LIBRARY)__tt_025C_1v80.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(SPECIAL_VOLTAGE_LIBRARY)/lib/$(SPECIAL_VOLTAGE_LIBRARY)__tt_025C_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(SPECIAL_VOLTAGE_LIBRARY)/lib/sky130_fd_sc_hvl__tt_025C_3v30_lv1v80.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/sky130_sram_macros/lib/sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_gpiov2_tt_tt_025C_1v80_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_ground_hvc_wpad_tt_025C_1v80_3v30_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_ground_lvc_wpad_tt_025C_1v80_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_ground_lvc_wpad_tt_100C_1v80_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_power_lvc_wpad_tt_025C_1v80_3v30_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_fd_io__top_xres4v2_tt_tt_025C_1v80_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__gpiov2_pad_tt_tt_025C_1v80_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vccd_lvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vdda_hvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vssa_hvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vssd_lvc_clamped3_pad_tt_025C_1v80_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vccd_lvc_clamped3_pad_tt_025C_1v80_3v30_3v30.lib;\
+		read_liberty $(PDK_ROOT)/$(PDK)/libs.ref/$(IO_LIBRARY)/lib/sky130_ef_io__vssd_lvc_clamped_pad_tt_025C_1v80_3v30.lib;\
+		read_verilog ./verilog/gl/$*.v;\
+		link_design $*;\
+		read_spef ./spef/$*.spef;\
+		read_sdc -echo ./sdc/$*.sdc;\
+		write_sdf ./sdf/$*.sdf -divider . -include_typ;\
+		report_checks -fields {capacitance slew input_pins nets fanout} -path_delay min_max -group_count 5;\
+		report_check_types -max_slew -max_capacitance -max_fanout -violators;\
+		report_checks -to [all_outputs] -group_count 1000;\
+		" > ./def/tmp/sta_$*.tcl 
+	docker run -it -v $(OPENLANE_ROOT):/openlane -v $(PDK_ROOT):$(PDK_ROOT) -v $(PWD):/caravel -e PDK_ROOT=$(PDK_ROOT) -u $(shell id -u $(USER)):$(shell id -g $(USER)) $(OPENLANE_IMAGE_NAME) \
+	sh -c "cd /caravel; openroad -exit ./def/tmp/sta_$*.tcl |& tee ./def/tmp/sta_$*.log" 
+
+ship: check-env uncompress uncompress-caravel
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 105):
+	@echo "Running make ship in the foreground..."
+	$(MAKE) -f $(CARAVEL_ROOT)/Makefile __ship
+	@echo "Make ship completed." 2>&1 | tee -a ./signoff/build/make_ship.out
+
+# Not a target:
+gds/user_project_wrapper.gds:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+gds/user_project_wrapper.gds.gz: gds/user_project_wrapper.gds
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'gds/user_project_wrapper.gds'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 216):
+	@if ! [ $(suffix $<) = ".$(ARCHIVE_EXT)" ]; then\
+		$(COMPRESS) $< > /dev/null &&\
+		echo "$< -> $@";\
+	fi
+
+check-mcw:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 1349):
+	@if [ ! -d "$(MCW_ROOT)" ]; then \
+		echo "MCW Root: "$(MCW_ROOT)" doesn't exists, please export the correct path before running make. "; \
+		exit 1; \
+	fi
+
+mag2lef-user_proj_example: mag/user_proj_example.mag uncompress
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'user_proj_example'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 477):
+	echo "Converting mag file $* to LEF..."
+	echo "addpath $(CARAVEL_ROOT)/mag/hexdigits;\
+		addpath ${PDKPATH}/libs.ref/sky130_ml_xx_hd/mag;\
+		addpath $(CARAVEL_ROOT)/mag/primitives;\
+		drc off;\
+		load $*;\
+		lef write $*.lef;\
+		exit;" > ./mag/mag2lef_$*.tcl
+	cd ./mag && magic -rcfile ${PDK_ROOT}/$(PDK)/libs.tech/magic/$(PDK).magicrc -noc -dnull mag2lef_$*.tcl < /dev/null
+	rm ./mag/mag2lef_$*.tcl
+	mv -f ./mag/$*.lef ./lef/
+
+truck: check-env uncompress uncompress-caravel
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 150):
+	@echo "Running make truck in the foreground..."
+	mkdir -p ./signoff
+	mkdir -p ./build
+	$(MAKE) -f $(CARAVEL_ROOT)/Makefile __truck
+	@echo "Make truck completed." 2>&1 | tee -a ./signoff/build/make_truck.out
+
+compress: gds/user_proj_example.gds.gz gds/user_project_wrapper.gds.gz gds/user_proj_example.gds.gz.00.split gds/user_project_wrapper.gds.gz.00.split caravel/def/caravan_core.def.gz.00.split caravel/def/caravel_core.def.gz.00.split caravel/gds/user_analog_project_wrapper_empty.gds.gz.00.split caravel/gds/user_project_wrapper_empty.gds.gz.00.split openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.error.gz.00.split openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.debug.gz.00.split openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.error.gz.00.split openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.debug.gz.00.split mgmt_core_wrapper/mag/mgmt_core_wrapper.mag.gz.00.split mgmt_core_wrapper/gds/mgmt_core_wrapper.gds.gz.00.split mgmt_core_wrapper/gds/RAM256.gds.gz.00.split mgmt_core_wrapper/gds/RAM128.gds.gz.00.split
+#  Phony target (prerequisite of .PHONY).
+ 
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 232):
+	@echo "Files larger than $(FILE_SIZE_LIMIT_MB) MBytes are compressed!"
+
+caravel/def/caravan_core.def: caravel/def/caravan_core.def.gz
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'caravel/def/caravan_core.def'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 238):
+	@$(UNCOMPRESS) $<
+	@echo "$< -> $@"
+
+# Not a target:
+def/user_project_wrapper.def:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=140/1024=14%, Rehash=0, Collisions=15/386=4%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 160 / storage = 4207 B / avg = 26 B
+# current buf: size = 8162 B / used = 4207 B / count = 160 / avg = 26 B
+
+# strcache performance: lookups = 511 / hit rate = 68%
+# hash-table stats:
+# Load=160/8192=2%, Rehash=0, Collisions=0/511=0%
+# Finished Make data base on Thu Oct  5 11:06:20 2023
+
+# make[1]: Leaving directory '/home/benison/isp_cteTWLCEO'
+# GNU Make 4.3
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Thu Oct  5 11:06:20 2023
+
+# Variables
+
+# environment
+GDK_BACKEND = x11
+# makefile (from 'Makefile', line 49)
+CARAVEL_NAME := caravel-lite
+# environment
+LC_ALL = C
+# environment
+GNOME_SHELL_SESSION_MODE = ubuntu
+# environment
+SSH_AGENT_LAUNCHER = gnome-keyring
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# makefile (from 'Makefile', line 27)
+PDK = sky130A
+# environment
+LC_NAME = lzh_TW
+# environment
+LC_NUMERIC = lzh_TW
+# environment
+VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
+# environment
+VSCODE_CWD = /home/benison
+# makefile (from 'Makefile', line 29)
+PDKPATH = $(PDK_ROOT)/$(PDK)
+# environment
+LC_ADDRESS = lzh_TW
+# default
+MAKE_COMMAND := make
+# makefile (from 'Makefile', line 37)
+PDK_ROOT = $(PWD)/dependencies/pdks
+# environment
+QT_ACCESSIBILITY = 1
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# makefile (from 'Makefile', line 120)
+dv-targets-gl = $(dv_patterns:%=verify-%-gl)
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/benison/isp_cteTWLCEO
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile (from 'Makefile', line 31)
+ROOTLESS = 0
+# makefile (from 'Makefile', line 43)
+SKYWATER_COMMIT = f70d8ca46961ff92719d8870a18a076370b85f6c
+# automatic
+%F = $(notdir $%)
+# makefile (from 'Makefile', line 125)
+dv_base_dependencies = simenv
+# environment
+VSCODE_CODE_CACHE_PATH = /home/benison/.config/Code/CachedData/e7e037083ff4455cf320e344325dacb480062c3c
+# environment
+LANG = C
+# environment
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.Y00BC2
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
+# makefile
+MAKEFLAGS = pqrR --warn-undefined-variables
+# makefile (from 'Makefile', line 18)
+CARAVEL_ROOT = $(PWD)/caravel
+# makefile (from 'Makefile', line 306)
+CUP_ROOT = $(shell pwd)
+# makefile
+CURDIR := /home/benison/isp_cteTWLCEO
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -pqrR --warn-undefined-variables
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# default
+.SHELLFLAGS := -c
+# makefile (from 'Makefile', line 261)
+LVS_BLOCKS = $(foreach block, $(BLOCKS), lvs-$(block))
+# environment
+WAYLAND_DISPLAY = wayland-0
+# makefile (from 'Makefile', line 183)
+make_what = setup $(blocks) $(dv-targets-rtl) $(dv-targets-gl) $(dv-targets-gl-sdf) $(clean-targets)
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile (from 'Makefile', line 24)
+CARAVEL_LITE = 1
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_PID = 4402
+# makefile (from 'Makefile', line 118)
+dv_patterns = $(shell cd verilog/dv && find * -maxdepth 0 -type d)
+# environment
+XDG_SESSION_TYPE = wayland
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+SESSION_MANAGER = local/benison-VirtualBox:@/tmp/.ICE-unix/1882,unix/benison-VirtualBox:/tmp/.ICE-unix/1882
+# automatic
+*F = $(notdir $*)
+# makefile (from 'Makefile', line 51)
+CARAVEL_TAG := mpw-9d
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","osLocale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# makefile
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := all
+# environment
+XMODIFIERS = @im=ibus
+# makefile (from 'Makefile', line 20)
+MCW_ROOT = $(PWD)/mgmt_core_wrapper
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# environment
+SHLVL = 0
+# makefile (from 'Makefile', line 50)
+CARAVEL_REPO := https://github.com/efabless/caravel-lite
+# makefile (from 'Makefile', line 21)
+SIM = RTL
+# environment
+MAKELEVEL := 0
+# environment
+IM_CONFIG_CHECK_ENV = 1
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = /home/benison/.local/bin:/home/benison/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+# default
+MAKEFILES := 
+# environment
+LC_MONETARY = lzh_TW
+# automatic
+^F = $(notdir $^)
+# environment
+LC_TIME = lzh_TW
+# makefile (from 'Makefile', line 123)
+TARGET_PATH = $(shell pwd)
+# makefile (from 'Makefile', line 45)
+OPENLANE_TAG = 2023.07.19
+# environment
+INVOCATION_ID = 2e7a146726b44027b9fcee52c0729524
+# environment
+USERNAME = benison
+# makefile (from 'Makefile', line 32)
+USER_ARGS = -u $$(id -u $$USER):$$(id -g $$USER)
+# environment
+GNOME_SETUP_DISPLAY = :1
+# environment
+LC_TELEPHONE = lzh_TW
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# automatic
+?F = $(notdir $?)
+# makefile (from 'Makefile', line 171)
+clean-targets = $(blocks:%=clean-%)
+# makefile (from 'Makefile', line 260)
+BLOCKS = $(shell cd lvs && find * -maxdepth 0 -type d)
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# automatic
++F = $(notdir $+)
+# environment
+DESKTOP_SESSION = ubuntu
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+LOGNAME = benison
+# makefile (from 'Makefile', line 113)
+blocks = $(shell cd openlane && find * -maxdepth 0 -type d)
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
+# makefile (from 'Makefile', line 38)
+DISABLE_LVS = 0
+# makefile
+.DEFAULT_GOAL := install
+# environment
+SYSTEMD_EXEC_PID = 1910
+# makefile (from 'Makefile', line 307)
+TIMING_ROOT = $(shell pwd)/dependencies/timing-scripts
+# environment
+DISPLAY = :0
+# environment
+USER = benison
+# environment
+GTK_MODULES = gail:atk-bridge
+# makefile (from 'Makefile', line 121)
+dv-targets-gl-sdf = $(dv_patterns:%=verify-%-gl-sdf)
+# default
+MAKE_VERSION := 4.3
+# 'override' directive
+.SHELLSTATUS := 0
+# makefile (from 'Makefile', line 44)
+OPEN_PDKS_COMMIT = 78b7bc32ddb4b6f14f76883c2e2dc5b5de9d1cbc
+# makefile (from 'Makefile', line 308)
+PROJECT_ROOT = $(CUP_ROOT)
+# environment
+MANAGERPID = 1733
+# environment
+LC_MEASUREMENT = lzh_TW
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 4402
+# environment
+_ = /usr/share/code/code
+ 
+make: *** [Makefile:93: all] Error 2
+
+# environment
+LC_PAPER = lzh_TW
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# makefile (from 'Makefile', line 36)
+OPENLANE_ROOT = $(PWD)/dependencies/openlane_src
+# makefile (from 'Makefile', line 46)
+MPW_TAG = mpw-9d
+# environment
+JOURNAL_STREAM = 8:24390
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/benison
+# environment
+QT_IM_MODULE = ibus
+# makefile (from 'Makefile', line 309)
+timing-scripts-repo = https://github.com/efabless/timing-scripts.git
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-1b460752-1.83-main.sock
+# makefile (from 'Makefile', line 19)
+PRECHECK_ROOT = ${HOME}/mpw_precheck
+# makefile (from 'Makefile', line 119)
+dv-targets-rtl = $(dv_patterns:%=verify-%-rtl)
+# makefile (from 'Makefile', line 124)
+verify_command = "source ~/.bashrc && cd ${TARGET_PATH}/verilog/dv/$* && export SIM=${SIM} && make"
+# environment
+IM_CONFIG_PHASE = 1
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# makefile (from 'Makefile', line 126)
+docker_run_verify = docker run $(USER_ARGS) -v ${TARGET_PATH}:${TARGET_PATH} -v ${PDK_ROOT}:${PDK_ROOT} -v ${CARAVEL_ROOT}:${CARAVEL_ROOT} -v ${MCW_ROOT}:${MCW_ROOT} -e TARGET_PATH=${TARGET_PATH} -e PDK_ROOT=${PDK_ROOT} -e CARAVEL_ROOT=${CARAVEL_ROOT} -e TOOLS=/foss/tools/riscv-gnu-toolchain-rv32i/217e7f3debe424d61374d31e33a091a630535937 -e DESIGNS=$(TARGET_PATH) -e USER_PROJECT_VERILOG=$(TARGET_PATH)/verilog -e PDK=$(PDK) -e CORE_VERILOG_PATH=$(TARGET_PATH)/mgmt_core_wrapper/verilog -e CARAVEL_VERILOG_PATH=$(TARGET_PATH)/caravel/verilog -e MCW_ROOT=$(MCW_ROOT) efabless/dv:latest sh -c $(verify_command)
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+GDMSESSION = ubuntu
+# environment
+LC_IDENTIFICATION = lzh_TW
+# variable set hash-table stats:
+# Load=140/1024=14%, Rehash=0, Collisions=15/344=4%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2051, inode 6816979): 28 files, no impossibilities.
+
+# 28 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+%:
+#  recipe to execute (from 'Makefile', line 93):
+	export CARAVEL_ROOT=$(CARAVEL_ROOT) && export MPW_TAG=$(MPW_TAG) && $(MAKE) -f $(CARAVEL_ROOT)/Makefile $@
+
+# 1 implicit rules, 0 (0.0%) terminal.
+# Files
+
+# makefile (from 'Makefile', line 159)
+verify-io_ports-rtl: SIM = RTL
+verify-io_ports-rtl: simenv
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'io_ports'
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/2=0%
+#  recipe to execute (from 'Makefile', line 161):
+	$(docker_run_verify)
+
+verify: verify-cocotb-rtl verify-io_ports-rtl verify-la_test1-rtl verify-la_test2-rtl verify-mprj_stimulus-rtl verify-wb_port-rtl
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+# makefile (from 'Makefile', line 167)
+verify-mprj_stimulus-gl-sdf: SIM = GL_SDF
+verify-mprj_stimulus-gl-sdf: simenv
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'mprj_stimulus'
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/2=0%
+#  recipe to execute (from 'Makefile', line 169):
+	$(docker_run_verify)
+
+# makefile (from 'Makefile', line 163)
+verify-la_test1-gl: SIM = GL
+verify-la_test1-gl: simenv
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'la_test1'
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/2=0%
+#  recipe to execute (from 'Makefile', line 165):
+	$(docker_run_verify)
+
+clean-asic:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'asic'
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 174):
+	rm -f ./verilog/gl/$*.v
+	rm -f ./spef/$*.spef
+	rm -f ./sdc/$*.sdc
+	rm -f ./sdf/$*.sdf
+	rm -f ./gds/$*.gds
+	rm -f ./mag/$*.mag
+	rm -f ./lef/$*.lef
+	rm -f ./maglef/*.maglef
+
+setup: check_dependencies install check-env install_mcw openlane pdk-with-volare setup-timing-scripts setup-cocotb
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+openlane:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 191):
+	@if [ "$$(realpath $${OPENLANE_ROOT})" = "$$(realpath $$(pwd)/openlane)" ]; then\
+		echo "OPENLANE_ROOT is set to '$$(pwd)/openlane' which contains openlane config files"; \
+		echo "Please set it to a different directory"; \
+		exit 1; \
+	fi
+	cd openlane && $(MAKE) openlane
+
+check-pdk:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 289):
+	@if [ ! -d "$(PDK_ROOT)" ]; then \
+		echo "PDK Root: "$(PDK_ROOT)" doesn't exists, please export the correct path before running make. "; \
+		exit 1; \
+	fi
+
+clean-user_proj_example:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'user_proj_example'
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 174):
+	rm -f ./verilog/gl/$*.v
+	rm -f ./spef/$*.spef
+	rm -f ./sdc/$*.sdc
+	rm -f ./sdf/$*.sdf
+	rm -f ./gds/$*.gds
+	rm -f ./mag/$*.mag
+	rm -f ./lef/$*.lef
+	rm -f ./maglef/*.maglef
+
+# makefile (from 'Makefile', line 163)
+verify-io_ports-gl: SIM = GL
+verify-io_ports-gl: simenv
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'io_ports'
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/2=0%
+#  recipe to execute (from 'Makefile', line 165):
+	$(docker_run_verify)
+
+# makefile (from 'Makefile', line 159)
+verify-mprj_stimulus-rtl: SIM = RTL
+verify-mprj_stimulus-rtl: simenv
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'mprj_stimulus'
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/2=0%
+#  recipe to execute (from 'Makefile', line 161):
+	$(docker_run_verify)
+
+cocotb-verify-gl:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 333):
+	@(cd $(PROJECT_ROOT)/verilog/dv/cocotb && caravel_cocotb -tl counter_tests/counter_tests_gl.yaml -v -verbosity quiet)
+
+Makefile:
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'Makefile'
+#  Last modified 2023-09-13 11:53:52.750616742
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 93):
+	export CARAVEL_ROOT=$(CARAVEL_ROOT) && export MPW_TAG=$(MPW_TAG) && $(MAKE) -f $(CARAVEL_ROOT)/Makefile $@
+
+user_project_wrapper:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'user_project_wrapper'
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 116):
+	$(MAKE) -C openlane $*
+
+# makefile (from 'Makefile', line 167)
+verify-la_test2-gl-sdf: SIM = GL_SDF
+verify-la_test2-gl-sdf: simenv
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'la_test2'
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/2=0%
+#  recipe to execute (from 'Makefile', line 169):
+	$(docker_run_verify)
+
+# makefile (from 'Makefile', line 163)
+verify-mprj_stimulus-gl: SIM = GL
+verify-mprj_stimulus-gl: simenv
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'mprj_stimulus'
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/2=0%
+#  recipe to execute (from 'Makefile', line 165):
+	$(docker_run_verify)
+
+clean-user_project_wrapper:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'user_project_wrapper'
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 174):
+	rm -f ./verilog/gl/$*.v
+	rm -f ./spef/$*.spef
+	rm -f ./sdc/$*.sdc
+	rm -f ./sdf/$*.sdf
+	rm -f ./gds/$*.gds
+	rm -f ./mag/$*.mag
+	rm -f ./lef/$*.lef
+	rm -f ./maglef/*.maglef
+
+setup-cocotb:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 322):
+	@pip install caravel-cocotb==1.0.0 
+	@(python3 $(PROJECT_ROOT)/verilog/dv/setup-cocotb.py $(CARAVEL_ROOT) $(MCW_ROOT) $(PDK_ROOT) $(PDK) $(PROJECT_ROOT))
+	@docker pull efabless/dv:latest
+	@docker pull efabless/dv:cocotb
+
+# makefile (from 'Makefile', line 167)
+verify-io_ports-gl-sdf: SIM = GL_SDF
+verify-io_ports-gl-sdf: simenv
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'io_ports'
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+ 
+# Load=1/32=3%, Rehash=0, Collisions=0/2=0%
+ 
+#  recipe to execute (from 'Makefile', line 169):
+	$(docker_run_verify)
+
+# makefile (from 'Makefile', line 167)
+verify-la_test1-gl-sdf: SIM = GL_SDF
+verify-la_test1-gl-sdf: simenv
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'la_test1'
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/2=0%
+#  recipe to execute (from 'Makefile', line 169):
+	$(docker_run_verify)
+
+verify-all-gl: verify-cocotb-gl verify-io_ports-gl verify-la_test1-gl verify-la_test2-gl verify-mprj_stimulus-gl verify-wb_port-gl
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+uninstall:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 221):
+	rm -rf $(CARAVEL_ROOT)
+
+caravel-sta: env/spef-mapping.tcl
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 390):
+	@$(MAKE) -C $(TIMING_ROOT) -f $(TIMING_ROOT)/timing.mk caravel-timing-typ -j3
+	@$(MAKE) -C $(TIMING_ROOT) -f $(TIMING_ROOT)/timing.mk caravel-timing-fast -j3
+	@$(MAKE) -C $(TIMING_ROOT) -f $(TIMING_ROOT)/timing.mk caravel-timing-slow -j3
+	@echo =============================================Summary=============================================
+	@find $(PROJECT_ROOT)/signoff/caravel/openlane-signoff/timing/*/ -name "summary.log" | head -n1 \
+		| xargs head -n5 | tail -n1
+	@find $(PROJECT_ROOT)/signoff/caravel/openlane-signoff/timing/*/ -name "summary.log" \
+		| xargs -I {} bash -c "head -n7 {} | tail -n1"
+	@echo =================================================================================================
+	@echo "You can find results for all corners in $(CUP_ROOT)/signoff/caravel/openlane-signoff/timing/"
+	@echo "Check summary.log of a specific corner to point to reports with reg2reg violations" 
+	@echo "Cap and slew violations are inside summary.log file itself"
+
+verify-all-gl-sdf: verify-cocotb-gl-sdf verify-io_ports-gl-sdf verify-la_test1-gl-sdf verify-la_test2-gl-sdf verify-mprj_stimulus-gl-sdf verify-wb_port-gl-sdf
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 273):
+	cd ./verilog/dv/ && \
+		$(MAKE) -j$(THREADS) clean
+
+# makefile (from 'Makefile', line 167)
+verify-cocotb-gl-sdf: SIM = GL_SDF
+verify-cocotb-gl-sdf: simenv
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'cocotb'
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/2=0%
+#  recipe to execute (from 'Makefile', line 169):
+	$(docker_run_verify)
+
+verilog/gl/user_project_wrapper.v:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 336):
+	$(error you don't have $@)
+
+# Not a target:
+lvs/user_project_wrapper/lvs_config.json:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+check-env:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+precheck:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 228):
+	@git clone --depth=1 --branch $(MPW_TAG) https://github.com/efabless/mpw_precheck.git $(PRECHECK_ROOT)
+	@docker pull efabless/mpw_precheck:latest
+
+what:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 186):
+	# $(make_what)
+
+# makefile (from 'Makefile', line 159)
+verify-cocotb-rtl: SIM = RTL
+verify-cocotb-rtl: simenv
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'cocotb'
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/2=0%
+#  recipe to execute (from 'Makefile', line 161):
+	$(docker_run_verify)
+
+env/spef-mapping.tcl:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 339):
+	@echo "run the following:"
+	@echo "make extract-parasitics"
+	@echo "make create-spef-mapping"
+	exit 1
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+setup-timing-scripts: /home/benison/isp_cteTWLCEO/dependencies/timing-scripts
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 317):
+	@( cd $(TIMING_ROOT) && git pull )
+	@#( cd $(TIMING_ROOT) && git fetch && git checkout $(MPW_TAG); )
+
+# 'override' directive
+all: .SHELLSTATUS := 0
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'all'
+#  Modification time never checked.
+#  File has been updated.
+#  Failed to be updated.
+# automatic
+# @ := all
+# automatic
+# * := all
+# automatic
+# < := 
+# automatic
+# + := 
+# automatic
+# % := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=9/32=28%, Rehash=0, Collisions=7/39=18%
+#  recipe to execute (from 'Makefile', line 93):
+	export CARAVEL_ROOT=$(CARAVEL_ROOT) && export MPW_TAG=$(MPW_TAG) && $(MAKE) -f $(CARAVEL_ROOT)/Makefile $@
+
+help:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 296):
+	cd $(CARAVEL_ROOT) && $(MAKE) help
+	@$(MAKE) -pRrq -f $(lastword $(MAKEFILE_LIST)) : 2>/dev/null | awk -v RS= -F: '/^# File/,/^# Finished Make data base/ {if ($$1 !~ "^[#.]") {print $$1}}' | sort | egrep -v -e '^[^[:alnum:]]' -e '^$@$$'
+
+simlink: check-caravel
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 204):
+	$(eval MAKEFILE_PATH := $(shell realpath --relative-to=openlane $(CARAVEL_ROOT)/openlane/Makefile))
+	$(eval PIN_CFG_PATH  := $(shell realpath --relative-to=openlane/user_project_wrapper $(CARAVEL_ROOT)/openlane/user_project_wrapper_empty/pin_order.cfg))
+	mkdir -p openlane
+	mkdir -p openlane/user_project_wrapper
+	cd openlane &&\
+	ln -sf $(MAKEFILE_PATH) Makefile
+	cd openlane/user_project_wrapper &&\
+	ln -sf $(PIN_CFG_PATH) pin_order.cfg
+
+check_dependencies:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 301):
+	@if [ ! -d "$(PWD)/dependencies" ]; then \
+		mkdir $(PWD)/dependencies; \
+	fi
+
+update_caravel: check-caravel
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 216):
+	cd $(CARAVEL_ROOT)/ && git checkout $(CARAVEL_TAG) && git pull
+
+lvs-user_project_wrapper: lvs/user_project_wrapper/lvs_config.json check-pdk check-precheck
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'user_project_wrapper'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 263):
+	@$(eval INPUT_DIRECTORY := $(shell pwd))
+	@cd $(PRECHECK_ROOT) && \
+	docker run -v $(PRECHECK_ROOT):$(PRECHECK_ROOT) \
+	-v $(INPUT_DIRECTORY):$(INPUT_DIRECTORY) \
+	-v $(PDK_ROOT):$(PDK_ROOT) \
+	-u $(shell id -u $(USER)):$(shell id -g $(USER)) \
+	efabless/mpw_precheck:latest bash -c "export PYTHONPATH=$(PRECHECK_ROOT) ; cd $(PRECHECK_ROOT) ; python3 checks/lvs_check/lvs.py --pdk_path $(PDK_ROOT)/$(PDK) --design_directory $(INPUT_DIRECTORY) --output_directory $(INPUT_DIRECTORY)/lvs --design_name $* --config_file $(INPUT_DIRECTORY)/lvs/$*/lvs_config.json"
+
+harden: asic user_proj_example user_project_wrapper
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+check-precheck:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 283):
+	@if [ ! -d "$(PRECHECK_ROOT)" ]; then \
+		echo "Pre-check Root: "$(PRECHECK_ROOT)" doesn't exists, please export the correct path before running make. "; \
+		exit 1; \
+	fi
+
+create-spef-mapping: verilog/gl/user_project_wrapper.v
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 346):
+	docker run \
+		--rm \
+		$(USER_ARGS) \
+		-v $(PDK_ROOT):$(PDK_ROOT) \
+		-v $(CUP_ROOT):$(CUP_ROOT) \
+		-v $(CARAVEL_ROOT):$(CARAVEL_ROOT) \
+		-v $(MCW_ROOT):$(MCW_ROOT) \
+		-v $(TIMING_ROOT):$(TIMING_ROOT) \
+		-w $(shell pwd) \
+		efabless/timing-scripts:latest \
+		python3 $(TIMING_ROOT)/scripts/generate_spef_mapping.py \
+			-i ./verilog/gl/user_project_wrapper.v \
+			-o ./env/spef-mapping.tcl \
+			--pdk-path $(PDK_ROOT)/$(PDK) \
+			--macro-parent chip_core/mprj \
+			--project-root "$(CUP_ROOT)"
+
+# makefile (from 'Makefile', line 159)
+verify-la_test1-rtl: SIM = RTL
+verify-la_test1-rtl: simenv
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'la_test1'
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/2=0%
+#  recipe to execute (from 'Makefile', line 161):
+	$(docker_run_verify)
+
+verify-all-rtl: verify-cocotb-rtl verify-io_ports-rtl verify-la_test1-rtl verify-la_test2-rtl verify-mprj_stimulus-rtl verify-wb_port-rtl
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+cocotb-verify-rtl:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+ 
+#  recipe to execute (from 'Makefile', line 329):
+	@(cd $(PROJECT_ROOT)/verilog/dv/cocotb && caravel_cocotb -tl counter_tests/counter_tests.yaml -v )
+	
+
+user_proj_example:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'user_proj_example'
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 116):
+	$(MAKE) -C openlane $*
+
+# makefile (from 'Makefile', line 163)
+verify-la_test2-gl: SIM = GL
+verify-la_test2-gl: simenv
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'la_test2'
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/2=0%
+#  recipe to execute (from 'Makefile', line 165):
+	$(docker_run_verify)
+
+install:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 97):
+	if [ -d "$(CARAVEL_ROOT)" ]; then\
+		echo "Deleting exisiting $(CARAVEL_ROOT)" && \
+		rm -rf $(CARAVEL_ROOT) && sleep 2;\
+	fi
+	echo "Installing $(CARAVEL_NAME).."
+	git clone -b $(CARAVEL_TAG) $(CARAVEL_REPO) $(CARAVEL_ROOT) --depth=1
+
+asic:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'asic'
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 116):
+	$(MAKE) -C openlane $*
+
+# Not a target:
+install_mcw:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# makefile (from 'Makefile', line 163)
+verify-cocotb-gl: SIM = GL
+verify-cocotb-gl: simenv
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'cocotb'
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/2=0%
+#  recipe to execute (from 'Makefile', line 165):
+	$(docker_run_verify)
+
+# Not a target:
+pdk-with-volare:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# makefile (from 'Makefile', line 159)
+verify-wb_port-rtl: SIM = RTL
+verify-wb_port-rtl: simenv
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'wb_port'
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/2=0%
+#  recipe to execute (from 'Makefile', line 161):
+	$(docker_run_verify)
+
+check-caravel:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 277):
+	@if [ ! -d "$(CARAVEL_ROOT)" ]; then \
+		echo "Caravel Root: "$(CARAVEL_ROOT)" doesn't exists, please export the correct path before running make. "; \
+		exit 1; \
+	fi
+
+# makefile (from 'Makefile', line 167)
+verify-wb_port-gl-sdf: SIM = GL_SDF
+verify-wb_port-gl-sdf: simenv
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'wb_port'
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/2=0%
+#  recipe to execute (from 'Makefile', line 169):
+	$(docker_run_verify)
+
+# makefile (from 'Makefile', line 159)
+verify-la_test2-rtl: SIM = RTL
+verify-la_test2-rtl: simenv
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'la_test2'
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/2=0%
+#  recipe to execute (from 'Makefile', line 161):
+	$(docker_run_verify)
+
+extract-parasitics: verilog/gl/user_project_wrapper.v
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 366):
+	docker run \
+		--rm \
+		$(USER_ARGS) \
+		-v $(PDK_ROOT):$(PDK_ROOT) \
+		-v $(CUP_ROOT):$(CUP_ROOT) \
+		-v $(CARAVEL_ROOT):$(CARAVEL_ROOT) \
+		-v $(MCW_ROOT):$(MCW_ROOT) \
+		-v $(TIMING_ROOT):$(TIMING_ROOT) \
+		-w $(shell pwd) \
+		efabless/timing-scripts:latest \
+		python3 $(TIMING_ROOT)/scripts/get_macros.py \
+			-i ./verilog/gl/user_project_wrapper.v \
+			-o ./tmp-macros-list \
+			--project-root "$(CUP_ROOT)" \
+			--pdk-path $(PDK_ROOT)/$(PDK)
+	@cat ./tmp-macros-list | cut -d " " -f2 \
+		| xargs -I % bash -c "$(MAKE) -C $(TIMING_ROOT) \
+			-f $(TIMING_ROOT)/timing.mk rcx-% || echo 'Cannot extract %. Probably no def for this macro'"
+	@$(MAKE) -C $(TIMING_ROOT) -f $(TIMING_ROOT)/timing.mk rcx-user_project_wrapper
+	@cat ./tmp-macros-list
+	@rm ./tmp-macros-list
+	
+
+.PHONY: check-caravel install simenv setup asic user_proj_example user_project_wrapper harden verify verify-all-rtl verify-all-gl verify-all-gl-sdf clean-asic clean-user_proj_example clean-user_project_wrapper what openlane simlink update_caravel uninstall precheck run-precheck clean help check_dependencies setup-timing-scripts setup-cocotb cocotb-verify-rtl cocotb-verify-gl create-spef-mapping extract-parasitics caravel-sta
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: '.PHONY'
+#  Modification time never checked.
+#  File has not been updated.
+
+simenv:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 107):
+	docker pull efabless/dv:latest
+
+# makefile (from 'Makefile', line 163)
+verify-wb_port-gl: SIM = GL
+verify-wb_port-gl: simenv
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'wb_port'
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/2=0%
+#  recipe to execute (from 'Makefile', line 165):
+	$(docker_run_verify)
+
+/home/benison/isp_cteTWLCEO/dependencies/timing-scripts:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 312):
+	@mkdir -p $(CUP_ROOT)/dependencies
+	@git clone $(timing-scripts-repo) $(TIMING_ROOT)
+
+run-precheck: check-pdk check-precheck
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 233):
+	@if [ "$$DISABLE_LVS" = "1" ]; then\
+		$(eval INPUT_DIRECTORY := $(shell pwd)) \
+		cd $(PRECHECK_ROOT) && \
+		docker run -it -v $(PRECHECK_ROOT):$(PRECHECK_ROOT) \
+		-v $(INPUT_DIRECTORY):$(INPUT_DIRECTORY) \
+		-v $(PDK_ROOT):$(PDK_ROOT) \
+		-e INPUT_DIRECTORY=$(INPUT_DIRECTORY) \
+		-e PDK_PATH=$(PDK_ROOT)/$(PDK) \
+		-e PDK_ROOT=$(PDK_ROOT) \
+		-e PDKPATH=$(PDKPATH) \
+		-u $(shell id -u $(USER)):$(shell id -g $(USER)) \
+		efabless/mpw_precheck:latest bash -c "cd $(PRECHECK_ROOT) ; python3 mpw_precheck.py --input_directory $(INPUT_DIRECTORY) --pdk_path $(PDK_ROOT)/$(PDK) license makefile default documentation consistency gpio_defines xor magic_drc klayout_feol klayout_beol klayout_offgrid klayout_met_min_ca_density klayout_pin_label_purposes_overlapping_drawing klayout_zeroarea"; \
+	else \
+		$(eval INPUT_DIRECTORY := $(shell pwd)) \
+		cd $(PRECHECK_ROOT) && \
+		docker run -it -v $(PRECHECK_ROOT):$(PRECHECK_ROOT) \
+		-v $(INPUT_DIRECTORY):$(INPUT_DIRECTORY) \
+		-v $(PDK_ROOT):$(PDK_ROOT) \
+		-e INPUT_DIRECTORY=$(INPUT_DIRECTORY) \
+		-e PDK_PATH=$(PDK_ROOT)/$(PDK) \
+		-e PDK_ROOT=$(PDK_ROOT) \
+		-e PDKPATH=$(PDKPATH) \
+		-u $(shell id -u $(USER)):$(shell id -g $(USER)) \
+		efabless/mpw_precheck:latest bash -c "cd $(PRECHECK_ROOT) ; python3 mpw_precheck.py --input_directory $(INPUT_DIRECTORY) --pdk_path $(PDK_ROOT)/$(PDK)"; \
+	fi
+
+# files hash-table stats:
+# Load=65/1024=6%, Rehash=0, Collisions=0/271=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 106 / storage = 1413 B / avg = 13 B
+# current buf: size = 8162 B / used = 1413 B / count = 106 / avg = 13 B
+
+# strcache performance: lookups = 341 / hit rate = 68%
+# hash-table stats:
+# Load=106/8192=1%, Rehash=0, Collisions=6/341=2%
+# Finished Make data base on Thu Oct  5 11:06:20 2023
+
+ 

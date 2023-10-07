@@ -61,9 +61,20 @@ module user_project_wrapper #(
     input  [127:0] la_oenb,
 
     // IOs
-    input  [`MPRJ_IO_PADS-1:0] io_in,
-    output [`MPRJ_IO_PADS-1:0] io_out,
-    output [`MPRJ_IO_PADS-1:0] io_oeb,
+       // Internal UART0,SPDX
+    input  [`MPRJ_IO_PADS-13:1] io_in,    
+    // sensor CIS_data input (d9-d0)
+    input  [`MPRJ_IO_PADS-1:28] io_in, 
+    // analog_io_in for MIPI_clk_N,MIPI_clk_P,MIPI_D0_N,MIPI_D0_P,MIPI_D1_N,MIPI_D1_P
+    inout  [`MPRJ_IO_PADS_1-4:`MPRJ_IO_PADS_1-11] analog_io,
+    // analog_io_out for DAC_cabin,DAC_outN 
+    inout [`MPRJ_IO_PADS_1-2:`MPRJ_IO_PADS_1-3] analog_io,
+       // analog_io_out for AD0, AD1 
+    inout [`MPRJ_IO_PADS_1:`MPRJ_IO_PADS_1-1] analog_io, 
+    //(CIS:PICLK,HSYNC,VSYNC,XCLK,RST)  
+    input  [`MPRJ_IO_PADS_2+5:MPRJ_IO_PADS_2+1] io_in, 
+    output [`MPRJ_IO_PADS:MPRJ_IO_PADS-1] io_out
+   output [`MPRJ_IO_PADS-1:0] io_oeb,
 
     // Analog (direct connection to GPIO pad---use with caution)
     // Note that analog I/O is not available on the 7 lowest-numbered
@@ -109,20 +120,22 @@ user_proj_example mprj (
     .la_oenb (la_oenb),
 
     // IO Pads (for ISP Project io)
-        //(MIPI_clk_N,MIPI_clk_P),(MIPI_D1_N,MIPI_D1_P),(MIPI_D0_N,MIPI_D0_P)
-        //(DAC_outN,DAC_cabin),(CIS:PICLK,HSYNC,VSYNC,XCLK,RST)  
-    .io_in ({io_in[16:15],io_in[14:13],io_in[12:11],io_in[10:9],io_in[8:4]}),
         //(CIS_data: D9 - D0)  
-    .io_in ({io_in[26:17]}),
-        //AD1 convert analog input , AD0 conver analog input)
-    .io_in ({io_in[28:28],io_in[27:27]}),
-        //(UART1 TX,RX),(UART0 TX,RX),(SCL,SDA,SLK) 
-    .io_in ({io_in[35:34],io_in[33:32],io_in[31:29]}),
+    .io_in ({io_in[37:27]}),
+        //(MIPI_clk_N,MIPI_clk_P),(MIPI_D1_N,MIPI_D1_P),(MIPI_D0_N,MIPI_D0_P),
+    .analog_io_in ({analog_io_in[15:14],analog_io_in[13:12],analog_io_in[11:10]}),
+       //(DAC_outN,DAC_cabin),
+    .analog_io_in ({analog_io_in[17:16]}),
+        //AD1 convert analog input , AD0 conver analog input),
+    .analog_io_in ({analog_io_in[19:19],analog_io_in[18:18]}),
+     //(CIS:PICLK,HSYNC,VSYNC,XCLK,RST)  
+    .io_in ({io_in[24:20]}),
+        //(UART0 TX,RX),(SDO,SDI,CSB,SCK) 
+    .io_in ({io_in[6:5],io_in[4:4],io_in[3:3],io_in[2:2],io_in[1:1]}),
         //(PWM_1),(PWM_0) 
     .io_out({io_out[37:37],io_out[36:36]}),
     
     .io_oeb({io_oeb[37:30],io_oeb[7:0]}),
-    // .analog_io(analog_io)
 
     // IRQ
       // To manage the arbitration for AMI bus among slave axi element.

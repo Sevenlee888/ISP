@@ -1,3 +1,17 @@
-make.exe --dry-run --always-make --keep-going --print-directory
-'make.exe' ���O�����Υ~���R�O�B�i���檺�{���Χ妸�ɡC
-
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/benison/isp_cteTWLCEO'
+ 
+export CARAVEL_ROOT=/home/benison/isp_cteTWLCEO/caravel && export MPW_TAG=mpw-9d && make -f /home/benison/isp_cteTWLCEO/caravel/Makefile Makefile
+ 
+make[1]: Entering directory '/home/benison/isp_cteTWLCEO'
+ 
+make[1]: Nothing to be done for 'Makefile'.
+make[1]: Leaving directory '/home/benison/isp_cteTWLCEO'
+if [ -d "/home/benison/isp_cteTWLCEO/caravel" ]; then\
+	echo "Deleting exisiting /home/benison/isp_cteTWLCEO/caravel" && \
+	rm -rf /home/benison/isp_cteTWLCEO/caravel && sleep 2;\
+fi
+echo "Installing caravel-lite.."
+git clone -b mpw-9d https://github.com/efabless/caravel-lite /home/benison/isp_cteTWLCEO/caravel --depth=1
+make: Leaving directory '/home/benison/isp_cteTWLCEO'
+ 
