@@ -100,28 +100,56 @@ module user_proj_example #(
     assign clk = (~la_oenb[64]) ? la_data_in[64]: wb_clk_i;
     assign rst = (~la_oenb[65]) ? la_data_in[65]: wb_rst_i;
 
-    mipi_rx_raw10_select #(
-        .BITS(BITS)
-    ) mipi_rx_raw10_select(
-        .wb_clk_i(wb_clk_i),
-        .reset(rst),
-        .valid(wbs_stb_i),
-        .wstrb(wstrb),
-        .data_i(data_i)
-        .wdata(wbs_dat_i[BITS-1:0]),
-        .la_write(la_write),
-        .la_input(la_data_in[63:64-BITS]),
-        .ready(ready)
-        .rdata(rdata),
-        .output_valid_o(output_valid_o)
-        .output_o(output_o)
-    );
+    // io_in ({io_in[37:27]}),
+        //(MIPI_clk_N,MIPI_clk_P),(MIPI_D1_N,MIPI_D1_P),(MIPI_D0_N,MIPI_D0_P),
 
+// Module "mipi_rx_raw10_select" replace by modle "mipi_csi_16_nx"
+    mipi_csi_16_nx #
+    (   .reset_in(rst),
+		.mipi_clk_p_in(io_in[36:36]),
+		.mipi_clk_n_in(io_in[37:37]),
+		.mipi_data_p_in(io_in[32:32]),
+		.mipi_data_n_in(io_in[33:33]),
+        .mipi_clk_p_in1(io_in[36:36]),
+		.mipi_clk_n_in1(io_in[37:37]),
+		.mipi_data_p_in1(io_in[34:34]),
+		.mipi_data_n_in1(io_in[35:35]),
+		.dummy_out(rdata),
+
+		.pclk_o(pclk_o),  //data output on pos edge , should be latching into receiver on negedge
+		.data_o(data_o),
+		.fsync_o(fsync_o), //active high 
+		.lsync_o(lsync_o), //active high
+						
+	//these pins may or many not be needed depeding on hardware config
+		.cam_ctrl_in(cam_ctrl_in), //control camera control input from host
+		.cam_pwr_en_o(cam_pwr_en_o), //enable camera power 
+		.cam_reset_o(cam_reset_o),  //camera reset to camera
+		.cam_xmaster_o(cam_xmaster_o) //camera master or slave 
+	);
 endmodule
 
+//    mipi_rx_raw10_select #(
+//        .BITS(BITS)
+//    ) mipi_rx_raw10_select(
+//       .wb_clk_i(wb_clk_i),
+//        .reset(rst),
+//        .valid(wbs_stb_i),
+//        .wstrb(wstrb),
+//        .data_i(data_i)
+//        .wdata(wbs_dat_i[BITS-1:0]),
+//        .la_write(la_write),
+//        .la_input(la_data_in[63:64-BITS]),
+//        .ready(ready)
+//        .rdata(rdata),
+//        .output_valid_o(output_valid_o)
+//        .output_o(output_o)
+//    );
+
+//endmodule
+// Module replace by modle "csi_dphy"
 module mipi_rx_raw10_select #(
-    parameter BITS = 16
-)(          
+   )(          
     .wb_clk_i(wb_clk_i),
     .reset(reset),
     .wbs_stb_i(wbs_stb_i),
@@ -133,7 +161,8 @@ module mipi_rx_raw10_select #(
     .ready(ready),
     .rdata(rdata),
     .output_valid_o(output_valid_o),
-    .output_o(output_o);   
+    .output_o(output_o)
+);   
 
 localparam [2:0]BYTES_PERPACK = 3'h5; // RAW 10 is packed <Sample0[9:2]> <Sample1[9:2]> <Sample2[9:2]> <Sample3[9:2]> <Sample0[1:0],Sample1[1:0],Sample2[1:0],Sample3[1:0]>
 input clk_i;

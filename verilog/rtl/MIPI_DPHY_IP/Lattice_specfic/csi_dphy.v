@@ -64,7 +64,8 @@ module csi_dphy (sync_clk_i,
     csi_dphy_ipgen_lscc_mipi_dphy #(.INT_TYPE("RX"),
             .FAMILY("LIFCL"),
             .INTF("CSI2_APP"),
-            .DPHY_IP("HARD_IP"),
+        //    .DPHY_IP("HARD_IP"), change to "soft IP"
+            .DPHY_IP("LATTICE"),
             .CIL_BYPASS("CIL_BYPASSED"),
             .PLL_MODE("EXTERNAL"),
             .CLK_MODE("DISABLED"),
@@ -648,7 +649,9 @@ endmodule
 // Mod. Date             : 06/05/18
 // Changes Made          : Initial version
 // =============================================================================
-module csi_dphy_ipgen_lscc_mipi_wrapper_rx #(parameter NUM_LANE = 4, 
+module csi_dphy_ipgen_lscc_mipi_wrapper_rx #
+  // change from 4 lane to 2 lane, 2023-10-10
+(       parameter NUM_LANE = 2, // change from 4 lane to 2 lane
         parameter GEAR = 8, 
         parameter INTF = "CSI2_APP", 
         parameter HSEL = "DISABLED", 
@@ -821,7 +824,7 @@ module csi_dphy_ipgen_lscc_mipi_wrapper_rx #(parameter NUM_LANE = 4,
                 begin : HARD_IP
                     if ((CIL_BYPASS == "CIL_BYPASSED")) 
                         begin : NO_CIL
-                            DPHY #(.GSR("ENABLED"),
+                            DPHY #( .GSR("ENABLED"),
                                     .AUTO_PD_EN("POWERED_UP"),
                                     .CFG_NUM_LANES(((NUM_LANE == 4) ? "FOUR_LANES" : ((NUM_LANE == 3) ? "THREE_LANES" : ((NUM_LANE == 2) ? "TWO_LANES" : "ONE_LANE")))),
                                     .CM("0b00000000"),
@@ -1589,7 +1592,7 @@ endmodule
 //                         and control logic to tx global operation.
 // Dependencies          : 1.
 //                       : 2.
-// Description           :
+// Description           : isp_cteTWLCEO / OCT-09-2023 (SOFT IP)
 // =============================================================================
 //                        REVISION HISTORY
 // Version               : 1.0
@@ -1602,7 +1605,9 @@ endmodule
 // Mod. Date             : 19/04/15
 // Changes Made          : Adding Soft logic and Changing coding style.
 // =============================================================================
-module csi_dphy_ipgen_lscc_mipi_wrapper_tx #(parameter NUM_LANE = 1, 
+module csi_dphy_ipgen_lscc_mipi_wrapper_tx #
+// change from 1 lane to 2 lane, 2023-10-10
+(       parameter NUM_LANE = 2, 
         parameter GEAR = 8, 
         parameter [((8 * 8) - 1):0] INTF = "CSI2", 
         parameter [((7 * 8) - 1):0] DPHY_IP = "LATTICE", 
@@ -2839,7 +2844,7 @@ endmodule
 // Project               : CSI2_DSI_DPHY_TX
 // File                  : lscc_mipi_dphy_soft_tx.v
 // Title                 :
-// Dependencies          : 1.
+// Dependencies          : 1.isp_cteTWLCEO
 //                       : 2.
 // Description           : Includes PLL, ECLKDIV, ECLKSYNC, lscc_gddr_sync,
 //                       : one MIPI for clock generation, one - four MIPI's for
@@ -2858,8 +2863,10 @@ endmodule
 // Mod. Date             : 9/06/19
 // Changes Made          : Ported to Radiant 2.265.
 // =============================================================================
-module csi_dphy_ipgen_lscc_mipi_dphy_soft_tx #(parameter GEAR = 2, 
-        parameter NUM_LANE = 1, 
+module csi_dphy_ipgen_lscc_mipi_dphy_soft_tx #
+(       parameter GEAR = 2, 
+// change from 1 lane to 2 lane, 2023-10-10
+        parameter NUM_LANE = 2, 
         parameter PLL_MODE = "INTERNAL", 
         parameter MODE = "FREQUENCY", 
         parameter VOLTAGE = 0, 
@@ -3270,7 +3277,7 @@ endmodule
 // Project               : MIPI_DPHY
 // File                  : lscc_mipi_dphy_soft_rx.v
 // Title                 :
-// Dependencies          : 1.
+// Dependencies          : 1.isp_cteTWLCEO
 //                       : 2.
 // Description           :
 // =============================================================================
@@ -3290,7 +3297,9 @@ endmodule
 // Mod. Date             : 19/09/19
 // Changes Made          : Ported to Radiant 2.38
 // =============================================================================
-module csi_dphy_ipgen_lscc_mipi_dphy_soft_rx #(parameter integer NUM_LANE = 1, 
+module csi_dphy_ipgen_lscc_mipi_dphy_soft_rx #
+// change from 1 lane to 2 lane, 2023-10-10
+(       parameter integer NUM_LANE = 2, 
         parameter integer GEAR = 8) (
     // -----------------------------------------------------------------------------
     // Module Parameters
@@ -3462,7 +3471,7 @@ endmodule
 // Project               :
 // File                  : lscc_gddr_sync.v
 // Title                 :
-// Dependencies          : 1.
+// Dependencies          : 1.isp_cteTWLCEO
 //                       : 2.
 // Description           :rst_i       => Synchronous reset
 //                       :sync_clk_i  => oscillator clk or other constant
@@ -3865,14 +3874,17 @@ endmodule
 
 
 `timescale 1ns/1ns
-module csi_dphy_ipgen_lscc_mipi_dphy #(parameter FAMILY = "common", 
+module csi_dphy_ipgen_lscc_mipi_dphy #
+(       parameter FAMILY = "common", 
         parameter INT_TYPE = "TX", 
         parameter INTF = "CSI2_APP", 
-        parameter DPHY_IP = "HARD_IP", 
+// change from "HARD_IP" to  " LATTICE ", 2023-10-10    
+        parameter DPHY_IP = "LATTICE", 
         parameter INT_FREQ = 1250.0, 
         parameter INT_DATA_RATE = 2500.0, 
         parameter GEAR = 8, 
-        parameter NUM_LANE = 1, 
+        // change from 1 lane to 2 lane, 2023-10-10
+        parameter NUM_LANE = 2, 
         parameter SYNC_CLOCK_FREQ = 200, 
         parameter HSEL = "DISABLED", 
         parameter [((8 * 8) - 1):0] PLL_MODE = "INTERNAL", 
@@ -4068,7 +4080,8 @@ module csi_dphy_ipgen_lscc_mipi_dphy #(parameter FAMILY = "common",
     generate
         if ((INT_TYPE == "TX")) 
             begin : TRANSMITTER
-                csi_dphy_ipgen_lscc_mipi_wrapper_tx #(.NUM_LANE(NUM_LANE),
+                csi_dphy_ipgen_lscc_mipi_wrapper_tx #
+                (       .NUM_LANE(NUM_LANE),
                         .GEAR(GEAR),
                         .INTF(INTF),
                         .DPHY_IP(DPHY_IP),
@@ -4228,7 +4241,8 @@ module csi_dphy_ipgen_lscc_mipi_dphy #(parameter FAMILY = "common",
         else
             if ((INT_TYPE == "RX")) 
                 begin : RECEIVER
-                    csi_dphy_ipgen_lscc_mipi_wrapper_rx #(.NUM_LANE(NUM_LANE),
+                    csi_dphy_ipgen_lscc_mipi_wrapper_rx #
+                    (       .NUM_LANE(NUM_LANE),
                             .GEAR(GEAR),
                             .INTF(INTF),
                             .HSEL(HSEL),

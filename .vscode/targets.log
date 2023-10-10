@@ -1,5 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 export CARAVEL_ROOT=/home/benison/isp_cteTWLCEO/caravel && export MPW_TAG=mpw-9d && make -f /home/benison/isp_cteTWLCEO/caravel/Makefile all
+ 
 # make[1]: Entering directory '/home/benison/isp_cteTWLCEO'
  
 make[1]: *** No rule to make target 'all'.  Stop.
@@ -11,7 +12,7 @@ make[1]: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Oct  7 15:47:26 2023
+# Make data base, printed on Mon Oct  9 16:50:32 2023
 
 # Variables
 
@@ -82,7 +83,7 @@ VSCODE_CODE_CACHE_PATH = /home/benison/.config/Code/CachedData/e7e037083ff4455cf
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.Y4GYB2
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.Q3XEC2
 # default
 .LOADED := 
 # default
@@ -130,7 +131,7 @@ MAKEFILE_LIST := /home/benison/isp_cteTWLCEO/caravel/Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 3248
+VSCODE_PID = 2644
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
@@ -140,7 +141,7 @@ LARGE_FILES_GZ := ./gds/user_proj_example.gds.gz ./gds/user_project_wrapper.gds.
 # makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 38)
 LARGE_FILES := ./gds/user_proj_example.gds ./gds/user_project_wrapper.gds
 # environment
-SESSION_MANAGER = local/benison-VirtualBox:@/tmp/.ICE-unix/1875,unix/benison-VirtualBox:/tmp/.ICE-unix/1875
+SESSION_MANAGER = local/benison-VirtualBox:@/tmp/.ICE-unix/1854,unix/benison-VirtualBox:/tmp/.ICE-unix/1854
 # automatic
 *F = $(notdir $*)
 # makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 23)
@@ -200,7 +201,7 @@ OPENLANE_TAG = 2023.07.19
 # makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 92)
 IO_LIBRARY = sky130_fd_io
 # environment
-INVOCATION_ID = e36c550abf244bdd8c87136e8469625d
+INVOCATION_ID = 8a44197fb70d4ce6bff29ca8d8b476e8
 # environment
 USERNAME = benison
 # makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 55)
@@ -235,6 +236,7 @@ GNUMAKEFLAGS :=
 LOGNAME = benison
 # environment
 GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
+ 
 # makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 89)
 THREADS = $(shell nproc)
 # environment
@@ -242,7 +244,7 @@ DISABLE_LVS = 0
 # makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 100)
 .DEFAULT_GOAL := ship
 # environment
-SYSTEMD_EXEC_PID = 1904
+SYSTEMD_EXEC_PID = 1888
 # environment
 TIMING_ROOT = /home/benison/isp_cteTWLCEO/dependencies/timing-scripts
 # environment
@@ -268,16 +270,15 @@ PROJECT_ROOT = /home/benison/isp_cteTWLCEO
 # makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 68)
 SUBMODULE = 0
 # environment
-MANAGERPID = 1735
+MANAGERPID = 1715
 # environment
 LC_MEASUREMENT = lzh_TW
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 3248
+GIO_LAUNCHED_DESKTOP_FILE_PID = 2644
 # makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 43)
 LARGE_FILES_GZ_SPLIT := ./gds/user_proj_example.gds.gz.00.split ./gds/user_project_wrapper.gds.gz.00.split ./caravel/def/caravan_core.def.gz.00.split ./caravel/def/caravel_core.def.gz.00.split ./caravel/gds/user_analog_project_wrapper_empty.gds.gz.00.split ./caravel/gds/user_project_wrapper_empty.gds.gz.00.split ./openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.error.gz.00.split ./openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.debug.gz.00.split ./openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.error.gz.00.split ./openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.debug.gz.00.split ./mgmt_core_wrapper/mag/mgmt_core_wrapper.mag.gz.00.split ./mgmt_core_wrapper/gds/mgmt_core_wrapper.gds.gz.00.split ./mgmt_core_wrapper/gds/RAM256.gds.gz.00.split ./mgmt_core_wrapper/gds/RAM128.gds.gz.00.split
 # environment
 _ = /usr/share/code/code
- 
 # environment
 LC_PAPER = lzh_TW
 # environment
@@ -289,7 +290,7 @@ OPENLANE_ROOT = /home/benison/isp_cteTWLCEO/dependencies/openlane_src
 # environment
 MPW_TAG = mpw-9d
 # environment
-JOURNAL_STREAM = 8:24191
+JOURNAL_STREAM = 8:23470
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -581,6 +582,7 @@ rcx-user_proj_example: def/user_proj_example.def
 		set_wire_rc -clock -layer met5;\
 		define_process_corner -ext_model_index 0 X;\
 		extract_parasitics -ext_model_file ${PDK_ROOT}/$(PDK)/libs.tech/openlane/rcx_rules.info -corner_cnt 1 -max_res 50 -coupling_threshold 0.1 -cc_model 10 -context_depth 5;\
+ 
 		write_spef ./spef/$*.spef" > ./def/tmp/rcx_$*.tcl
 	docker run -it -v $(OPENLANE_ROOT):/openlane -v $(PDK_ROOT):$(PDK_ROOT) -v $(PWD):/caravel -e PDK_ROOT=$(PDK_ROOT) -u $(shell id -u $(USER)):$(shell id -g $(USER)) $(OPENLANE_IMAGE_NAME) \
 	sh -c " cd /caravel; openroad -exit ./def/tmp/rcx_$*.tcl |& tee ./def/tmp/rcx_$*.log" 
@@ -731,6 +733,7 @@ lvs-gds-user_project_wrapper: gds/user_project_wrapper.gds verilog/gl/user_proje
 	mv ./gds/$*.spice ./spi/lvs
 	rm ./gds/*.ext
 	mv -f ./gds/extract_$*.tcl ./gds/tmp
+ 
 	mv -f ./gds/extract_$*.log ./gds/tmp
 	####
 	mkdir -p ./spi/lvs/tmp
@@ -979,7 +982,6 @@ clean:
 #  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 199):
 	cd $(CARAVEL_ROOT)/verilog/dv/caravel/mgmt_soc/ && \
 		$(MAKE) -j$(THREADS) clean
- 
 	cd $(CARAVEL_ROOT)/verilog/dv/wb_utests/ && \
 		$(MAKE) -j$(THREADS) clean
 
@@ -1042,6 +1044,7 @@ verilog/gl/caravel.v:
 #  File has not been updated.
 
 __set_user_id:
+ 
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -1307,7 +1310,6 @@ lvs-maglef-user_project_wrapper: mag/user_project_wrapper.mag verilog/gl/user_pr
 #  Implicit/static pattern stem: 'user_project_wrapper'
 #  Modification time never checked.
 #  File has not been updated.
- 
 #  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 400):
 	echo "Extracting $*"
 	mkdir -p ./maglef/tmp
@@ -1358,6 +1360,7 @@ uncompress: caravel/def/caravan_core.def caravel/def/caravel_core.def caravel/gd
 #  File does not exist.
 #  File has not been updated.
 #  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 252):
+ 
 	@echo "All files are uncompressed!"
 
 manifest: mag/ maglef/ verilog/rtl/ Makefile
@@ -1752,7 +1755,6 @@ lvs-gds-asic: gds/asic.gds verilog/gl/asic.v
 	@echo "Comparison result: ./spi/lvs/tmp/$*.v_comp.out"
 	@awk '/^NET mismatches/,0' ./spi/lvs/tmp/$*.v_comp.out
 
- 
 gpio_defaults: check-env uncompress uncompress-caravel
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
@@ -1771,6 +1773,7 @@ sdc/caravel.sdc:
 __gpio_defaults:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
+ 
 #  File has not been updated.
 #  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 1160):
 	mkdir -p ./signoff/build
@@ -1814,6 +1817,7 @@ mag2lef-user_project_wrapper: mag/user_project_wrapper.mag uncompress
 	cd ./mag && magic -rcfile ${PDK_ROOT}/$(PDK)/libs.tech/magic/$(PDK).magicrc -noc -dnull mag2lef_$*.tcl < /dev/null
 	rm ./mag/mag2lef_$*.tcl
 	mv -f ./mag/$*.lef ./lef/
+ 
 
 # Not a target:
 openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.error.gz:
@@ -1851,6 +1855,7 @@ skywater-pdk:
 		rm -rf $(PDK_ROOT)/skywater-pdk && sleep 2;\
 	fi
 	git clone https://github.com/google/skywater-pdk.git $(PDK_ROOT)/skywater-pdk
+ 
 	cd $(PDK_ROOT)/skywater-pdk && \
 		git checkout main && git pull && \
 		git checkout -qf $(SKYWATER_COMMIT) && \
@@ -1905,6 +1910,7 @@ mgmt_core_wrapper/gds/mgmt_core_wrapper.gds: mgmt_core_wrapper/gds/mgmt_core_wra
 mgmt_core_wrapper/mag/mgmt_core_wrapper.mag.gz:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
+ 
 #  File has not been updated.
 
 drc-user_proj_example: gds/user_proj_example.gds
@@ -2095,6 +2101,7 @@ caravel_timing_typ: def/caravel.def sdc/caravel.sdc verilog/gl/caravel.v check-m
 		report_checks -to mprj/wbs_cyc_i -unconstrained -group_count 1;\
 		report_checks -to mprj/wbs_stb_i -unconstrained -group_count 1;\
 		report_checks -to mprj/wbs_we_i -unconstrained -group_count 1;\
+ 
 		report_checks -to mprj/wbs_sel_i[*] -unconstrained -group_count 4;\
 		report_checks -to mprj/wbs_adr_i[*] -unconstrained -group_count 32;\
 		report_checks -to mprj/io_in[*] -unconstrained -group_count 32;\
@@ -2292,6 +2299,7 @@ caravel/gds/user_project_wrapper_empty.gds: caravel/gds/user_project_wrapper_emp
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 238):
+ 
 	@$(UNCOMPRESS) $<
 	@echo "$< -> $@"
 
@@ -2456,6 +2464,7 @@ openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example
 
 caravel_timing_fast: def/caravel.def sdc/caravel.sdc verilog/gl/caravel.v check-mcw
 #  Implicit rule search has not been done.
+ 
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 939):
@@ -2739,6 +2748,7 @@ rcx-user_project_wrapper: def/user_project_wrapper.def
 	sh -c "cd /caravel; openroad -exit ./def/tmp/sta_$*.tcl |& tee ./def/tmp/sta_$*.log" 
 
 ship: check-env uncompress uncompress-caravel
+ 
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
@@ -2812,6 +2822,7 @@ compress: gds/user_proj_example.gds.gz gds/user_project_wrapper.gds.gz gds/user_
 #  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 232):
 	@echo "Files larger than $(FILE_SIZE_LIMIT_MB) MBytes are compressed!"
 
+ 
 caravel/def/caravan_core.def: caravel/def/caravan_core.def.gz
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: 'caravel/def/caravan_core.def'
@@ -2841,9 +2852,12 @@ def/user_project_wrapper.def:
 # strcache performance: lookups = 511 / hit rate = 68%
 # hash-table stats:
 # Load=160/8192=2%, Rehash=0, Collisions=0/511=0%
-# Finished Make data base on Sat Oct  7 15:47:26 2023
+# Finished Make data base on Mon Oct  9 16:50:32 2023
 
 # make[1]: Leaving directory '/home/benison/isp_cteTWLCEO'
+ 
+make: *** [Makefile:93: all] Error 2
+
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -2851,7 +2865,7 @@ def/user_project_wrapper.def:
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Oct  7 15:47:26 2023
+# Make data base, printed on Mon Oct  9 16:50:32 2023
 
 # Variables
 
@@ -2916,14 +2930,13 @@ VSCODE_CODE_CACHE_PATH = /home/benison/.config/Code/CachedData/e7e037083ff4455cf
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.Y4GYB2
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.Q3XEC2
 # default
 .LOADED := 
 # default
 .INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
 # makefile
-MAKEFLAGS = pqrR --warn-undef 
-ined-variables
+MAKEFLAGS = pqrR --warn-undefined-variables
 # makefile (from 'Makefile', line 18)
 CARAVEL_ROOT = $(PWD)/caravel
 # makefile (from 'Makefile', line 306)
@@ -2963,7 +2976,7 @@ MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 3248
+VSCODE_PID = 2644
 # makefile (from 'Makefile', line 118)
 dv_patterns = $(shell cd verilog/dv && find * -maxdepth 0 -type d)
 # environment
@@ -2971,7 +2984,7 @@ XDG_SESSION_TYPE = wayland
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/benison-VirtualBox:@/tmp/.ICE-unix/1875,unix/benison-VirtualBox:/tmp/.ICE-unix/1875
+SESSION_MANAGER = local/benison-VirtualBox:@/tmp/.ICE-unix/1854,unix/benison-VirtualBox:/tmp/.ICE-unix/1854
 # automatic
 *F = $(notdir $*)
 # makefile (from 'Makefile', line 51)
@@ -3025,7 +3038,7 @@ TARGET_PATH = $(shell pwd)
 # makefile (from 'Makefile', line 45)
 OPENLANE_TAG = 2023.07.19
 # environment
-INVOCATION_ID = e36c550abf244bdd8c87136e8469625d
+INVOCATION_ID = 8a44197fb70d4ce6bff29ca8d8b476e8
 # environment
 USERNAME = benison
 # makefile (from 'Makefile', line 32)
@@ -3063,7 +3076,7 @@ DISABLE_LVS = 0
 # makefile
 .DEFAULT_GOAL := install
 # environment
-SYSTEMD_EXEC_PID = 1904
+SYSTEMD_EXEC_PID = 1888
 # makefile (from 'Makefile', line 307)
 TIMING_ROOT = $(shell pwd)/dependencies/timing-scripts
 # environment
@@ -3083,11 +3096,11 @@ OPEN_PDKS_COMMIT = 78b7bc32ddb4b6f14f76883c2e2dc5b5de9d1cbc
 # makefile (from 'Makefile', line 308)
 PROJECT_ROOT = $(CUP_ROOT)
 # environment
-MANAGERPID = 1735
+MANAGERPID = 1715
 # environment
 LC_MEASUREMENT = lzh_TW
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 3248
+GIO_LAUNCHED_DESKTOP_FILE_PID = 2644
 # environment
 _ = /usr/share/code/code
 # environment
@@ -3099,7 +3112,7 @@ OPENLANE_ROOT = $(PWD)/dependencies/openlane_src
 # makefile (from 'Makefile', line 46)
 MPW_TAG = mpw-9d
 # environment
-JOURNAL_STREAM = 8:24191
+JOURNAL_STREAM = 8:23470
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -3141,6 +3154,7 @@ LC_IDENTIFICATION = lzh_TW
 # variable set hash-table stats:
 # Load=141/1024=14%, Rehash=0, Collisions=16/345=5%
 
+ 
 # Pattern-specific Variable Values
 
 # No pattern-specific variable values.
@@ -3385,6 +3399,7 @@ verify-la_test1-gl-sdf: simenv
 #  File has not been updated.
 # variable set hash-table stats:
 # Load=1/32=3%, Rehash=0, Collisions=0/2=0%
+ 
 #  recipe to execute (from 'Makefile', line 169):
 	$(docker_run_verify)
 
@@ -3650,6 +3665,7 @@ create-spef-mapping: verilog/gl/user_project_wrapper.v
 verify-la_test1-rtl: SIM = RTL
 verify-la_test1-rtl: simenv
 #  Implicit rule search has not been done.
+ 
 #  Implicit/static pattern stem: 'la_test1'
 #  Modification time never checked.
 #  File has not been updated.
@@ -3896,8 +3912,6 @@ run-precheck: check-pdk check-precheck
 # strcache performance: lookups = 341 / hit rate = 68%
 # hash-table stats:
 # Load=106/8192=1%, Rehash=0, Collisions=6/341=2%
-# Finished Make data base on Sat Oct  7 15:47:26 2023
+# Finished Make data base on Mon Oct  9 16:50:32 2023
 
  
-make: *** [Makefile:93: all] Error 2
-
