@@ -101,19 +101,20 @@ module user_proj_example #(
     assign rst = (~la_oenb[65]) ? la_data_in[65]: wb_rst_i;
 
     // io_in ({io_in[37:27]}),
+    
         //(MIPI_clk_N,MIPI_clk_P),(MIPI_D1_N,MIPI_D1_P),(MIPI_D0_N,MIPI_D0_P),
 
 // Module "mipi_rx_raw10_select" replace by modle "mipi_csi_16_nx"
     mipi_csi_16_nx #
     (   .reset_in(rst),
-		.mipi_clk_p_in(io_in[36:36]),
-		.mipi_clk_n_in(io_in[37:37]),
-		.mipi_data_p_in(io_in[32:32]),
-		.mipi_data_n_in(io_in[33:33]),
-        .mipi_clk_p_in1(io_in[36:36]),
-		.mipi_clk_n_in1(io_in[37:37]),
-		.mipi_data_p_in1(io_in[34:34]),
-		.mipi_data_n_in1(io_in[35:35]),
+		.mipi_clk_p_in(io_in[14:14]), //(MIPI_clk_N),
+		.mipi_clk_n_in(io_in[15:15]),//(MIPI_clk_P,),
+		.mipi_data_p_in(io_in[10:10]),//(MIPI_D0_N),
+		.mipi_data_n_in(io_in[11:11]),//(MIPI_D0_P),
+        .mipi_clk_p_in1(io_in[14:14]),//(MIPI_clk_N),
+		.mipi_clk_n_in1(io_in[15:15]),//(MIPI_clk_P,),
+		.mipi_data_p_in1(io_in[12:12]),//(,MIPI_D1_N),
+		.mipi_data_n_in1(io_in[13:13]),//(MIPI_D1_P),
 		.dummy_out(rdata),
 
 		.pclk_o(pclk_o),  //data output on pos edge , should be latching into receiver on negedge
