@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		},
+		{
+			"path": "../../../../USB_C_Industrial_Camera_FPGA_USB3"
+		},
+		{
+			"path": "../../../../I2C"
+		}
+	],
+	"settings": {}
+}

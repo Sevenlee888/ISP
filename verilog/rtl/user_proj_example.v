@@ -36,11 +36,18 @@
  */
 
 module user_proj_example #(
-    parameter BITS = 16
+    //parameter BITS = 16  ,disable on CT-14-2023
+    parameter BITS = 32
 )(
 `ifdef USE_POWER_PINS
+    inout vdda1,	// User area 1 3.3V supply
+    inout vdda2,	// User area 2 3.3V supply
+    inout vssa1,	// User area 1 analog ground
+    inout vssa2,	// User area 2 analog ground
     inout vccd1,	// User area 1 1.8V supply
+    inout vccd2,	// User area 2 1.8v supply
     inout vssd1,	// User area 1 digital ground
+    inout vssd2,	// User area 2 digital ground
 `endif
 
     // Wishbone Slave ports (WB MI A)
@@ -61,10 +68,11 @@ module user_proj_example #(
     input  [127:0] la_oenb,
 
     // IOs
-    input  [BITS-1:0] io_in,
-    output [BITS-1:0] io_out,
-    output [BITS-1:0] io_oeb,
-
+    input  [38-1:0] io_in,
+    output [38-1:0] io_out,
+    output [38-1:0] io_oeb,
+ 
+    input   user_clock2,
     // IRQ
     output [2:0] irq
 );
@@ -101,7 +109,7 @@ module user_proj_example #(
     assign rst = (~la_oenb[65]) ? la_data_in[65]: wb_rst_i;
 
     // io_in ({io_in[37:27]}),
-    
+
         //(MIPI_clk_N,MIPI_clk_P),(MIPI_D1_N,MIPI_D1_P),(MIPI_D0_N,MIPI_D0_P),
 
 // Module "mipi_rx_raw10_select" replace by modle "mipi_csi_16_nx"
