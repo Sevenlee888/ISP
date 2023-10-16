@@ -126,9 +126,12 @@ user_proj_example mprj (
         //(MIPI_clk_P,MIPI_clk_N),(MIPI_D1_P,MIPI_D1_N),(MIPI_D0_P,MIPI_D0_N),
     .analog_io_in ({analog_io_in[15:14],analog_io_in[13:12],analog_io_in[11:10]}),
     
-       //(DAC_outN,DAC_cabin),
-    .analog_io_in ({analog_io_in[17:16]}),
+       //(DAC_outN),
+    .analog_io_in ({analog_io_in[17:17]}),
     
+       //(DAC_cabin),
+    .analog_io_in ({analog_io_in[18:18]}),
+
         //AD1 convert analog input , AD0 conver analog input),
     .analog_io_in ({analog_io_in[19:19],analog_io_in[18:18]}),
     
