@@ -173,18 +173,17 @@ module user_proj_example #(
    wire q_spi_ssel_o;
    wire q_spi_ssel_t;
 
-    // io_in ({io_in[37:27]}),
-
+    // io_in ({io_in[37:27]}),gi
   
    // gpio mapping   gpio is muxed along with qspi and jtag
-   assign io_out[9:0]   = w_gpo[9:0];
-   assign io_oeb[9:0]   = w_gpd;
-   assign w_gpi[9:0]    = io_in[9:0] ;
+  // assign io_out[9:0]   = w_gpo[9:0];
+  // assign io_oeb[9:0]   = w_gpd;
+  // assign w_gpi[9:0]    = io_in[9:0] ;
    
-   assign io_out[13:10]  = jtag_mux ?  {1'b0,TMS,TDO,TCK}  : w_gpo[13:10] ;
-   assign io_oeb[13:10]  = jtag_mux ? 4'b1000 : w_gpd[13:10];
-   assign TDI            = jtag_mux ? io_in[13] : 1'b1;
-   assign w_gpi[13:10]   = jtag_mux ? 4'b0000 : io_in[13:10];
+  // assign io_out[13:10]  = jtag_mux ?  {1'b0,TMS,TDO,TCK}  : w_gpo[13:10] ;
+  // assign io_oeb[13:10]  = jtag_mux ? 4'b1000 : w_gpd[13:10];
+  // assign TDI            = jtag_mux ? io_in[13] : 1'b1;
+  // assign w_gpi[13:10]   = jtag_mux ? 4'b0000 : io_in[13:10];
    
    assign io_out[19:14]  = qspi_mux ? {q_io3_o,q_io2_o,q_io1_o,q_io0_o,q_spi_clk_o,q_spi_ssel_o} : w_gpo[19:14];
    assign io_oeb[19:14]  = qspi_mux ? {q_io3_t,q_io2_t,q_io1_t,q_io0_t,q_spi_clk_t,q_spi_ssel_t} : w_gpd[19:14];
@@ -201,9 +200,9 @@ module user_proj_example #(
    
    // spi mapping
    
-   assign io_out[24:20] = {w_spi_mosi,1'b1,w_spi_clk,w_spi_ssel};
-   assign io_oeb[24:20] = w_spi_dir;
-   assign w_spi_miso    = io_in[23];
+ //  assign io_out[24:20] = {w_spi_mosi,1'b1,w_spi_clk,w_spi_ssel};
+ //  assign io_oeb[24:20] = w_spi_dir;
+ //  assign w_spi_miso    = io_in[23];
    
    // i2c mapping
    assign io_out[26:25] = {w_sda_o,w_scl_o};
@@ -222,21 +221,24 @@ module user_proj_example #(
    assign io_oeb[31:30] = {w_pwm_dir,w_pwm_dir};
    
    // led control
-   assign io_out[32]    = w_ledcntrl;
-   assign io_oeb[32]    = w_led_dir;
+ //  assign io_out[32]    = w_ledcntrl;
+ //  assign io_oeb[32]    = w_led_dir;
    
-   assign io_out[33]    = 1'b1;
-   assign io_oeb[33]    = !w_i2s_dir;
-   assign ext_aud_mclk  = io_in[33];   // external master audio clock
+ //  assign io_out[33]    = 1'b1;
+ //  assign io_oeb[33]    = !w_i2s_dir;
+ //  assign ext_aud_mclk  = io_in[33];   // external master audio clock
    
    //uart mapping
-   assign io_oeb[35:34] = {w_uart_rxd_dir,w_uart_txd_dir};
-   assign io_out[35:34] = {1'b1,w_uart_txd};
-   assign w_uart_rxd = io_in[35];
-   
+ //  assign io_oeb[35:34] = {w_uart_rxd_dir,w_uart_txd_dir};
+  // assign io_out[35:34] = {1'b1,w_uart_txd};
+  // assign w_uart_rxd = io_in[35];
+
+        //(UART0 rX,tX),disable port (6:5), oct-17-2023
+    //.io_in ({io_in[17:16]})    //change to port (17:16)
+
    // power led
-   assign io_out[36]    = w_pwrled;
-   assign io_oeb[36]    = 1'b0;
+ //  assign io_out[36]    = w_pwrled;
+ //  assign io_oeb[36]    = 1'b0;
    
    assign io_out[37] = 0;
    assign io_oeb[37] = 0;
