@@ -332,8 +332,7 @@ module user_proj_example #(
 
 
 
-
-        //(MIPI_clk_N,MIPI_clk_P),(MIPI_D1_N,MIPI_D1_P),(MIPI_D0_N,MIPI_D0_P),
+//(MIPI_clk_N,MIPI_clk_P),(MIPI_D1_N,MIPI_D1_P),(MIPI_D0_N,MIPI_D0_P),
 
 // Module "mipi_rx_raw10_select" replace by modle "mipi_csi_16_nx"
     mipi_csi_16_nx #

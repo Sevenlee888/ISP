@@ -7,7 +7,8 @@
 /*******************************************************************************
     Wrapper Module generated per user settings.
 *******************************************************************************/
-module dphy_dummy (sync_clk_i, 
+module dphy_dummy (
+        sync_clk_i, 
         sync_rst_i, 
         lmmi_clk_i, 
         lmmi_resetn_i, 

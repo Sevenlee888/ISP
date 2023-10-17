@@ -126,22 +126,26 @@ user_proj_example mprj (
         //(MIPI_clk_P,MIPI_clk_N),(MIPI_D1_P,MIPI_D1_N),(MIPI_D0_P,MIPI_D0_N),
     .analog_io_in ({analog_io_in[15:14],analog_io_in[13:12],analog_io_in[11:10]}),
     
-       //(DAC_outN),
-    .analog_io_in ({analog_io_in[17:17]}),
+       //(DAC_outN),disable on OCT-12-2023
+    //.analog_io_in ({analog_io_in[17:17]}), 
     
        //(DAC_cabin),
     .analog_io_in ({analog_io_in[18:18]}),
 
-        //AD1 convert analog input , AD0 conver analog input),
-    .analog_io_in ({analog_io_in[19:19],analog_io_in[18:18]}),
+        //AD1 convert analog input 
+        //DISABLE, AD0 conver analog input), OCT-17-2023
+    .analog_io_in ({analog_io_in[19:19]}),
     
      //(CIS:PICLK,HSYNC,VSYNC,XCLK,RST)  
-    .io_in ({io_in[24:20]}),
+    //.io_in ({io_in[24:20]}), change to port (36 :32)
+    .io_in ({io_in[36:32]}), // OCT-17-2023 disable
+
+        //(UART0 TX,RX),
+    .io_in ({io_in[6:5]})   
+        //(SDO,SDI,CSB,SCK) , 
+    .io_in ({io_in[4:4],io_in[3:3],io_in[2:2],io_in[1:1]}),
     
-        //(UART0 TX,RX),(SDO,SDI,CSB,SCK) 
-    .io_in ({io_in[6:5],io_in[4:4],io_in[3:3],io_in[2:2],io_in[1:1]}),
-    
-        //(PWM_1),(PWM_0) 
+        //(PWM_1) 
     .io_out({io_out[37:37]}),
     
     .io_oeb({io_oeb[37:30],io_oeb[7:0]}),
