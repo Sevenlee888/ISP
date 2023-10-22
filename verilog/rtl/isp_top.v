@@ -94,6 +94,8 @@ module isp_top
 
 	wire dpc_href_o, dpc_vsync_o;
 	wire [BITS-1:0] dpc_raw_o;
+
+
 `ifdef USE_DPC
 	wire dpc_href, dpc_vsync;
 	wire [BITS-1:0] dpc_raw;

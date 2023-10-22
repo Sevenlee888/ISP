@@ -80,7 +80,8 @@ module user_project_wrapper #(
     inout [`MPRJ_IO_PADS_2+1:`MPRJ_IO_PADS_2+1] analog_io, 
 
     //(CIS:PICLK,HSYNC,VSYNC,XCLK,RST)  
-    input  [`MPRJ_IO_PADS_2+5:MPRJ_IO_PADS_2+1] io_in, 
+    input  [`MPRJ_IO_PADS-1:MPRJ_IO_PADS-5] io_in, 
+
     output [`MPRJ_IO_PADS:MPRJ_IO_PADS-1] io_out
    output [`MPRJ_IO_PADS-1:0] io_oeb,
 
@@ -103,8 +104,15 @@ module user_project_wrapper #(
 
 user_proj_example mprj (
 `ifdef USE_POWER_PINS
-	.vccd1(vccd1),	// User area 1 1.8V power
-	.vssd1(vssd1),	// User area 1 digital ground
+
+        inout vdda1,	// User area 1 3.3V supply
+    .vdda2(vdda2),	// User area 2 3.3V supply
+    .vssa1(vssa1),	// User area 1 analog ground
+    .vssa2(vssa2),	// User area 2 analog ground
+    .vccd1(vccd1),	// User area 1 1.8V supply
+    .vccd2(vccd2),	// User area 2 1.8v supply
+    .vssd1(vssd1),	// User area 1 digital ground
+    .vssd2(vssd2),	// User area 2 digital ground
 `endif
 
     .wb_clk_i(wb_clk_i),
