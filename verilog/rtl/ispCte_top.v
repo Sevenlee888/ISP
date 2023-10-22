@@ -58,6 +58,30 @@ module ispCte_top
 	wire [BITS-1:0] in_raw_o;
 	vid_mux #(BITS) mux_in(pclk, rst_n, 1'b0, in_href, in_vsync, in_raw, 1'b0, 1'b0, {BITS{1'b0}}, in_href_o, in_vsync_o, in_raw_o);
 
+// add the judgement after reset and clk enable, oct-22-2023 add
+		assign rst_n = wb_rst_i
+		assign pclk = wb_clk_i
+		always @ (posedge pclk or negedge rst_n) begin
+				if (!rst_n) begin
+					href_reg <= 0;
+					vsync_reg <= 0;
+					data_reg <= 0;
+				// read flash data
+				// check I2c status
+				// module isp_top
+				// module mipi_csi_16_nx
+				// module DAC_cabin_out_data
+
+				end
+				else begin
+			href_reg <= in_href;
+			vsync_reg <= in_vsync;
+			data_reg <= in_data;
+		end
+	end
+	
+
+
 `ifdef USE_DPC
 	wire dpc_href, dpc_vsync;
 	wire [BITS-1:0] dpc_raw;

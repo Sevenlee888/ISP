@@ -62,15 +62,23 @@ module user_project_wrapper #(
 
     // IOs
        // Internal UART0,SPDX
-    input  [`MPRJ_IO_PADS-13:1] io_in,    
-    // sensor CIS_data input (d9-d0)
+    input  [`MPRJ_IO_PADS-13:1] io_in, 
+
+    // sensor CIS_data input (d9-d0)   , io_in [36:27]
     input  [`MPRJ_IO_PADS-1:28] io_in, 
+    
     // analog_io_in for MIPI_clk_N,MIPI_clk_P,MIPI_D0_N,MIPI_D0_P,MIPI_D1_N,MIPI_D1_P
-    inout  [`MPRJ_IO_PADS_1-4:`MPRJ_IO_PADS_1-11] analog_io,
+    // analog_io_in[15:10]
+    inout  [`MPRJ_IO_PADS_1-3:11] analog_io,
+
     // analog_io_out for DAC_cabin,DAC_outN 
-    inout [`MPRJ_IO_PADS_1-2:`MPRJ_IO_PADS_1-3] analog_io,
-       // analog_io_out for AD0, AD1 
-    inout [`MPRJ_IO_PADS_1:`MPRJ_IO_PADS_1-1] analog_io, 
+    // analog_io_iout[18:18]
+    inout [`MPRJ_IO_PADS_1:`MPRJ_IO_PADS_1] analog_io,
+
+       // analog_io_out for  AD1 
+       // analog_io_out[19:19]
+    inout [`MPRJ_IO_PADS_2+1:`MPRJ_IO_PADS_2+1] analog_io, 
+
     //(CIS:PICLK,HSYNC,VSYNC,XCLK,RST)  
     input  [`MPRJ_IO_PADS_2+5:MPRJ_IO_PADS_2+1] io_in, 
     output [`MPRJ_IO_PADS:MPRJ_IO_PADS-1] io_out
