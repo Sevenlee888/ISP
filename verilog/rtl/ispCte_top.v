@@ -192,3 +192,4 @@ module vid_mux
 	assign out_vsync = vsync_reg;
 	assign out_data = data_reg;
 endmodule
+
